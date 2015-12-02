@@ -1,0 +1,47 @@
+# Album API
+
+## Retreive an album
+
+### GET /api/v1/albums/:id
+### Request
+
+#### Headers
+
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI2ODQxYTcyMS1mYTM4LTQ2YzAtYjZmNC0zODZiZmQwNzlhYzQifQ.V0IzNIUHKQyZSUk9xsEoZsbXcGwlcBqz95D5dq86Yb4&quot;
+Host: example.org
+Cookie: </pre>
+
+#### Route
+
+<pre>GET /api/v1/albums/99d11f10-8b55-493d-9314-333e68bc8f5c</pre>
+
+### Response
+
+#### Headers
+
+<pre>X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-access-image_delete: true
+X-access-image_upload: true
+X-access-image_share: false
+X-access-image_rotate: true
+X-access-image_crop: true
+X-access-stats: true
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI2ODQxYTcyMS1mYTM4LTQ2YzAtYjZmNC0zODZiZmQwNzlhYzQifQ.V0IzNIUHKQyZSUk9xsEoZsbXcGwlcBqz95D5dq86Yb4
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;be1ae231f3c0698263d55e4ff123481c&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 7a98f6e0-dca8-4ee7-9acc-fc2463084fcb
+X-Runtime: 0.032929
+Content-Length: 1194</pre>
+
+#### Status
+
+<pre>200 OK</pre>
+
+#### Body
+
+<pre>{"public_id":"99d11f10-8b55-493d-9314-333e68bc8f5c","upload_form":{"url":"https://api.cloudinary.com/v1_1/hwja6b0dx/auto/upload","params":{"timestamp":1449051274,"transformation":"a_exif","callback":"https://localhost/cloudinary_cors.html","type":"private","tags":"99d11f10-8b55-493d-9314-333e68bc8f5c","signature":"794baa26c36e0f6f35dae498c5313670ed8f45c5","api_key":"744524991939777"}},"images_count":1,"views_count":0,"thumbnails":[{"public_id":"58738212-d891-4931-a0e4-895a917d1b28","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["99d11f10-8b55-493d-9314-333e68bc8f5c"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2015-12-02T11:14:34.269+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"99d11f10-8b55-493d-9314-333e68bc8f5c","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}}]}</pre>

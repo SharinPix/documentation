@@ -1,0 +1,47 @@
+{
+  "resource": "Image",
+  "http_method": "GET",
+  "route": "/api/v1/albums/:album_id/images",
+  "description": "Listing images of an album",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/albums/0a37d440-c19c-4c89-90cd-1980706e3626/images",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI2MWQ4MjdiNy04MDY2LTRiOGYtYjdhMi03NmM0YTFiYWFiODgifQ.v7TvyFcUDEvfBEUy9eaaKjsG1QA5rY89iKkZ_ETnj_0\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI2MWQ4MjdiNy04MDY2LTRiOGYtYjdhMi03NmM0YTFiYWFiODgifQ.v7TvyFcUDEvfBEUy9eaaKjsG1QA5rY89iKkZ_ETnj_0",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"d751713988987e9331980363e24189ce\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "211b9971-4024-4ae9-af70-1011902dd56d",
+        "X-Runtime": "0.010337",
+        "Content-Length": "2"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

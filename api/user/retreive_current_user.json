@@ -1,0 +1,48 @@
+{
+  "resource": "User",
+  "http_method": "GET",
+  "route": "/api/v1/user",
+  "description": "Retreive current user",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/user",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhMzgwNjFiMS04MTgwLTRhM2UtYjdmMC0wOWNhOThjYTQ5YjkifQ.qTMS5sNsnJHK4LjsW45TaBGgXYB_nglF2M4XbakzmL8\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"public_id\":\"a38061b1-8180-4a3e-b7f0-09ca98ca49b9\",\"fullname\":\"translation missing: fr.unknown_user\",\"email\":\"luc+23@sharinpix.com\"}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-access-admin": "false",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhMzgwNjFiMS04MTgwLTRhM2UtYjdmMC0wOWNhOThjYTQ5YjkifQ.qTMS5sNsnJHK4LjsW45TaBGgXYB_nglF2M4XbakzmL8",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"5f4c620a5735993ac3d995cae82086c8\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "2bbd5c80-f407-4205-a0bb-f98410d4d920",
+        "X-Runtime": "0.029103",
+        "Content-Length": "133"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

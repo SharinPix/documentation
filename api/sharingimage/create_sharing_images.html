@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SharingImage API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SharingImage API</h1>
+
+      <div class="article">
+        <h2>create sharing images</h2>
+        <h3>POST /api/v1/sharings/:sharing_id/sharing_images</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">image_ids</span>
+                </td>
+                <td>
+                  <span class="description">id of images</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzUsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiU2hhcmluZ3MiOnsic2hhcmluZyI6IntcImVuXCI6IFwiSG9tZXBhZ2VcIiwgXCJmclwiOiBcIlBhZ2UgZCdhY2NldWlsXCJ9In19fSwidXNlcl9pZCI6IjM1NWI1ZjExLWYxYWUtNDIxMi04MjRhLWFmNzdkYzhmNGJiZiJ9.LmKa9Pw5ByOSWvL4i7-EjYtyG4enXJSy2YfAT9t20yI&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">POST /api/v1/sharings/b30d7017-d303-48e0-bee8-7cd95711996c/sharing_images</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">image_ids[]=6203cd9f-557d-4a50-ae0d-a6e5fcd7a274&image_ids[]=4de66731-b35b-435c-8d41-c1d9d680a183&image_ids[]=499cd954-722a-4877-be8e-24d8ec4bd171</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzUsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiU2hhcmluZ3MiOnsic2hhcmluZyI6IntcImVuXCI6IFwiSG9tZXBhZ2VcIiwgXCJmclwiOiBcIlBhZ2UgZCdhY2NldWlsXCJ9In19fSwidXNlcl9pZCI6IjM1NWI1ZjExLWYxYWUtNDIxMi04MjRhLWFmNzdkYzhmNGJiZiJ9.LmKa9Pw5ByOSWvL4i7-EjYtyG4enXJSy2YfAT9t20yI
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;ce2e8743d59fea45070952024f9864ad&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: d9d331af-cb03-4396-93c8-30fc4bf7b737
+X-Runtime: 0.080203
+Content-Length: 1846</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[{&quot;id&quot;:&quot;0e97c59e-0c09-40c2-b23b-05ba65d43ec1&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:35.324+01:00&quot;,&quot;url&quot;:&quot;/sharing_images/0e97c59e-0c09-40c2-b23b-05ba65d43ec1/image&quot;,&quot;user&quot;:&quot;355b5f11-f1ae-4212-824a-af77dc8f4bbf&quot;,&quot;image&quot;:{&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;public_id&quot;:&quot;6203cd9f-557d-4a50-ae0d-a6e5fcd7a274&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;}},{&quot;id&quot;:&quot;fe6a9195-3147-4f73-a579-404df9c0bbcf&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:35.333+01:00&quot;,&quot;url&quot;:&quot;/sharing_images/fe6a9195-3147-4f73-a579-404df9c0bbcf/image&quot;,&quot;user&quot;:&quot;355b5f11-f1ae-4212-824a-af77dc8f4bbf&quot;,&quot;image&quot;:{&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;public_id&quot;:&quot;4de66731-b35b-435c-8d41-c1d9d680a183&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;}},{&quot;id&quot;:&quot;10e08a8b-19b6-4975-80b6-584333c47d8c&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:35.342+01:00&quot;,&quot;url&quot;:&quot;/sharing_images/10e08a8b-19b6-4975-80b6-584333c47d8c/image&quot;,&quot;user&quot;:&quot;355b5f11-f1ae-4212-824a-af77dc8f4bbf&quot;,&quot;image&quot;:{&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;public_id&quot;:&quot;499cd954-722a-4877-be8e-24d8ec4bd171&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;}}]</pre>
+      </div>
+    </div>
+  </body>
+</html>

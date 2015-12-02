@@ -1,0 +1,52 @@
+{
+  "resource": "Statistics",
+  "http_method": "GET",
+  "route": "/api/v1/albums/:id/events/count",
+  "description": "Retreive album activity",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "group",
+      "description": "Group clause"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/albums/233fbe7a-a4bf-46d7-babd-eba12b2af13c/events/count?group=name",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJjNjkwYjFmNS1hMzEzLTRhNDktYjExZi0zZjMzMjA2MTBjNTAifQ.l-1lZbSo2EAosn89JVKbqDcLPn8gir89vR6DAlbKqP8\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "group": "name"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"Viewed Album\":3,\"Viewed Image\":1}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJjNjkwYjFmNS1hMzEzLTRhNDktYjExZi0zZjMzMjA2MTBjNTAifQ.l-1lZbSo2EAosn89JVKbqDcLPn8gir89vR6DAlbKqP8",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"317f7b5cb2e37f8133f24407da967114\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "af26babf-c992-4160-a7a5-b20cca964115",
+        "X-Runtime": "0.008383",
+        "Content-Length": "35"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image API</h1>
+
+      <div class="article">
+        <h2>Crop an image</h2>
+        <h3>PUT /api/v1/images/:id</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">rotation</span>
+                </td>
+                <td>
+                  <span class="description">Image rotation</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">crop_x</span>
+                </td>
+                <td>
+                  <span class="description">Image crop x</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">crop_y</span>
+                </td>
+                <td>
+                  <span class="description">Image crop y</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">crop_w</span>
+                </td>
+                <td>
+                  <span class="description">Image crop w</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">crop_h</span>
+                </td>
+                <td>
+                  <span class="description">Image crop h</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyI2YzA4Y2U0Ni00NWZkLTRhOTYtYjU0Mi0xYWU1ZDIzNmY4MTgiOnsiQWNjZXNzIjp7ImltYWdlX2Nyb3AiOnRydWV9fX0sInVzZXJfaWQiOiJmZmQ3N2Q2ZC0xZGYwLTQ2MjMtYTY4ZC00NzA4OWUwZmUwOGEifQ.e263F_-rKJ9RJjK-3QbN5CaccjJkZ3C31In1MxLwtME&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">PUT /api/v1/images/eea38232-8017-458d-8e3c-1c218dedeb36</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">rotation=0&crop_x=3&crop_y=2&crop_w=10&crop_h=11</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyI2YzA4Y2U0Ni00NWZkLTRhOTYtYjU0Mi0xYWU1ZDIzNmY4MTgiOnsiQWNjZXNzIjp7ImltYWdlX2Nyb3AiOnRydWV9fX0sInVzZXJfaWQiOiJmZmQ3N2Q2ZC0xZGYwLTQ2MjMtYTY4ZC00NzA4OWUwZmUwOGEifQ.e263F_-rKJ9RJjK-3QbN5CaccjJkZ3C31In1MxLwtME
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;d8af263708a0ec0b21b52823f85ff7ee&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 887299ba-97bf-4425-ad53-5df710c19e59
+X-Runtime: 0.019460
+Content-Length: 759</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{&quot;public_id&quot;:&quot;eea38232-8017-458d-8e3c-1c218dedeb36&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;6c08ce46-45fd-4a96-b542-1ae5d236f818&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:34.410+01:00&quot;,&quot;width&quot;:10,&quot;height&quot;:11,&quot;rotation&quot;:0,&quot;crop_x&quot;:3.0,&quot;crop_y&quot;:2.0,&quot;crop_w&quot;:10.0,&quot;crop_h&quot;:11.0,&quot;album_id&quot;:&quot;6c08ce46-45fd-4a96-b542-1ae5d236f818&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}}</pre>
+      </div>
+    </div>
+  </body>
+</html>

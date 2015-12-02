@@ -1,0 +1,41 @@
+# Sharing API
+
+## retrieve sharings
+
+### GET api/v1/albums/:album_id/sharings
+### Request
+
+#### Headers
+
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiU2hhcmluZ3MiOnsic2hhcmluZyI6InNoYXJpbmcifX19LCJ1c2VyX2lkIjoiOGEyZDJlNTktMWY2Zi00M2Q4LTkyYjQtYjRmZWNiYmJjN2UwIn0.B6zhXaeYb_5iTkJTiDoPtGefdmnxQKtrnJPI_qSAbko&quot;
+Host: example.org
+Cookie: </pre>
+
+#### Route
+
+<pre>GET api/v1/albums/00324000004ijWS/sharings</pre>
+
+### Response
+
+#### Headers
+
+<pre>X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiU2hhcmluZ3MiOnsic2hhcmluZyI6InNoYXJpbmcifX19LCJ1c2VyX2lkIjoiOGEyZDJlNTktMWY2Zi00M2Q4LTkyYjQtYjRmZWNiYmJjN2UwIn0.B6zhXaeYb_5iTkJTiDoPtGefdmnxQKtrnJPI_qSAbko
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;2408288304ff37850f2559118693ee05&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: bb211966-a2f2-439d-a8e5-15dc67cc7316
+X-Runtime: 0.028686
+Content-Length: 225</pre>
+
+#### Status
+
+<pre>200 OK</pre>
+
+#### Body
+
+<pre>[{"id":"dc274b75-9777-42ed-ab2e-4f28bf620213","created_at":"2015-12-02T11:14:30.516+01:00","name":"sharing","label":"{\"en\": \"Homepage\", \"fr\": \"Page d'acceuil\"}","url":"/sharings/dc274b75-9777-42ed-ab2e-4f28bf620213"}]</pre>

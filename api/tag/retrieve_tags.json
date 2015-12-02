@@ -1,0 +1,47 @@
+{
+  "resource": "Tag",
+  "http_method": "GET",
+  "route": "api/v1/albums/:album_id/tags",
+  "description": "retrieve tags",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/albums/00324000004ijWS/tags",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiNzJhMjkyMzItOGJiMi00ODJhLWFlN2UtMzkyNzIyMTJkOWI4In0.qK1gs9pRu_d3xAfAe8Wb0XSKKihVy1c0no3ar9TowUs\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"id\":\"be1a4a59-43f5-4870-ae78-faaf5be7bf2d\",\"created_at\":\"2015-12-02T11:14:31.268+01:00\",\"name\":\"tag\",\"label\":\"{\\\"en\\\":\\\"Cartoons\\\",\\\"fr\\\":\\\"Déssin animé\\\"}\"}]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiNzJhMjkyMzItOGJiMi00ODJhLWFlN2UtMzkyNzIyMTJkOWI4In0.qK1gs9pRu_d3xAfAe8Wb0XSKKihVy1c0no3ar9TowUs",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"212a3c0fa70e97a8aa67468596a6d7d8\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "2b93b69f-23a5-41d0-8ae1-e367c180ffd0",
+        "X-Runtime": "0.042624",
+        "Content-Length": "163"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

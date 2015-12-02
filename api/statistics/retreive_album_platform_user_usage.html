@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Statistics API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Statistics API</h1>
+
+      <div class="article">
+        <h2>Retreive album platform user usage</h2>
+        <h3>GET /api/v1/albums/:album_id/events/users_count</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">group</span>
+                </td>
+                <td>
+                  <span class="description">Group clause</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">name</span>
+                </td>
+                <td>
+                  <span class="description">Group clause</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhOTQ1ZjRjYy1kZTc4LTQ0MjEtODQ1YS0zMDFjMDczYmI4MDYifQ.CmG5_57h2wS008E5BE_68oHQrRUfxjpfxokn7_T_I2c&quot;
+Host: example.org
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET /api/v1/albums/8d987d01-4844-4871-88b2-c094fa5877bf/events/users_count?group=platform&amp;name=Viewed+Thumbnail</pre>
+
+            <h4>Query Parameters</h4>
+            <pre class="request query_parameters highlight">group: platform
+name: Viewed Thumbnail</pre>
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhOTQ1ZjRjYy1kZTc4LTQ0MjEtODQ1YS0zMDFjMDczYmI4MDYifQ.CmG5_57h2wS008E5BE_68oHQrRUfxjpfxokn7_T_I2c
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;269b1dbf2a1f5add577b3c258bf7eef1&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: f0b5a8f2-232d-40e0-968f-56a3ed4ba7e1
+X-Runtime: 0.012172
+Content-Length: 88</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{&quot;count&quot;:{&quot;salesforce&quot;:1,&quot;salesforce1&quot;:2,&quot;unknown&quot;:1},&quot;total&quot;:2,&quot;unidentified_events&quot;:1}</pre>
+      </div>
+    </div>
+  </body>
+</html>

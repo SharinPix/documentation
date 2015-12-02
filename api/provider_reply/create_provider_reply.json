@@ -1,0 +1,46 @@
+{
+  "resource": "Provider reply",
+  "http_method": "POST",
+  "route": "/api/v1/provider_requests/:provider_request_id/provider_replies",
+  "description": "create provider reply",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/provider_requests/7851b393-2c9b-4485-a31b-7188d0496cdc/provider_replies",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "ok",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"444bcb3a3fcf8389296c49467f27e1d6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "67121560-daa2-4b5c-8de0-c2689680728f",
+        "X-Runtime": "0.018065",
+        "Content-Length": "2"
+      },
+      "response_content_type": "text/html; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

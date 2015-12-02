@@ -1,0 +1,48 @@
+{
+  "resource": "Album",
+  "http_method": "POST",
+  "route": "/api/v1/albums",
+  "description": "Create an album",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/albums",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlZDA1MWFkNS1lYmIxLTQ4ODctOTZlOC1mMmRjZDU3NjY4NTQifQ.ISK-xgnAhKG0PFJcjtau8TBAdlUy6kz1mVljA88Si7I\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"public_id\":\"8a523aa6-6de5-4b6c-97bf-04e446e9541b\",\"upload_form\":{\"url\":\"https://api.cloudinary.com/v1_1/hwja6b0dx/auto/upload\",\"params\":{\"timestamp\":1449051274,\"transformation\":\"a_exif\",\"callback\":\"https://localhost/cloudinary_cors.html\",\"type\":\"private\",\"tags\":\"8a523aa6-6de5-4b6c-97bf-04e446e9541b\",\"signature\":\"eeb0778948fe326c2924a5d43865cd83e52363d3\",\"api_key\":\"744524991939777\"}},\"images_count\":0,\"views_count\":0,\"thumbnails\":[]}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlZDA1MWFkNS1lYmIxLTQ4ODctOTZlOC1mMmRjZDU3NjY4NTQifQ.ISK-xgnAhKG0PFJcjtau8TBAdlUy6kz1mVljA88Si7I",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"57fd1edc17a7b98f2a6b9adf8dd803f6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "55d367e0-8c23-47ce-b299-5c8659af7824",
+        "X-Runtime": "0.099833",
+        "Content-Length": "437"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

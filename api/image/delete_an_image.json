@@ -1,0 +1,44 @@
+{
+  "resource": "Image",
+  "http_method": "DELETE",
+  "route": "/api/v1/images/:id",
+  "description": "Delete an image",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/images/1f3a4f8e-02ac-4f91-9df0-bc7c229f94dd",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyIwODY4OWRmZS0xNmI3LTQ3MjctODM3My0zYTAwMmMyZGFmZTgiOnsiQWNjZXNzIjp7ImltYWdlX2RlbGV0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6IjgwOGMwNmIwLWVlNjctNGExYy1hYzI4LTQyZDYwYWRiZTA2MCJ9.odhV6ErRKZi4F7HIFtwxsyWuIZnz-XLK7IOG6Aaq_GA\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyIwODY4OWRmZS0xNmI3LTQ3MjctODM3My0zYTAwMmMyZGFmZTgiOnsiQWNjZXNzIjp7ImltYWdlX2RlbGV0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6IjgwOGMwNmIwLWVlNjctNGExYy1hYzI4LTQyZDYwYWRiZTA2MCJ9.odhV6ErRKZi4F7HIFtwxsyWuIZnz-XLK7IOG6Aaq_GA",
+        "Cache-Control": "no-cache",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "302a7992-7749-4d90-abd7-6386764eef48",
+        "X-Runtime": "0.016203"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

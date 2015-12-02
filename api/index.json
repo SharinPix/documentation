@@ -1,0 +1,254 @@
+{
+  "resources": [
+    {
+      "name": "Album",
+      "examples": [
+        {
+          "description": "Create an album",
+          "link": "album/create_an_album.json",
+          "groups": "all"
+        },
+        {
+          "description": "Listing albums",
+          "link": "album/listing_albums.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive an album",
+          "link": "album/retreive_an_album.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Identify",
+      "examples": [
+        {
+          "description": "Identify users",
+          "link": "identify/identify_users.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retrieve all mentions",
+          "link": "identify/retrieve_all_mentions.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Image",
+      "examples": [
+        {
+          "description": "Crop an image",
+          "link": "image/crop_an_image.json",
+          "groups": "all"
+        },
+        {
+          "description": "Delete an image",
+          "link": "image/delete_an_image.json",
+          "groups": "all"
+        },
+        {
+          "description": "Listing images of an album",
+          "link": "image/listing_images_of_an_album.json",
+          "groups": "all"
+        },
+        {
+          "description": "Listing untag images of an album",
+          "link": "image/listing_untag_images_of_an_album.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive an image embed code",
+          "link": "image/retreive_an_image_embed_code.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive and image",
+          "link": "image/retreive_and_image.json",
+          "groups": "all"
+        },
+        {
+          "description": "Rotate an image",
+          "link": "image/rotate_an_image.json",
+          "groups": "all"
+        },
+        {
+          "description": "returns images listing",
+          "link": "image/returns_images_listing.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Organization",
+      "examples": [
+        {
+          "description": "Retreive the organization",
+          "link": "organization/retreive_the_organization.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Provider",
+      "examples": [
+        {
+          "description": "Retrieve the provider list",
+          "link": "provider/retrieve_the_provider_list.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Provider reply",
+      "examples": [
+        {
+          "description": "create provider reply",
+          "link": "provider_reply/create_provider_reply.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Provider request",
+      "examples": [
+        {
+          "description": "create provider requests",
+          "link": "provider_request/create_provider_requests.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Publication",
+      "examples": [
+        {
+          "description": "Create a publication",
+          "link": "publication/create_a_publication.json",
+          "groups": "all"
+        },
+        {
+          "description": "Create a publication with text",
+          "link": "publication/create_a_publication_with_text.json",
+          "groups": "all"
+        },
+        {
+          "description": "Create a publication with text from salesforce1",
+          "link": "publication/create_a_publication_with_text_from_salesforce1.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive the album contained",
+          "link": "publication/retreive_the_album_contained.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive the album contained",
+          "link": "publication/retreive_the_album_contained.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Sharing",
+      "examples": [
+        {
+          "description": "retrieve sharing",
+          "link": "sharing/retrieve_sharing.json",
+          "groups": "all"
+        },
+        {
+          "description": "retrieve sharings",
+          "link": "sharing/retrieve_sharings.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "SharingImage",
+      "examples": [
+        {
+          "description": "create sharing images",
+          "link": "sharingimage/create_sharing_images.json",
+          "groups": "all"
+        },
+        {
+          "description": "retreive sharing images",
+          "link": "sharingimage/retreive_sharing_images.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "examples": [
+        {
+          "description": "Retreive album activity",
+          "link": "statistics/retreive_album_activity.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive album activity",
+          "link": "statistics/retreive_album_activity.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive album activity",
+          "link": "statistics/retreive_album_activity.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive album platform user usage",
+          "link": "statistics/retreive_album_platform_user_usage.json",
+          "groups": "all"
+        },
+        {
+          "description": "Retreive album platform user usage",
+          "link": "statistics/retreive_album_platform_user_usage.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Tag",
+      "examples": [
+        {
+          "description": "retrieve tags",
+          "link": "tag/retrieve_tags.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "TagImage",
+      "examples": [
+        {
+          "description": "create tag images",
+          "link": "tagimage/create_tag_images.json",
+          "groups": "all"
+        },
+        {
+          "description": "delete tag image",
+          "link": "tagimage/delete_tag_image.json",
+          "groups": "all"
+        },
+        {
+          "description": "retrieve tag images",
+          "link": "tagimage/retrieve_tag_images.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "examples": [
+        {
+          "description": "Retreive current user",
+          "link": "user/retreive_current_user.json",
+          "groups": "all"
+        }
+      ]
+    }
+  ]
+}

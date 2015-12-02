@@ -1,0 +1,47 @@
+{
+  "resource": "Publication",
+  "http_method": "GET",
+  "route": "/api/v1/albums/:album_id/publications",
+  "description": "Retreive the album contained",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/albums/5b110dc9-af98-4659-a798-9383ebdd052a/publications",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjU0ODg1Mi1lY2FlLTQwYzktYWY0My0xMjNjOGY3NTdhOTUifQ.sidN4p2WvguWrG30fiUoIpzpz0g7DxIX4JRgg6RpAlQ\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"public_id\":\"6a3aed6c-e7aa-486f-8a46-f8e3bf09cd4c\",\"thumbnail\":\"https://localhost/publications/6a3aed6c-e7aa-486f-8a46-f8e3bf09cd4c/thumbnail\",\"title\":\"Album du 02/12/2015\",\"description\":\"1 photo disponible\\nPowered by SharinPix\",\"aux_text\":\"a partagé un album: \",\"entity_id\":\"\",\"views_count\":0,\"opens_count\":0},{\"public_id\":\"b59855e6-e02e-4c50-b840-782c7ef70496\",\"thumbnail\":\"https://localhost/publications/b59855e6-e02e-4c50-b840-782c7ef70496/thumbnail\",\"title\":\"Album du 02/12/2015\",\"description\":\"1 photo disponible\\nPowered by SharinPix\",\"aux_text\":\"a partagé un album: \",\"entity_id\":\"\",\"views_count\":0,\"opens_count\":0},{\"public_id\":\"5b07643f-eaf7-451c-a5bd-381d60d95216\",\"thumbnail\":\"https://localhost/publications/5b07643f-eaf7-451c-a5bd-381d60d95216/thumbnail\",\"title\":\"Album du 02/12/2015\",\"description\":\"1 photo disponible\\nPowered by SharinPix\",\"aux_text\":\"a partagé un album: \",\"entity_id\":\"\",\"views_count\":0,\"opens_count\":0}]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjU0ODg1Mi1lY2FlLTQwYzktYWY0My0xMjNjOGY3NTdhOTUifQ.sidN4p2WvguWrG30fiUoIpzpz0g7DxIX4JRgg6RpAlQ",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"21df8666ab5ffd27ae0c153d33c0bfab\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "54195380-2d53-471f-bc18-1eb9c63867b5",
+        "X-Runtime": "0.029628",
+        "Content-Length": "943"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

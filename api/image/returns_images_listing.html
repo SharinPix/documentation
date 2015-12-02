@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image API</h1>
+
+      <div class="article">
+        <h2>returns images listing</h2>
+        <h3>GET /api/v1/albums/:album_id/images</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyI3MWU2NjljMy0wMzgyLTQ4NDUtOTU0MS1lMjUzNzI4ZjM4YzEiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiI4YmQxYzBjYi0xZWM4LTQ2MjAtODY4NC0yNzM5N2NiOWNiOTQifQ.l2bw96Dj8IzlFrrvv5pSF8XdSvXeRNH14GHBk7G1K_0&quot;
+Host: example.org
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET /api/v1/albums/71e669c3-0382-4845-9541-e253728f38c1/images</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyI3MWU2NjljMy0wMzgyLTQ4NDUtOTU0MS1lMjUzNzI4ZjM4YzEiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiI4YmQxYzBjYi0xZWM4LTQ2MjAtODY4NC0yNzM5N2NiOWNiOTQifQ.l2bw96Dj8IzlFrrvv5pSF8XdSvXeRNH14GHBk7G1K_0
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;b5728e4f7d2a160122891d6d96090d32&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 69d0c3f3-5b3d-4a29-947c-2b7659628873
+X-Runtime: 0.011311
+Content-Length: 3791</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[{&quot;public_id&quot;:&quot;9803404c-f60f-4479-acab-3cee8d133ca5&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:34.862+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},{&quot;public_id&quot;:&quot;f3ec6ae5-4449-40bd-b1f4-da6f433d8a89&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:34.850+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},{&quot;public_id&quot;:&quot;9d753640-b611-4a9d-997f-ce2ed6c61cb9&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:34.842+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},{&quot;public_id&quot;:&quot;04361f9d-528a-432f-8497-a8073ba380a1&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:34.835+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},{&quot;public_id&quot;:&quot;df872ce1-1a0e-4c99-a489-99210b966863&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:34.828+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;71e669c3-0382-4845-9541-e253728f38c1&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}}]</pre>
+      </div>
+    </div>
+  </body>
+</html>

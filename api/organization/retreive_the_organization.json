@@ -1,0 +1,48 @@
+{
+  "resource": "Organization",
+  "http_method": "GET",
+  "route": "/api/v1/organization",
+  "description": "Retreive the organization",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/organization",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlYjIzNmI4Zi1jY2IxLTRiYTEtOWFiMC0zZmM0YzkzNDE3OGUifQ.M5Rlp-ACVXlkpM2otlMC7OKo27E9WFZw2n004JSgu2w\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"id\":\"a2fe486f-c71e-4892-a8e5-069936576d26\",\"name\":\"SharinPix\"}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-access-stats": "false",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlYjIzNmI4Zi1jY2IxLTRiYTEtOWFiMC0zZmM0YzkzNDE3OGUifQ.M5Rlp-ACVXlkpM2otlMC7OKo27E9WFZw2n004JSgu2w",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"da0043d82dda3f7c8181e2e437d2ccd5\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "77efd4e8-2975-4b27-af36-079850706b32",
+        "X-Runtime": "0.019017",
+        "Content-Length": "64"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "resource": "Sharing",
+  "http_method": "GET",
+  "route": "api/v1/albums/:album_id/sharings",
+  "description": "retrieve sharings",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/albums/00324000004ijWS/sharings",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiU2hhcmluZ3MiOnsic2hhcmluZyI6InNoYXJpbmcifX19LCJ1c2VyX2lkIjoiOGEyZDJlNTktMWY2Zi00M2Q4LTkyYjQtYjRmZWNiYmJjN2UwIn0.B6zhXaeYb_5iTkJTiDoPtGefdmnxQKtrnJPI_qSAbko\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"id\":\"dc274b75-9777-42ed-ab2e-4f28bf620213\",\"created_at\":\"2015-12-02T11:14:30.516+01:00\",\"name\":\"sharing\",\"label\":\"{\\\"en\\\": \\\"Homepage\\\", \\\"fr\\\": \\\"Page d'acceuil\\\"}\",\"url\":\"/sharings/dc274b75-9777-42ed-ab2e-4f28bf620213\"}]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiU2hhcmluZ3MiOnsic2hhcmluZyI6InNoYXJpbmcifX19LCJ1c2VyX2lkIjoiOGEyZDJlNTktMWY2Zi00M2Q4LTkyYjQtYjRmZWNiYmJjN2UwIn0.B6zhXaeYb_5iTkJTiDoPtGefdmnxQKtrnJPI_qSAbko",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"2408288304ff37850f2559118693ee05\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "bb211966-a2f2-439d-a8e5-15dc67cc7316",
+        "X-Runtime": "0.028686",
+        "Content-Length": "225"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

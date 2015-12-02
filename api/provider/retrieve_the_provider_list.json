@@ -1,0 +1,47 @@
+{
+  "resource": "Provider",
+  "http_method": "GET",
+  "route": "/api/v1/albums/:album_id/providers",
+  "description": "Retrieve the provider list",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/albums/00324000004ijWS/providers",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzUsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiN2I2NWI0YmEtYjQ4My00YjU3LWJhMzktNTljNTE3YzljY2VhIn0.kWiN0ybk_GMK2Wetr0aygCFV0W8hiYzDkddZym2ko-A\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"name\":\"test provider\",\"id\":\"e6b0d0ad-3950-4f7c-a2b6-a341a5610dbe\"}]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzUsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiN2I2NWI0YmEtYjQ4My00YjU3LWJhMzktNTljNTE3YzljY2VhIn0.kWiN0ybk_GMK2Wetr0aygCFV0W8hiYzDkddZym2ko-A",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"a8adc369e53cc7ff980ff0cbf9d69d93\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "4ca4f5fd-1a8d-41fb-82ef-aa965f0a28b6",
+        "X-Runtime": "0.020220",
+        "Content-Length": "70"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

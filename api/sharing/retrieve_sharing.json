@@ -1,0 +1,45 @@
+{
+  "resource": "Sharing",
+  "http_method": "GET",
+  "route": "/api/v1/sharings/:id",
+  "description": "retrieve sharing",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/sharings/22f4a582-24ff-4ccf-af87-57079275ab4f",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"id\":\"22f4a582-24ff-4ccf-af87-57079275ab4f\",\"created_at\":\"2015-12-02T11:14:30.562+01:00\",\"name\":\"sharing\",\"label\":\"{\\\"en\\\": \\\"Homepage\\\", \\\"fr\\\": \\\"Page d'acceuil\\\"}\",\"url\":\"/sharings/22f4a582-24ff-4ccf-af87-57079275ab4f\"}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"9d84293e417adfcc70e61051377cadb1\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "aeae4f81-3c36-4f4a-ad9d-65c98d58257d",
+        "X-Runtime": "0.005824",
+        "Content-Length": "223"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

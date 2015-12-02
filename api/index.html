@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Documentation</title>
+  <meta charset="utf-8">
+  <style>
+    
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: &quot;required&quot;;
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>API Documentation</h1>
+
+  <div class="article">
+    <h2>Album</h2>
+
+    <ul>
+      <li>
+        <a href="album/create_an_album.html">Create an album</a>
+      </li>
+      <li>
+        <a href="album/listing_albums.html">Listing albums</a>
+      </li>
+      <li>
+        <a href="album/retreive_an_album.html">Retreive an album</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Identify</h2>
+
+    <ul>
+      <li>
+        <a href="identify/identify_users.html">Identify users</a>
+      </li>
+      <li>
+        <a href="identify/retrieve_all_mentions.html">Retrieve all mentions</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Image</h2>
+
+    <ul>
+      <li>
+        <a href="image/crop_an_image.html">Crop an image</a>
+      </li>
+      <li>
+        <a href="image/delete_an_image.html">Delete an image</a>
+      </li>
+      <li>
+        <a href="image/listing_images_of_an_album.html">Listing images of an album</a>
+      </li>
+      <li>
+        <a href="image/listing_untag_images_of_an_album.html">Listing untag images of an album</a>
+      </li>
+      <li>
+        <a href="image/retreive_an_image_embed_code.html">Retreive an image embed code</a>
+      </li>
+      <li>
+        <a href="image/retreive_and_image.html">Retreive and image</a>
+      </li>
+      <li>
+        <a href="image/rotate_an_image.html">Rotate an image</a>
+      </li>
+      <li>
+        <a href="image/returns_images_listing.html">returns images listing</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Organization</h2>
+
+    <ul>
+      <li>
+        <a href="organization/retreive_the_organization.html">Retreive the organization</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Provider</h2>
+
+    <ul>
+      <li>
+        <a href="provider/retrieve_the_provider_list.html">Retrieve the provider list</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Provider reply</h2>
+
+    <ul>
+      <li>
+        <a href="provider_reply/create_provider_reply.html">create provider reply</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Provider request</h2>
+
+    <ul>
+      <li>
+        <a href="provider_request/create_provider_requests.html">create provider requests</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Publication</h2>
+
+    <ul>
+      <li>
+        <a href="publication/create_a_publication.html">Create a publication</a>
+      </li>
+      <li>
+        <a href="publication/create_a_publication_with_text.html">Create a publication with text</a>
+      </li>
+      <li>
+        <a href="publication/create_a_publication_with_text_from_salesforce1.html">Create a publication with text from salesforce1</a>
+      </li>
+      <li>
+        <a href="publication/retreive_the_album_contained.html">Retreive the album contained</a>
+      </li>
+      <li>
+        <a href="publication/retreive_the_album_contained.html">Retreive the album contained</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Sharing</h2>
+
+    <ul>
+      <li>
+        <a href="sharing/retrieve_sharing.html">retrieve sharing</a>
+      </li>
+      <li>
+        <a href="sharing/retrieve_sharings.html">retrieve sharings</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>SharingImage</h2>
+
+    <ul>
+      <li>
+        <a href="sharingimage/create_sharing_images.html">create sharing images</a>
+      </li>
+      <li>
+        <a href="sharingimage/retreive_sharing_images.html">retreive sharing images</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Statistics</h2>
+
+    <ul>
+      <li>
+        <a href="statistics/retreive_album_activity.html">Retreive album activity</a>
+      </li>
+      <li>
+        <a href="statistics/retreive_album_activity.html">Retreive album activity</a>
+      </li>
+      <li>
+        <a href="statistics/retreive_album_activity.html">Retreive album activity</a>
+      </li>
+      <li>
+        <a href="statistics/retreive_album_platform_user_usage.html">Retreive album platform user usage</a>
+      </li>
+      <li>
+        <a href="statistics/retreive_album_platform_user_usage.html">Retreive album platform user usage</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>Tag</h2>
+
+    <ul>
+      <li>
+        <a href="tag/retrieve_tags.html">retrieve tags</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>TagImage</h2>
+
+    <ul>
+      <li>
+        <a href="tagimage/create_tag_images.html">create tag images</a>
+      </li>
+      <li>
+        <a href="tagimage/delete_tag_image.html">delete tag image</a>
+      </li>
+      <li>
+        <a href="tagimage/retrieve_tag_images.html">retrieve tag images</a>
+      </li>
+    </ul>
+  </div>
+  <div class="article">
+    <h2>User</h2>
+
+    <ul>
+      <li>
+        <a href="user/retreive_current_user.html">Retreive current user</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

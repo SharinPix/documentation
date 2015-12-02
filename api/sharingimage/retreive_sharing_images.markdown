@@ -1,0 +1,39 @@
+# SharingImage API
+
+## retreive sharing images
+
+### GET api/v1/sharings/:sharing_id/sharing_images
+### Request
+
+#### Headers
+
+<pre>Host: example.org
+Cookie: </pre>
+
+#### Route
+
+<pre>GET api/v1/sharings/c2288cdd-4408-4744-bc75-2eed28c93e24/sharing_images</pre>
+
+### Response
+
+#### Headers
+
+<pre>X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;7843905609b021718b6475e9667ea5b1&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 0dce3193-a544-42ad-9e2c-b8ebaf14cc19
+X-Runtime: 0.026742
+Content-Length: 616</pre>
+
+#### Status
+
+<pre>200 OK</pre>
+
+#### Body
+
+<pre>[{"id":"ea030d17-7801-45f6-9a5c-c639d3c80b5d","created_at":"2015-12-02T11:14:35.443+01:00","url":"/sharing_images/ea030d17-7801-45f6-9a5c-c639d3c80b5d/image","user":"37dd1717-ef05-4b7c-abd1-56ae6759e11a","image":{"infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["00324000004ijWS"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"public_id":"80acebc6-b403-445e-85d4-ab78b8ca1091","width":48,"height":48,"rotation":0,"album_id":"00324000004ijWS"}}]</pre>

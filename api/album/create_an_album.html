@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Album API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Album API</h1>
+
+      <div class="article">
+        <h2>Create an album</h2>
+        <h3>POST /api/v1/albums</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlZDA1MWFkNS1lYmIxLTQ4ODctOTZlOC1mMmRjZDU3NjY4NTQifQ.ISK-xgnAhKG0PFJcjtau8TBAdlUy6kz1mVljA88Si7I&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">POST /api/v1/albums</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlZDA1MWFkNS1lYmIxLTQ4ODctOTZlOC1mMmRjZDU3NjY4NTQifQ.ISK-xgnAhKG0PFJcjtau8TBAdlUy6kz1mVljA88Si7I
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;57fd1edc17a7b98f2a6b9adf8dd803f6&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 55d367e0-8c23-47ce-b299-5c8659af7824
+X-Runtime: 0.099833
+Content-Length: 437</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{&quot;public_id&quot;:&quot;8a523aa6-6de5-4b6c-97bf-04e446e9541b&quot;,&quot;upload_form&quot;:{&quot;url&quot;:&quot;https://api.cloudinary.com/v1_1/hwja6b0dx/auto/upload&quot;,&quot;params&quot;:{&quot;timestamp&quot;:1449051274,&quot;transformation&quot;:&quot;a_exif&quot;,&quot;callback&quot;:&quot;https://localhost/cloudinary_cors.html&quot;,&quot;type&quot;:&quot;private&quot;,&quot;tags&quot;:&quot;8a523aa6-6de5-4b6c-97bf-04e446e9541b&quot;,&quot;signature&quot;:&quot;eeb0778948fe326c2924a5d43865cd83e52363d3&quot;,&quot;api_key&quot;:&quot;744524991939777&quot;}},&quot;images_count&quot;:0,&quot;views_count&quot;:0,&quot;thumbnails&quot;:[]}</pre>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TagImage API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TagImage API</h1>
+
+      <div class="article">
+        <h2>create tag images</h2>
+        <h3>POST /api/v1/tags/:tag_id/tag_images</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">image_ids</span>
+                </td>
+                <td>
+                  <span class="description">id of images</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiI3OTYwMGQwMy1hZTVmLTQ0NDEtODBmNS1kM2M4MjY1OGViZTMifQ.FajPiacQljTV0H3oBiErUGEAKbBKjllKf2u7SZjQ5F8&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">POST /api/v1/tags/37c48016-b272-4660-8714-ae1159b5b2aa/tag_images</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">image_ids[]=9af77e58-7e95-4f8f-8bcd-96fb830bf95d&image_ids[]=f54efc53-05f5-480b-909e-c795a7e68137&image_ids[]=1b8b3289-351c-4e02-9452-2268749128f5</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiI3OTYwMGQwMy1hZTVmLTQ0NDEtODBmNS1kM2M4MjY1OGViZTMifQ.FajPiacQljTV0H3oBiErUGEAKbBKjllKf2u7SZjQ5F8
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+ETag: W/&quot;e1fea04d2bdd7ad38f3e644d7b19e48d&quot;
+Cache-Control: max-age=0, private, must-revalidate
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 8fad4bfe-c0fb-48a2-852f-e955e4b2efd5
+X-Runtime: 0.077299
+Content-Length: 3088</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[{&quot;id&quot;:&quot;08050d74-568b-4358-9397-701b17f50ebe&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:30.688+01:00&quot;,&quot;user&quot;:&quot;79600d03-ae5f-4441-80f5-d3c82658ebe3&quot;,&quot;image&quot;:{&quot;public_id&quot;:&quot;9af77e58-7e95-4f8f-8bcd-96fb830bf95d&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:30.602+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},&quot;tag&quot;:{&quot;id&quot;:&quot;37c48016-b272-4660-8714-ae1159b5b2aa&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:30.594+01:00&quot;,&quot;name&quot;:&quot;tag&quot;,&quot;label&quot;:&quot;{\&quot;en\&quot;:\&quot;Cartoons\&quot;,\&quot;fr\&quot;:\&quot;Déssin animé\&quot;}&quot;}},{&quot;id&quot;:&quot;344a6d37-ac29-4afc-95ec-0234c64c4714&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:30.693+01:00&quot;,&quot;user&quot;:&quot;79600d03-ae5f-4441-80f5-d3c82658ebe3&quot;,&quot;image&quot;:{&quot;public_id&quot;:&quot;f54efc53-05f5-480b-909e-c795a7e68137&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:30.615+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},&quot;tag&quot;:{&quot;id&quot;:&quot;37c48016-b272-4660-8714-ae1159b5b2aa&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:30.594+01:00&quot;,&quot;name&quot;:&quot;tag&quot;,&quot;label&quot;:&quot;{\&quot;en\&quot;:\&quot;Cartoons\&quot;,\&quot;fr\&quot;:\&quot;Déssin animé\&quot;}&quot;}},{&quot;id&quot;:&quot;4fa3f423-c015-422d-97e1-93ec70494e8e&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:30.697+01:00&quot;,&quot;user&quot;:&quot;79600d03-ae5f-4441-80f5-d3c82658ebe3&quot;,&quot;image&quot;:{&quot;public_id&quot;:&quot;1b8b3289-351c-4e02-9452-2268749128f5&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:30.634+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},&quot;tag&quot;:{&quot;id&quot;:&quot;37c48016-b272-4660-8714-ae1159b5b2aa&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:30.594+01:00&quot;,&quot;name&quot;:&quot;tag&quot;,&quot;label&quot;:&quot;{\&quot;en\&quot;:\&quot;Cartoons\&quot;,\&quot;fr\&quot;:\&quot;Déssin animé\&quot;}&quot;}}]</pre>
+      </div>
+    </div>
+  </body>
+</html>
