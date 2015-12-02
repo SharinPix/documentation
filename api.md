@@ -2,3 +2,6 @@
 
 ### Authentification
 
+### Endpoints
+
+[Endpoints details](api/index)
