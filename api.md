@@ -4,4 +4,4 @@
 
 ### Endpoints
 
-[Endpoints details](api/index)
+[Endpoints details](api/index.markdown)

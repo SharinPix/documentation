@@ -10,5 +10,5 @@
 
 ### API documentation
 
-[Documntation](api/api)
+[Documntation](api/api.md)
 
