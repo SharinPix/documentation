@@ -7,30 +7,33 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJmZmY2NjJmNC04ZGQ3LTQ2MjQtYjZmNS04NDEyZjAwMGJlODcifQ.WQoKRQ-1JIgP-vyuMmQlRGFd60yqpmM8vrNEovqWWhM&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIwYmFiZmIxZC03OWZlLTQ4MTEtODE0Ni1hMDBjYWQ3YzZlODkifQ.hppgDKU-ItZgj5X7z168gUXn50dA9HLhHx0mYfm0S60&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
 
-<pre>POST /api/v1/albums/2f8be17f-a98e-4294-8c6f-c192f93b7bd5/publications</pre>
+<pre>POST /api/v1/albums/ee0abbcf-fbe9-48f3-8cff-8345ffed9a11/publications</pre>
 
 ### Response
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJmZmY2NjJmNC04ZGQ3LTQ2MjQtYjZmNS04NDEyZjAwMGJlODcifQ.6cUUX_p2dlrQfzLUYkcvEGamSZZLg3FMQWnYRyq6PLI
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIwYmFiZmIxZC03OWZlLTQ4MTEtODE0Ni1hMDBjYWQ3YzZlODkifQ.hppgDKU-ItZgj5X7z168gUXn50dA9HLhHx0mYfm0S60
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;0bccc29e5e9bd501df626cc66a28d6da&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 278bf80e-ad1b-4cc0-9232-cdcb19a8bec6
-X-Runtime: 0.053329
+X-Request-Id: 0f921e33-9289-4af3-84cc-d26e91324b39
+X-Runtime: 0.030855
 Content-Length: 313</pre>
 
 #### Status
@@ -39,4 +42,4 @@ Content-Length: 313</pre>
 
 #### Body
 
-<pre>{"public_id":"d4266ff0-c669-4c2e-bb77-d3f9b6596be0","thumbnail":"https://localhost/publications/d4266ff0-c669-4c2e-bb77-d3f9b6596be0/thumbnail","title":"Album du 02/12/2015","description":"1 photo disponible\nPowered by SharinPix","aux_text":"a partagé un album: ","entity_id":"","views_count":0,"opens_count":0}</pre>
+<pre>{"public_id":"31ef5bcf-275f-42e1-9989-da588e9e04d6","thumbnail":"https://localhost/publications/31ef5bcf-275f-42e1-9989-da588e9e04d6/thumbnail","title":"Album du 12/01/2016","description":"1 photo disponible\nPowered by SharinPix","aux_text":"a partagé un album: ","entity_id":"","views_count":0,"opens_count":0}</pre>

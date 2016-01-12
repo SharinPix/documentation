@@ -7,14 +7,14 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI0NTkzOWRkZi1kMGFjLTQ4NGItYjkxYS0wZDE0MTVjYTIxZmYifQ.iX88HlgLld2zkh9rxXVoB2K_pqKGTZ300bCg3a5sXdk&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI0OTViNWZiOS0zNDAwLTRiMTYtOTE2Zi1hNzVmYTQyMzgwOTYifQ.T1qy0ZJ0f0Wb92VsLnEFlshBMVS2k6YUELRoclSbsms&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
 
-<pre>POST /api/v1/albums/86e17c9a-5f93-42f4-876d-52ccd3684625/publications</pre>
+<pre>POST /api/v1/albums/3457c503-5728-4398-9307-ffafe08b5ec9/publications</pre>
 
 #### Body
 
@@ -24,17 +24,20 @@ Cookie: </pre>
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI0NTkzOWRkZi1kMGFjLTQ4NGItYjkxYS0wZDE0MTVjYTIxZmYifQ.iX88HlgLld2zkh9rxXVoB2K_pqKGTZ300bCg3a5sXdk
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI0OTViNWZiOS0zNDAwLTRiMTYtOTE2Zi1hNzVmYTQyMzgwOTYifQ.LMF5VenojzQ3wOCusMrvQdIwYSvbhjavIPoAHeSg9LA
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;cd4fcfdc2a7e359aaab207a59d4233d4&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: dce1d209-b7cf-4e6e-8f64-022ea026f99b
-X-Runtime: 0.030224
+X-Request-Id: cf79d002-abd2-468a-ab5b-278f12ea5db1
+X-Runtime: 0.041632
 Content-Length: 292</pre>
 
 #### Status
@@ -43,4 +46,4 @@ Content-Length: 292</pre>
 
 #### Body
 
-<pre>{"public_id":"6bd26630-f3dc-4230-9851-2774583dc928","thumbnail":"https://localhost/publications/6bd26630-f3dc-4230-9851-2774583dc928/thumbnail","title":"Album du 02/12/2015","description":"1 photo disponible\nPowered by SharinPix","aux_text":"","entity_id":"","views_count":0,"opens_count":0}</pre>
+<pre>{"public_id":"b120a650-61f9-48a3-9072-a122c945847d","thumbnail":"https://localhost/publications/b120a650-61f9-48a3-9072-a122c945847d/thumbnail","title":"Album du 12/01/2016","description":"1 photo disponible\nPowered by SharinPix","aux_text":"","entity_id":"","views_count":0,"opens_count":0}</pre>

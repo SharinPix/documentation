@@ -7,7 +7,7 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhMzgwNjFiMS04MTgwLTRhM2UtYjdmMC0wOWNhOThjYTQ5YjkifQ.qTMS5sNsnJHK4LjsW45TaBGgXYB_nglF2M4XbakzmL8&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTYsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI5YjNlMGVmYS1iYzFiLTRiZDQtYTQwOS0wNGMwMTRkYzYwNGYifQ.pcfYp5IRMLsHoZX_-4HMhyuXZk_U8bavVRk1qI_R63s&quot;
 Host: example.org
 Cookie: </pre>
 
@@ -19,18 +19,21 @@ Cookie: </pre>
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
 X-access-admin: false
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhMzgwNjFiMS04MTgwLTRhM2UtYjdmMC0wOWNhOThjYTQ5YjkifQ.qTMS5sNsnJHK4LjsW45TaBGgXYB_nglF2M4XbakzmL8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTYsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI5YjNlMGVmYS1iYzFiLTRiZDQtYTQwOS0wNGMwMTRkYzYwNGYifQ.pcfYp5IRMLsHoZX_-4HMhyuXZk_U8bavVRk1qI_R63s
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;5f4c620a5735993ac3d995cae82086c8&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 2bbd5c80-f407-4205-a0bb-f98410d4d920
-X-Runtime: 0.029103
+X-Request-Id: c980c3fd-6d41-4104-88fd-ac09d9fb9b8f
+X-Runtime: 0.022888
 Content-Length: 133</pre>
 
 #### Status
@@ -39,4 +42,4 @@ Content-Length: 133</pre>
 
 #### Body
 
-<pre>{"public_id":"a38061b1-8180-4a3e-b7f0-09ca98ca49b9","fullname":"translation missing: fr.unknown_user","email":"luc+23@sharinpix.com"}</pre>
+<pre>{"public_id":"9b3e0efa-bc1b-4bd4-a409-04c014dc604f","fullname":"translation missing: fr.unknown_user","email":"luc+27@sharinpix.com"}</pre>

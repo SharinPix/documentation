@@ -14,6 +14,11 @@
           "groups": "all"
         },
         {
+          "description": "Rename an album",
+          "link": "album/rename_an_album.json",
+          "groups": "all"
+        },
+        {
           "description": "Retreive an album",
           "link": "album/retreive_an_album.json",
           "groups": "all"
@@ -49,6 +54,11 @@
           "groups": "all"
         },
         {
+          "description": "Listing images",
+          "link": "image/listing_images.json",
+          "groups": "all"
+        },
+        {
           "description": "Listing images of an album",
           "link": "image/listing_images_of_an_album.json",
           "groups": "all"
@@ -74,8 +84,8 @@
           "groups": "all"
         },
         {
-          "description": "returns images listing",
-          "link": "image/returns_images_listing.json",
+          "description": "return an empty list",
+          "link": "image/return_an_empty_list.json",
           "groups": "all"
         }
       ]
@@ -231,6 +241,11 @@
         {
           "description": "delete tag image",
           "link": "tagimage/delete_tag_image.json",
+          "groups": "all"
+        },
+        {
+          "description": "retrieve tag image on a single image",
+          "link": "tagimage/retrieve_tag_image_on_a_single_image.json",
           "groups": "all"
         },
         {

@@ -32,10 +32,10 @@
   "requests": [
     {
       "request_method": "PUT",
-      "request_path": "/api/v1/images/eea38232-8017-458d-8e3c-1c218dedeb36",
+      "request_path": "/api/v1/images/437212ba-4727-4995-8377-5e85d94542fb",
       "request_body": "rotation=0&crop_x=3&crop_y=2&crop_w=10&crop_h=11",
       "request_headers": {
-        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyI2YzA4Y2U0Ni00NWZkLTRhOTYtYjU0Mi0xYWU1ZDIzNmY4MTgiOnsiQWNjZXNzIjp7ImltYWdlX2Nyb3AiOnRydWV9fX0sInVzZXJfaWQiOiJmZmQ3N2Q2ZC0xZGYwLTQ2MjMtYTY4ZC00NzA4OWUwZmUwOGEifQ.e263F_-rKJ9RJjK-3QbN5CaccjJkZ3C31In1MxLwtME\"",
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6eyJlODU1MjhkNS04MzA0LTRiNGYtYWUwYS01MWUxNGIxNmYxOTciOnsiQWNjZXNzIjp7ImltYWdlX2Nyb3AiOnRydWV9fX0sInVzZXJfaWQiOiJmZjNlOThhMC1kNzFlLTQyNDMtYmY2MS1hNTE1MjMwODkwYWIifQ.iVAstMeGqgMl2B6Ei2g40ux6QoOutps_6w-LsABPglk\"",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -45,19 +45,22 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"public_id\":\"eea38232-8017-458d-8e3c-1c218dedeb36\",\"infos\":{\"bytes\":3604,\"created_at\":\"2015-09-25T13:32:55Z\",\"etag\":\"5a98d4d3e5d39024abf237be55e99b15\",\"format\":\"png\",\"height\":48,\"resource_type\":\"image\",\"tags\":[\"6c08ce46-45fd-4a96-b542-1ae5d236f818\"],\"type\":\"private\",\"width\":48,\"location\":{\"accuracy\":36,\"latitude\":48.861934399999996,\"longitude\":2.348967}},\"exifs\":{},\"gps\":[48.861934399999996,2.348967],\"gps_ip\":null,\"gps_exifs\":null,\"gps_html\":[48.861934399999996,2.348967],\"created_at\":\"2015-12-02T11:14:34.410+01:00\",\"width\":10,\"height\":11,\"rotation\":0,\"crop_x\":3.0,\"crop_y\":2.0,\"crop_w\":10.0,\"crop_h\":11.0,\"album_id\":\"6c08ce46-45fd-4a96-b542-1ae5d236f818\",\"thumbnails\":{\"full\":\"/assets/blank.jpg\",\"large\":\"/assets/blank.jpg\",\"mini\":\"/assets/blank.jpg\"}}",
+      "response_body": "{\"public_id\":\"437212ba-4727-4995-8377-5e85d94542fb\",\"infos\":{\"bytes\":3604,\"created_at\":\"2015-09-25T13:32:55Z\",\"etag\":\"5a98d4d3e5d39024abf237be55e99b15\",\"format\":\"png\",\"height\":48,\"resource_type\":\"image\",\"tags\":[\"e85528d5-8304-4b4f-ae0a-51e14b16f197\"],\"type\":\"private\",\"width\":48,\"location\":{\"accuracy\":36,\"latitude\":48.861934399999996,\"longitude\":2.348967}},\"exifs\":{},\"gps\":[48.861934399999996,2.348967],\"gps_ip\":null,\"gps_exifs\":null,\"gps_html\":[48.861934399999996,2.348967],\"created_at\":\"2016-01-12T15:05:14.709+01:00\",\"width\":10,\"height\":11,\"rotation\":0,\"crop_x\":3.0,\"crop_y\":2.0,\"crop_w\":10.0,\"crop_h\":11.0,\"album_id\":\"e85528d5-8304-4b4f-ae0a-51e14b16f197\",\"thumbnails\":{\"full\":\"/assets/blank.jpg\",\"large\":\"/assets/blank.jpg\",\"mini\":\"/assets/blank.jpg\"}}",
       "response_headers": {
-        "X-Frame-Options": "SAMEORIGIN",
+        "Cache-Control": "no-cache, no-store, must-revalidate, private, max-age=0",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-Frame-Options": "DENY",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyI2YzA4Y2U0Ni00NWZkLTRhOTYtYjU0Mi0xYWU1ZDIzNmY4MTgiOnsiQWNjZXNzIjp7ImltYWdlX2Nyb3AiOnRydWV9fX0sInVzZXJfaWQiOiJmZmQ3N2Q2ZC0xZGYwLTQ2MjMtYTY4ZC00NzA4OWUwZmUwOGEifQ.e263F_-rKJ9RJjK-3QbN5CaccjJkZ3C31In1MxLwtME",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6eyJlODU1MjhkNS04MzA0LTRiNGYtYWUwYS01MWUxNGIxNmYxOTciOnsiQWNjZXNzIjp7ImltYWdlX2Nyb3AiOnRydWV9fX0sInVzZXJfaWQiOiJmZjNlOThhMC1kNzFlLTQyNDMtYmY2MS1hNTE1MjMwODkwYWIifQ.iVAstMeGqgMl2B6Ei2g40ux6QoOutps_6w-LsABPglk",
         "Content-Type": "application/json; charset=utf-8",
         "Vary": "Accept-Encoding",
-        "ETag": "W/\"d8af263708a0ec0b21b52823f85ff7ee\"",
-        "Cache-Control": "max-age=0, private, must-revalidate",
         "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-        "X-Request-Id": "887299ba-97bf-4425-ad53-5df710c19e59",
-        "X-Runtime": "0.019460",
+        "X-Request-Id": "779f50c0-c5a1-44af-86a9-3a5646da2c30",
+        "X-Runtime": "0.042566",
         "Content-Length": "759"
       },
       "response_content_type": "application/json; charset=utf-8",

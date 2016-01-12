@@ -7,7 +7,7 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlZDA1MWFkNS1lYmIxLTQ4ODctOTZlOC1mMmRjZDU3NjY4NTQifQ.ISK-xgnAhKG0PFJcjtau8TBAdlUy6kz1mVljA88Si7I&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTksImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI5YTBiNmUwZi1mOGIxLTQ3ZjktOTU5Mi1jOTdlMDI0Zjg3ZmIifQ.Rhwhqa4DZnKKrSYsAWgeGBoammRyxLQMRIfUiOcXpBM&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
@@ -20,17 +20,20 @@ Cookie: </pre>
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlZDA1MWFkNS1lYmIxLTQ4ODctOTZlOC1mMmRjZDU3NjY4NTQifQ.ISK-xgnAhKG0PFJcjtau8TBAdlUy6kz1mVljA88Si7I
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTksImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI5YTBiNmUwZi1mOGIxLTQ3ZjktOTU5Mi1jOTdlMDI0Zjg3ZmIifQ.Rhwhqa4DZnKKrSYsAWgeGBoammRyxLQMRIfUiOcXpBM
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;57fd1edc17a7b98f2a6b9adf8dd803f6&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 55d367e0-8c23-47ce-b299-5c8659af7824
-X-Runtime: 0.099833
+X-Request-Id: 6e25f424-8e5b-467d-9e57-0f73c3e65849
+X-Runtime: 0.049003
 Content-Length: 437</pre>
 
 #### Status
@@ -39,4 +42,4 @@ Content-Length: 437</pre>
 
 #### Body
 
-<pre>{"public_id":"8a523aa6-6de5-4b6c-97bf-04e446e9541b","upload_form":{"url":"https://api.cloudinary.com/v1_1/hwja6b0dx/auto/upload","params":{"timestamp":1449051274,"transformation":"a_exif","callback":"https://localhost/cloudinary_cors.html","type":"private","tags":"8a523aa6-6de5-4b6c-97bf-04e446e9541b","signature":"eeb0778948fe326c2924a5d43865cd83e52363d3","api_key":"744524991939777"}},"images_count":0,"views_count":0,"thumbnails":[]}</pre>
+<pre>{"public_id":"1877d36e-ded5-4282-873f-4b21cb8e2184","upload_form":{"url":"https://api.cloudinary.com/v1_1/hwja6b0dx/auto/upload","params":{"timestamp":1452607519,"transformation":"a_exif","callback":"https://localhost/cloudinary_cors.html","type":"private","tags":"1877d36e-ded5-4282-873f-4b21cb8e2184","signature":"f0a80c739f160e6a5d41d1967b250982737f8772","api_key":"744524991939777"}},"images_count":0,"views_count":0,"thumbnails":[]}</pre>

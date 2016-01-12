@@ -110,41 +110,74 @@ table th, table td {
 
       <div class="article">
         <h2>retrieve tag images</h2>
-        <h3>GET api/v1/tags/:tag_id/tag_images</h3>
+        <h3>GET api/v1/tag_images</h3>
 
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">tag_name</span>
+                </td>
+                <td>
+                  <span class="description">name of the tag</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">album_id</span>
+                </td>
+                <td>
+                  <span class="description">id de l&#39;album</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
 
           <h3>Request</h3>
 
             <h4>Headers</h4>
-            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiIzZGUwMzlhMC01NmFjLTQzMjEtYmZjMi1iODU2ZmMzYWNjZGQifQ.GdrGZM3Gz48f7RaF8JsBV7fWsQaJYL40r938Gcb7R4A&quot;
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiMjhjMTVlZGItYzEyNS00ZWZiLWFiODMtN2EzNDczMzYwNmM3In0.QIttA545PFc8gJMvK-wroDZl4J3PueYeBZwAhu43GfQ&quot;
 Host: example.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET api/v1/tags/0fa52a27-6845-4373-b772-9ee8ad5ebe85/tag_images</pre>
+          <pre class="request route highlight">GET api/v1/tag_images?tag_name=MyTag&amp;album_id=00324000004ijWS</pre>
 
+            <h4>Query Parameters</h4>
+            <pre class="request query_parameters highlight">tag_name: MyTag
+album_id: 00324000004ijWS</pre>
 
 
 
             <h3>Response</h3>
               <h4>Headers</h4>
-              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+              <pre class="response headers">Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiIzZGUwMzlhMC01NmFjLTQzMjEtYmZjMi1iODU2ZmMzYWNjZGQifQ.GdrGZM3Gz48f7RaF8JsBV7fWsQaJYL40r938Gcb7R4A
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTgsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiMjhjMTVlZGItYzEyNS00ZWZiLWFiODMtN2EzNDczMzYwNmM3In0.ie-gWSlkhmCv1yG2Rjdlp7uWUpBTXL3JxMxu9sFm8Dw
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;f6cb5291067fd0f109af53e31007155e&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: cfaf0120-93a9-41ca-a9a6-692f2e01ffbd
-X-Runtime: 0.027356
-Content-Length: 1030</pre>
+X-Request-Id: 4e22da7d-7447-4803-8707-0676b6a88b1d
+X-Runtime: 0.054466
+Content-Length: 1032</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">[{&quot;id&quot;:&quot;f87f4ca4-1055-47cf-bb06-27db94a0f860&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:31.054+01:00&quot;,&quot;user&quot;:&quot;3de039a0-56ac-4321-bfc2-b856fc3accdd&quot;,&quot;image&quot;:{&quot;public_id&quot;:&quot;02292855-9f85-4d28-bb00-424d5f9b7b6b&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2015-12-02T11:14:31.019+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},&quot;tag&quot;:{&quot;id&quot;:&quot;0fa52a27-6845-4373-b772-9ee8ad5ebe85&quot;,&quot;created_at&quot;:&quot;2015-12-02T11:14:31.003+01:00&quot;,&quot;name&quot;:&quot;tag&quot;,&quot;label&quot;:&quot;{\&quot;en\&quot;:\&quot;Cartoons\&quot;,\&quot;fr\&quot;:\&quot;Déssin animé\&quot;}&quot;}}]</pre>
+              <pre class="response body">[{&quot;id&quot;:&quot;c22463ce-cda7-49c3-857c-2bdb1dca2343&quot;,&quot;created_at&quot;:&quot;2016-01-12T15:05:18.031+01:00&quot;,&quot;user&quot;:&quot;28c15edb-c125-4efb-ab83-7a34733606c7&quot;,&quot;image&quot;:{&quot;public_id&quot;:&quot;342078e1-9849-42ea-983c-073b444a6f01&quot;,&quot;infos&quot;:{&quot;bytes&quot;:3604,&quot;created_at&quot;:&quot;2015-09-25T13:32:55Z&quot;,&quot;etag&quot;:&quot;5a98d4d3e5d39024abf237be55e99b15&quot;,&quot;format&quot;:&quot;png&quot;,&quot;height&quot;:48,&quot;resource_type&quot;:&quot;image&quot;,&quot;tags&quot;:[&quot;00324000004ijWS&quot;],&quot;type&quot;:&quot;private&quot;,&quot;width&quot;:48,&quot;location&quot;:{&quot;accuracy&quot;:36,&quot;latitude&quot;:48.861934399999996,&quot;longitude&quot;:2.348967}},&quot;exifs&quot;:{},&quot;gps&quot;:[48.861934399999996,2.348967],&quot;gps_ip&quot;:null,&quot;gps_exifs&quot;:null,&quot;gps_html&quot;:[48.861934399999996,2.348967],&quot;created_at&quot;:&quot;2016-01-12T15:05:17.969+01:00&quot;,&quot;width&quot;:48,&quot;height&quot;:48,&quot;rotation&quot;:0,&quot;crop_x&quot;:0.0,&quot;crop_y&quot;:0.0,&quot;crop_w&quot;:0.0,&quot;crop_h&quot;:0.0,&quot;album_id&quot;:&quot;00324000004ijWS&quot;,&quot;thumbnails&quot;:{&quot;full&quot;:&quot;/assets/blank.jpg&quot;,&quot;large&quot;:&quot;/assets/blank.jpg&quot;,&quot;mini&quot;:&quot;/assets/blank.jpg&quot;}},&quot;tag&quot;:{&quot;id&quot;:&quot;417da649-1dfc-43ab-8538-4db9f37e9725&quot;,&quot;created_at&quot;:&quot;2016-01-12T15:05:17.954+01:00&quot;,&quot;name&quot;:&quot;MyTag&quot;,&quot;label&quot;:&quot;{\&quot;en\&quot;:\&quot;Cartoons\&quot;,\&quot;fr\&quot;:\&quot;Déssin animé\&quot;}&quot;}}]</pre>
       </div>
     </div>
   </body>

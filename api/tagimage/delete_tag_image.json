@@ -13,10 +13,10 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/tag_images/008bc1a9-60db-4b6f-9e20-57363b90d110",
+      "request_path": "api/v1/tag_images/8c03f2b3-eda3-4461-b50a-268cdb1bcda3",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiI2ODZjNGI0NS00MjNhLTQ3OWYtOWE3OS01OWUzY2QxMjk4OTYifQ.cnE2EmaKZC37D4gsc45AAmYDKHLKefipqKdo2nt_HYY\"",
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiMjcyY2M5NWYtOTk2MS00MjE0LWE5NDctMWRmOWY0MmZlMzU2In0.hqxjyVyOU9O5wJnUcjedrPu05dyMoGVwFT-P-FPLBX0\"",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -28,14 +28,18 @@
       "response_status_text": "No Content",
       "response_body": null,
       "response_headers": {
-        "X-Frame-Options": "SAMEORIGIN",
+        "Cache-Control": "no-cache, no-store, must-revalidate, private, max-age=0",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-Frame-Options": "DENY",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiI2ODZjNGI0NS00MjNhLTQ3OWYtOWE3OS01OWUzY2QxMjk4OTYifQ.cnE2EmaKZC37D4gsc45AAmYDKHLKefipqKdo2nt_HYY",
-        "Cache-Control": "no-cache",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiMjcyY2M5NWYtOTk2MS00MjE0LWE5NDctMWRmOWY0MmZlMzU2In0.hqxjyVyOU9O5wJnUcjedrPu05dyMoGVwFT-P-FPLBX0",
         "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-        "X-Request-Id": "014dcc9e-a6cf-43f3-a542-39bdf9bd9edc",
-        "X-Runtime": "0.067228"
+        "X-Request-Id": "ff4e0a3c-daaa-45ac-ac1a-813a725895f5",
+        "X-Runtime": "0.050733"
       },
       "response_content_type": null,
       "curl": null

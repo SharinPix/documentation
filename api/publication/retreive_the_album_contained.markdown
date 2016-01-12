@@ -2,35 +2,44 @@
 
 ## Retreive the album contained
 
-### GET /api/v1/albums/:album_id/publications
+### GET /api/v1/publications/:publication_id/album
 ### Request
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjU0ODg1Mi1lY2FlLTQwYzktYWY0My0xMjNjOGY3NTdhOTUifQ.sidN4p2WvguWrG30fiUoIpzpz0g7DxIX4JRgg6RpAlQ&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjQzMzgzMC0xN2Q5LTQyOTMtOGZlZi00MGMzYzNlMmU3MWYifQ.AgjbWhpBriwFqlF8wKWzYUKvT6No45V3Xsfcnw_JWdI&quot;
 Host: example.org
 Cookie: </pre>
 
 #### Route
 
-<pre>GET /api/v1/albums/5b110dc9-af98-4659-a798-9383ebdd052a/publications</pre>
+<pre>GET /api/v1/publications/ae26b8a7-e460-44ce-86f0-089a34beff45/album</pre>
 
 ### Response
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjU0ODg1Mi1lY2FlLTQwYzktYWY0My0xMjNjOGY3NTdhOTUifQ.sidN4p2WvguWrG30fiUoIpzpz0g7DxIX4JRgg6RpAlQ
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-access-image_delete: true
+X-access-image_upload: true
+X-access-image_share: false
+X-access-image_rotate: true
+X-access-image_crop: true
+X-access-stats: true
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjQzMzgzMC0xN2Q5LTQyOTMtOGZlZi00MGMzYzNlMmU3MWYifQ.AgjbWhpBriwFqlF8wKWzYUKvT6No45V3Xsfcnw_JWdI
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;21df8666ab5ffd27ae0c153d33c0bfab&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 54195380-2d53-471f-bc18-1eb9c63867b5
-X-Runtime: 0.029628
-Content-Length: 943</pre>
+X-Request-Id: b3e7f7e8-362c-4e54-9762-45af5c6ea9aa
+X-Runtime: 0.078037
+Content-Length: 437</pre>
 
 #### Status
 
@@ -38,4 +47,4 @@ Content-Length: 943</pre>
 
 #### Body
 
-<pre>[{"public_id":"6a3aed6c-e7aa-486f-8a46-f8e3bf09cd4c","thumbnail":"https://localhost/publications/6a3aed6c-e7aa-486f-8a46-f8e3bf09cd4c/thumbnail","title":"Album du 02/12/2015","description":"1 photo disponible\nPowered by SharinPix","aux_text":"a partagé un album: ","entity_id":"","views_count":0,"opens_count":0},{"public_id":"b59855e6-e02e-4c50-b840-782c7ef70496","thumbnail":"https://localhost/publications/b59855e6-e02e-4c50-b840-782c7ef70496/thumbnail","title":"Album du 02/12/2015","description":"1 photo disponible\nPowered by SharinPix","aux_text":"a partagé un album: ","entity_id":"","views_count":0,"opens_count":0},{"public_id":"5b07643f-eaf7-451c-a5bd-381d60d95216","thumbnail":"https://localhost/publications/5b07643f-eaf7-451c-a5bd-381d60d95216/thumbnail","title":"Album du 02/12/2015","description":"1 photo disponible\nPowered by SharinPix","aux_text":"a partagé un album: ","entity_id":"","views_count":0,"opens_count":0}]</pre>
+<pre>{"public_id":"cac1b8d8-1b93-4ea0-b271-a5f08f754160","upload_form":{"url":"https://api.cloudinary.com/v1_1/hwja6b0dx/auto/upload","params":{"timestamp":1452607514,"transformation":"a_exif","callback":"https://localhost/cloudinary_cors.html","type":"private","tags":"cac1b8d8-1b93-4ea0-b271-a5f08f754160","signature":"e9ed25810046b59986bf79b5cb3a9ed72d35d17c","api_key":"744524991939777"}},"images_count":0,"views_count":0,"thumbnails":[]}</pre>

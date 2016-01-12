@@ -7,7 +7,7 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiNzJhMjkyMzItOGJiMi00ODJhLWFlN2UtMzkyNzIyMTJkOWI4In0.qK1gs9pRu_d3xAfAe8Wb0XSKKihVy1c0no3ar9TowUs&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTMsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiYmIxZDg4NTgtMDcxOS00YjZiLWIwNzAtZTJmY2RlNGI0Mzc4In0.hX3TrFCZseMk0KER8dBfStAWj7moVsUhhVTacd00Slw&quot;
 Host: example.org
 Cookie: </pre>
 
@@ -19,17 +19,20 @@ Cookie: </pre>
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzEsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiNzJhMjkyMzItOGJiMi00ODJhLWFlN2UtMzkyNzIyMTJkOWI4In0.qK1gs9pRu_d3xAfAe8Wb0XSKKihVy1c0no3ar9TowUs
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTMsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiYmIxZDg4NTgtMDcxOS00YjZiLWIwNzAtZTJmY2RlNGI0Mzc4In0.hX3TrFCZseMk0KER8dBfStAWj7moVsUhhVTacd00Slw
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;212a3c0fa70e97a8aa67468596a6d7d8&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 2b93b69f-23a5-41d0-8ae1-e367c180ffd0
-X-Runtime: 0.042624
+X-Request-Id: 0022d74e-2207-4dab-8903-500010790338
+X-Runtime: 0.049119
 Content-Length: 163</pre>
 
 #### Status
@@ -38,4 +41,4 @@ Content-Length: 163</pre>
 
 #### Body
 
-<pre>[{"id":"be1a4a59-43f5-4870-ae78-faaf5be7bf2d","created_at":"2015-12-02T11:14:31.268+01:00","name":"tag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}]</pre>
+<pre>[{"id":"9126e145-f1cc-494a-b66d-86eca0bfa47a","created_at":"2016-01-12T15:05:13.752+01:00","name":"tag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}]</pre>

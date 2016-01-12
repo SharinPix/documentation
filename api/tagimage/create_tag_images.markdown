@@ -6,6 +6,9 @@
 
 ### Parameters
 
+Name : tag_id
+Description : Id du tag
+
 Name : image_ids
 Description : id of images
 
@@ -13,35 +16,38 @@ Description : id of images
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiI3OTYwMGQwMy1hZTVmLTQ0NDEtODBmNS1kM2M4MjY1OGViZTMifQ.FajPiacQljTV0H3oBiErUGEAKbBKjllKf2u7SZjQ5F8&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTgsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiMjQ3YWNlOGMtNDY5Ni00MmFkLWJkMDgtYTJiYWJhN2Q1ZWViIn0.HMT99OZBUZczV1ssAHoHRaQ3p7Hl4XeAXhuHkP8B984&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
 
-<pre>POST /api/v1/tags/37c48016-b272-4660-8714-ae1159b5b2aa/tag_images</pre>
+<pre>POST /api/v1/tags/9512bb80-9603-43fc-9f49-47dd94e135b0/tag_images</pre>
 
 #### Body
 
-<pre>image_ids[]=9af77e58-7e95-4f8f-8bcd-96fb830bf95d&image_ids[]=f54efc53-05f5-480b-909e-c795a7e68137&image_ids[]=1b8b3289-351c-4e02-9452-2268749128f5</pre>
+<pre>image_ids[]=9a78255b-2dc2-4849-837f-273ea5e3af67&image_ids[]=78ca6aa8-9578-45d9-be45-a8015cd484f5&image_ids[]=5ab7f857-1809-4237-8ca0-179ec75bd959</pre>
 
 ### Response
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzAsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOnsiZW4iOiJDYXJ0b29ucyIsImZyIjoiRMOpc3NpbiBhbmltw6kifX0sIkFjY2VzcyI6eyJpbWFnZV90YWciOnRydWV9fX0sInVzZXJfaWQiOiI3OTYwMGQwMy1hZTVmLTQ0NDEtODBmNS1kM2M4MjY1OGViZTMifQ.FajPiacQljTV0H3oBiErUGEAKbBKjllKf2u7SZjQ5F8
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTgsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiMjQ3YWNlOGMtNDY5Ni00MmFkLWJkMDgtYTJiYWJhN2Q1ZWViIn0.HMT99OZBUZczV1ssAHoHRaQ3p7Hl4XeAXhuHkP8B984
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;e1fea04d2bdd7ad38f3e644d7b19e48d&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 8fad4bfe-c0fb-48a2-852f-e955e4b2efd5
-X-Runtime: 0.077299
-Content-Length: 3088</pre>
+X-Request-Id: 5275c4cb-1f4d-4b73-b604-30edb0021f4e
+X-Runtime: 0.149931
+Content-Length: 3094</pre>
 
 #### Status
 
@@ -49,4 +55,4 @@ Content-Length: 3088</pre>
 
 #### Body
 
-<pre>[{"id":"08050d74-568b-4358-9397-701b17f50ebe","created_at":"2015-12-02T11:14:30.688+01:00","user":"79600d03-ae5f-4441-80f5-d3c82658ebe3","image":{"public_id":"9af77e58-7e95-4f8f-8bcd-96fb830bf95d","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["00324000004ijWS"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2015-12-02T11:14:30.602+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"00324000004ijWS","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}},"tag":{"id":"37c48016-b272-4660-8714-ae1159b5b2aa","created_at":"2015-12-02T11:14:30.594+01:00","name":"tag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}},{"id":"344a6d37-ac29-4afc-95ec-0234c64c4714","created_at":"2015-12-02T11:14:30.693+01:00","user":"79600d03-ae5f-4441-80f5-d3c82658ebe3","image":{"public_id":"f54efc53-05f5-480b-909e-c795a7e68137","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["00324000004ijWS"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2015-12-02T11:14:30.615+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"00324000004ijWS","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}},"tag":{"id":"37c48016-b272-4660-8714-ae1159b5b2aa","created_at":"2015-12-02T11:14:30.594+01:00","name":"tag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}},{"id":"4fa3f423-c015-422d-97e1-93ec70494e8e","created_at":"2015-12-02T11:14:30.697+01:00","user":"79600d03-ae5f-4441-80f5-d3c82658ebe3","image":{"public_id":"1b8b3289-351c-4e02-9452-2268749128f5","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["00324000004ijWS"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2015-12-02T11:14:30.634+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"00324000004ijWS","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}},"tag":{"id":"37c48016-b272-4660-8714-ae1159b5b2aa","created_at":"2015-12-02T11:14:30.594+01:00","name":"tag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}}]</pre>
+<pre>[{"id":"39e5529d-de01-4b43-ab2a-baa1ea334deb","created_at":"2016-01-12T15:05:18.456+01:00","user":"247ace8c-4696-42ad-bd08-a2baba7d5eeb","image":{"public_id":"9a78255b-2dc2-4849-837f-273ea5e3af67","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["00324000004ijWS"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-01-12T15:05:18.300+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"00324000004ijWS","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}},"tag":{"id":"9512bb80-9603-43fc-9f49-47dd94e135b0","created_at":"2016-01-12T15:05:18.277+01:00","name":"MyTag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}},{"id":"93905919-ffb4-4149-90bd-4546afdcfe5d","created_at":"2016-01-12T15:05:18.467+01:00","user":"247ace8c-4696-42ad-bd08-a2baba7d5eeb","image":{"public_id":"78ca6aa8-9578-45d9-be45-a8015cd484f5","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["00324000004ijWS"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-01-12T15:05:18.338+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"00324000004ijWS","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}},"tag":{"id":"9512bb80-9603-43fc-9f49-47dd94e135b0","created_at":"2016-01-12T15:05:18.277+01:00","name":"MyTag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}},{"id":"04611dce-5216-4e52-8525-197aa3722cda","created_at":"2016-01-12T15:05:18.476+01:00","user":"247ace8c-4696-42ad-bd08-a2baba7d5eeb","image":{"public_id":"5ab7f857-1809-4237-8ca0-179ec75bd959","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["00324000004ijWS"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-01-12T15:05:18.356+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"00324000004ijWS","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}},"tag":{"id":"9512bb80-9603-43fc-9f49-47dd94e135b0","created_at":"2016-01-12T15:05:18.277+01:00","name":"MyTag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}}]</pre>

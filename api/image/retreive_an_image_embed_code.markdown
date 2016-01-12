@@ -7,29 +7,32 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyIxY2VkZTVjZS1jYzExLTQ4YTMtYjAzMC02MWZhZWIzMGEzOGQiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiJiOWJlZjE3NS0xNTZiLTQ0ZTMtYjJlNS1mMjIxYzFlM2NmYzUifQ.A-9nn_7C0OUkTxHH8iYs_9sxtbYgPoY9PgtWoJ0k1Io&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTUsImFiaWxpdGllcyI6eyI3ZTQ2MDhmNC03NmRmLTQ0NzUtYWRkOS02YTAyMzU5NTM5ZWUiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiJmNjY3NTU1Ny0xMTA2LTQ5ZGUtOGQxYS0xMzM1YmJlZjdmZmQifQ.2jDfZ1f76kiV50mfJnFOAufqKIcMOWRbK82ozlRCFBA&quot;
 Host: example.org
 Cookie: </pre>
 
 #### Route
 
-<pre>GET /api/v1/images/3c9afc84-0f46-4b85-a7d4-0fb8f596d45c/embed</pre>
+<pre>GET /api/v1/images/6e817a48-540d-4ab5-bbee-953a353ed76e/embed</pre>
 
 ### Response
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzQsImFiaWxpdGllcyI6eyIxY2VkZTVjZS1jYzExLTQ4YTMtYjAzMC02MWZhZWIzMGEzOGQiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiJiOWJlZjE3NS0xNTZiLTQ0ZTMtYjJlNS1mMjIxYzFlM2NmYzUifQ.A-9nn_7C0OUkTxHH8iYs_9sxtbYgPoY9PgtWoJ0k1Io
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTUsImFiaWxpdGllcyI6eyI3ZTQ2MDhmNC03NmRmLTQ0NzUtYWRkOS02YTAyMzU5NTM5ZWUiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiJmNjY3NTU1Ny0xMTA2LTQ5ZGUtOGQxYS0xMzM1YmJlZjdmZmQifQ.2jDfZ1f76kiV50mfJnFOAufqKIcMOWRbK82ozlRCFBA
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;ed3014e7f66392030e70cd149bea50e9&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 5bc56bd4-f77b-4f59-94e8-19932663b506
-X-Runtime: 0.055078
+X-Request-Id: c531acd7-7dd2-4e69-9dd6-0a34e74dc7ef
+X-Runtime: 0.056850
 Content-Length: 684</pre>
 
 #### Status

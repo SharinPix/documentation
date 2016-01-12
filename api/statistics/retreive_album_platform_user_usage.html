@@ -110,7 +110,7 @@ table th, table td {
 
       <div class="article">
         <h2>Retreive album platform user usage</h2>
-        <h3>GET /api/v1/albums/:album_id/events/users_count</h3>
+        <h3>GET /api/v1/publications/:publication_id/events/users_count</h3>
 
           <h3>Parameters</h3>
           <table class="parameters table table-striped table-bordered table-condensed">
@@ -129,14 +129,6 @@ table th, table td {
                   <span class="description">Group clause</span>
                 </td>
               </tr>
-              <tr>
-                <td>
-                    <span class="name">name</span>
-                </td>
-                <td>
-                  <span class="description">Group clause</span>
-                </td>
-              </tr>
             </tbody>
           </table>
 
@@ -144,32 +136,34 @@ table th, table td {
           <h3>Request</h3>
 
             <h4>Headers</h4>
-            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhOTQ1ZjRjYy1kZTc4LTQ0MjEtODQ1YS0zMDFjMDczYmI4MDYifQ.CmG5_57h2wS008E5BE_68oHQrRUfxjpfxokn7_T_I2c&quot;
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlYTAwNjVhNi1hMzE2LTQyYTAtYTRlNy0xYWZmZTU5N2E2NWEifQ.rsPw8edzaollGYDFuNFVRxzRnBQeyEzn4bkmtB8Wz8I&quot;
 Host: example.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/albums/8d987d01-4844-4871-88b2-c094fa5877bf/events/users_count?group=platform&amp;name=Viewed+Thumbnail</pre>
+          <pre class="request route highlight">GET /api/v1/publications/82ec40c4-e2b5-4efa-94ee-4f37cd137939/events/users_count?group=platform</pre>
 
             <h4>Query Parameters</h4>
-            <pre class="request query_parameters highlight">group: platform
-name: Viewed Thumbnail</pre>
+            <pre class="request query_parameters highlight">group: platform</pre>
 
 
 
             <h3>Response</h3>
               <h4>Headers</h4>
-              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+              <pre class="response headers">Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhOTQ1ZjRjYy1kZTc4LTQ0MjEtODQ1YS0zMDFjMDczYmI4MDYifQ.CmG5_57h2wS008E5BE_68oHQrRUfxjpfxokn7_T_I2c
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlYTAwNjVhNi1hMzE2LTQyYTAtYTRlNy0xYWZmZTU5N2E2NWEifQ.rsPw8edzaollGYDFuNFVRxzRnBQeyEzn4bkmtB8Wz8I
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;269b1dbf2a1f5add577b3c258bf7eef1&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: f0b5a8f2-232d-40e0-968f-56a3ed4ba7e1
-X-Runtime: 0.012172
+X-Request-Id: a5ff43cd-19f4-4ed1-8d9a-c2f60c86741f
+X-Runtime: 0.043338
 Content-Length: 88</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>

@@ -2,48 +2,47 @@
 
 ## Retreive album platform user usage
 
-### GET /api/v1/albums/:album_id/events/users_count
+### GET /api/v1/publications/:publication_id/events/users_count
 
 ### Parameters
 
 Name : group
 Description : Group clause
 
-Name : name
-Description : Group clause
-
 ### Request
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhOTQ1ZjRjYy1kZTc4LTQ0MjEtODQ1YS0zMDFjMDczYmI4MDYifQ.CmG5_57h2wS008E5BE_68oHQrRUfxjpfxokn7_T_I2c&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlYTAwNjVhNi1hMzE2LTQyYTAtYTRlNy0xYWZmZTU5N2E2NWEifQ.rsPw8edzaollGYDFuNFVRxzRnBQeyEzn4bkmtB8Wz8I&quot;
 Host: example.org
 Cookie: </pre>
 
 #### Route
 
-<pre>GET /api/v1/albums/8d987d01-4844-4871-88b2-c094fa5877bf/events/users_count?group=platform&amp;name=Viewed+Thumbnail</pre>
+<pre>GET /api/v1/publications/82ec40c4-e2b5-4efa-94ee-4f37cd137939/events/users_count?group=platform</pre>
 
 #### Query Parameters
 
-<pre>group: platform
-name: Viewed Thumbnail</pre>
+<pre>group: platform</pre>
 
 ### Response
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJhOTQ1ZjRjYy1kZTc4LTQ0MjEtODQ1YS0zMDFjMDczYmI4MDYifQ.CmG5_57h2wS008E5BE_68oHQrRUfxjpfxokn7_T_I2c
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTIsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJlYTAwNjVhNi1hMzE2LTQyYTAtYTRlNy0xYWZmZTU5N2E2NWEifQ.rsPw8edzaollGYDFuNFVRxzRnBQeyEzn4bkmtB8Wz8I
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;269b1dbf2a1f5add577b3c258bf7eef1&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: f0b5a8f2-232d-40e0-968f-56a3ed4ba7e1
-X-Runtime: 0.012172
+X-Request-Id: a5ff43cd-19f4-4ed1-8d9a-c2f60c86741f
+X-Runtime: 0.043338
 Content-Length: 88</pre>
 
 #### Status

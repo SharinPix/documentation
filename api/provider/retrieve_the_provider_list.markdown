@@ -7,7 +7,7 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzUsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiN2I2NWI0YmEtYjQ4My00YjU3LWJhMzktNTljNTE3YzljY2VhIn0.kWiN0ybk_GMK2Wetr0aygCFV0W8hiYzDkddZym2ko-A&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTksImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiNDc5ZGNhZjktMGIyZi00MTRmLWExZWItZWI0M2IwMjU4MTVhIn0.gFRfNZ9aTqyElDizEZOwQLhbmlKmo_0tvnJsa8ciqmE&quot;
 Host: example.org
 Cookie: </pre>
 
@@ -19,17 +19,20 @@ Cookie: </pre>
 
 #### Headers
 
-<pre>X-Frame-Options: SAMEORIGIN
+<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NDkwNjU2NzUsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiN2I2NWI0YmEtYjQ4My00YjU3LWJhMzktNTljNTE3YzljY2VhIn0.kWiN0ybk_GMK2Wetr0aygCFV0W8hiYzDkddZym2ko-A
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTksImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiNDc5ZGNhZjktMGIyZi00MTRmLWExZWItZWI0M2IwMjU4MTVhIn0.gFRfNZ9aTqyElDizEZOwQLhbmlKmo_0tvnJsa8ciqmE
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
-ETag: W/&quot;a8adc369e53cc7ff980ff0cbf9d69d93&quot;
-Cache-Control: max-age=0, private, must-revalidate
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 4ca4f5fd-1a8d-41fb-82ef-aa965f0a28b6
-X-Runtime: 0.020220
+X-Request-Id: f9bdb7a8-d67d-43dc-bfbd-3e886e15869d
+X-Runtime: 0.055792
 Content-Length: 70</pre>
 
 #### Status
@@ -38,4 +41,4 @@ Content-Length: 70</pre>
 
 #### Body
 
-<pre>[{"name":"test provider","id":"e6b0d0ad-3950-4f7c-a2b6-a341a5610dbe"}]</pre>
+<pre>[{"name":"test provider","id":"5d984a4c-1703-41a9-b641-25085a2baa71"}]</pre>
