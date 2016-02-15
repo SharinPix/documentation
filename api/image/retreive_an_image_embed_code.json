@@ -1,7 +1,7 @@
 {
   "resource": "Image",
-  "http_method": "GET",
-  "route": "/api/v1/images/:id/embed",
+  "http_method": "POST",
+  "route": "/api/v1/images/:id/duplicate",
   "description": "Retreive an image embed code",
   "explanation": null,
   "parameters": [
@@ -12,20 +12,21 @@
   ],
   "requests": [
     {
-      "request_method": "GET",
-      "request_path": "/api/v1/images/6e817a48-540d-4ab5-bbee-953a353ed76e/embed",
+      "request_method": "POST",
+      "request_path": "/api/v1/images/21e7dabb-7d50-49f5-bb3a-9b69e034e6c4/duplicate",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTUsImFiaWxpdGllcyI6eyI3ZTQ2MDhmNC03NmRmLTQ0NzUtYWRkOS02YTAyMzU5NTM5ZWUiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiJmNjY3NTU1Ny0xMTA2LTQ5ZGUtOGQxYS0xMzM1YmJlZjdmZmQifQ.2jDfZ1f76kiV50mfJnFOAufqKIcMOWRbK82ozlRCFBA\"",
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6eyJhZGExYjMwNS1lYzIxLTQyMWUtOGE1Yy00NDE0ZjQyNGE2NmIiOnsiQWNjZXNzIjp7ImltYWdlX2R1cGxpY2F0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6Ijc0NGJmODE2LTE5YjItNGE3Zi05MmUzLWFkN2Y0OTdhYzVkMSJ9.OnPegK8pRf-ywt2YJ5CE36tYAukoYerZA-DnH9dV2TE\"",
         "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
       },
       "request_query_parameters": {
       },
-      "request_content_type": null,
+      "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"html\":\"\\u003cvideo autoplay=\\\"autoplay\\\" controls=\\\"controls\\\" poster=\\\"https://res.cloudinary.com/hwja6b0dx/video/private/s--p674B2BU--/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.jpg\\\"\\u003e\\u003csource src=\\\"https://res.cloudinary.com/hwja6b0dx/video/private/s--0wXzLh0r--/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.webm\\\" type=\\\"video/webm\\\" /\\u003e\\u003csource src=\\\"https://res.cloudinary.com/hwja6b0dx/video/private/s--UxGtQ7i2--/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.mp4\\\" type=\\\"video/mp4\\\" /\\u003e\\u003csource src=\\\"https://res.cloudinary.com/hwja6b0dx/video/private/s--LPhVi-4B--/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.ogv\\\" type=\\\"video/ogg\\\" /\\u003e\\u003c/video\\u003e\"}",
+      "response_body": "{\"public_id\":\"38c2df38-351f-4f7b-a3cb-6e47fc8507fb\",\"infos\":{\"bytes\":3604,\"created_at\":\"2015-09-25T13:32:55Z\",\"etag\":\"5a98d4d3e5d39024abf237be55e99b15\",\"format\":\"png\",\"height\":48,\"resource_type\":\"image\",\"tags\":[\"ada1b305-ec21-421e-8a5c-4414f424a66b\"],\"type\":\"private\",\"width\":48,\"location\":{\"accuracy\":36,\"latitude\":48.861934399999996,\"longitude\":2.348967}},\"exifs\":{},\"gps\":[48.861934399999996,2.348967],\"gps_ip\":null,\"gps_exifs\":null,\"gps_html\":[48.861934399999996,2.348967],\"created_at\":\"2016-02-15T13:02:58.990+01:00\",\"width\":48,\"height\":48,\"rotation\":0,\"crop_x\":0.0,\"crop_y\":0.0,\"crop_w\":0.0,\"crop_h\":0.0,\"album_id\":\"ada1b305-ec21-421e-8a5c-4414f424a66b\",\"thumbnails\":{\"full\":\"/assets/blank.jpg\",\"large\":\"/assets/blank.jpg\",\"mini\":\"/assets/blank.jpg\"}}",
       "response_headers": {
         "Cache-Control": "no-cache, no-store, must-revalidate, private, max-age=0",
         "Pragma": "no-cache",
@@ -35,13 +36,13 @@
         "X-Content-Type-Options": "nosniff",
         "X-Download-Options": "noopen",
         "X-Permitted-Cross-Domain-Policies": "none",
-        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTUsImFiaWxpdGllcyI6eyI3ZTQ2MDhmNC03NmRmLTQ0NzUtYWRkOS02YTAyMzU5NTM5ZWUiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiJmNjY3NTU1Ny0xMTA2LTQ5ZGUtOGQxYS0xMzM1YmJlZjdmZmQifQ.2jDfZ1f76kiV50mfJnFOAufqKIcMOWRbK82ozlRCFBA",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzksImFiaWxpdGllcyI6eyJhZGExYjMwNS1lYzIxLTQyMWUtOGE1Yy00NDE0ZjQyNGE2NmIiOnsiQWNjZXNzIjp7ImltYWdlX2R1cGxpY2F0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6Ijc0NGJmODE2LTE5YjItNGE3Zi05MmUzLWFkN2Y0OTdhYzVkMSJ9.h0GqEV0kGqdnB9UPgTs9aSsQbTx3i7uLekb3d-j3e8I",
         "Content-Type": "application/json; charset=utf-8",
         "Vary": "Accept-Encoding",
         "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-        "X-Request-Id": "c531acd7-7dd2-4e69-9dd6-0a34e74dc7ef",
-        "X-Runtime": "0.056850",
-        "Content-Length": "684"
+        "X-Request-Id": "ac46b3e8-59e0-445d-852d-7213e47e8c23",
+        "X-Runtime": "0.047401",
+        "Content-Length": "757"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

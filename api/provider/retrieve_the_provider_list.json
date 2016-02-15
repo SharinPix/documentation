@@ -16,7 +16,7 @@
       "request_path": "/api/v1/albums/00324000004ijWS/providers",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTksImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiNDc5ZGNhZjktMGIyZi00MTRmLWExZWItZWI0M2IwMjU4MTVhIn0.gFRfNZ9aTqyElDizEZOwQLhbmlKmo_0tvnJsa8ciqmE\"",
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiZDUxNmJlYTUtZGU3Ni00MmU3LWIwYzAtNWY5Y2Q4YzA1NDM4In0.FwYdTGlvZL6xt2-M_QX-QJfLEtMJuHyd0PcQPW91V5A\"",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -25,7 +25,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[{\"name\":\"test provider\",\"id\":\"5d984a4c-1703-41a9-b641-25085a2baa71\"}]",
+      "response_body": "[{\"name\":\"test provider\",\"id\":\"05af6978-a94e-4666-9dc5-1323ff1b776a\"}]",
       "response_headers": {
         "Cache-Control": "no-cache, no-store, must-revalidate, private, max-age=0",
         "Pragma": "no-cache",
@@ -35,12 +35,12 @@
         "X-Content-Type-Options": "nosniff",
         "X-Download-Options": "noopen",
         "X-Permitted-Cross-Domain-Policies": "none",
-        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTksImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiNDc5ZGNhZjktMGIyZi00MTRmLWExZWItZWI0M2IwMjU4MTVhIn0.gFRfNZ9aTqyElDizEZOwQLhbmlKmo_0tvnJsa8ciqmE",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiUHJvdmlkZXJzIjpbInRlc3QgcHJvdmlkZXIiXX19LCJ1c2VyX2lkIjoiZDUxNmJlYTUtZGU3Ni00MmU3LWIwYzAtNWY5Y2Q4YzA1NDM4In0.FwYdTGlvZL6xt2-M_QX-QJfLEtMJuHyd0PcQPW91V5A",
         "Content-Type": "application/json; charset=utf-8",
         "Vary": "Accept-Encoding",
         "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-        "X-Request-Id": "f9bdb7a8-d67d-43dc-bfbd-3e886e15869d",
-        "X-Runtime": "0.055792",
+        "X-Request-Id": "440fac1f-bacd-45ef-9292-86073d0e430b",
+        "X-Runtime": "0.043060",
         "Content-Length": "70"
       },
       "response_content_type": "application/json; charset=utf-8",

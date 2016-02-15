@@ -13,14 +13,14 @@ Description : Image payload
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6eyJjMzAwYWEyNC01YzYzLTRmNmItYjExMS1kZmExMGNiNDdiOGYiOnsiQWNjZXNzIjp7ImltYWdlX3JvdGF0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6ImJkNzY1OTUxLTYwZTktNDBhNi05MDhkLTdmZTY1ODNkYzQ1MiJ9.uLXpdClqQYIXSUH50HM5iNRPYq-wpRJDS-DG9nAZoFI&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzksImFiaWxpdGllcyI6eyJhZmZhNjBkNi03MmI2LTQ1ZGQtYTk0Ny02OTkxMGZiMTk5M2QiOnsiQWNjZXNzIjp7ImltYWdlX3JvdGF0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6IjY0NjRiYzczLTU3MjUtNDYyMi05OGI2LTM1N2Q0ZTRkMTI5OSJ9.2rI4EHq7O6BC_NWsYQFWcn3kSDDtw58cHnclKAa0PnE&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
 
-<pre>PUT /api/v1/images/52c01312-320c-404a-a19c-0fae235ccf49</pre>
+<pre>PUT /api/v1/images/81240a45-bce4-4cb5-9606-6a132ea3d153</pre>
 
 #### Body
 
@@ -38,12 +38,12 @@ X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTUsImFiaWxpdGllcyI6eyJjMzAwYWEyNC01YzYzLTRmNmItYjExMS1kZmExMGNiNDdiOGYiOnsiQWNjZXNzIjp7ImltYWdlX3JvdGF0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6ImJkNzY1OTUxLTYwZTktNDBhNi05MDhkLTdmZTY1ODNkYzQ1MiJ9.Oen9tUj7W_x2Aqmj7RIE4BQ19XBbjr5qhZM3uabGMUs
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzksImFiaWxpdGllcyI6eyJhZmZhNjBkNi03MmI2LTQ1ZGQtYTk0Ny02OTkxMGZiMTk5M2QiOnsiQWNjZXNzIjp7ImltYWdlX3JvdGF0ZSI6dHJ1ZX19fSwidXNlcl9pZCI6IjY0NjRiYzczLTU3MjUtNDYyMi05OGI2LTM1N2Q0ZTRkMTI5OSJ9.2rI4EHq7O6BC_NWsYQFWcn3kSDDtw58cHnclKAa0PnE
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 4cdc3162-1258-4a13-9329-149fd4e8bc5d
-X-Runtime: 0.062404
+X-Request-Id: def03bfc-8fe3-4bf1-8278-aab3352e800e
+X-Runtime: 0.019744
 Content-Length: 758</pre>
 
 #### Status
@@ -52,4 +52,4 @@ Content-Length: 758</pre>
 
 #### Body
 
-<pre>{"public_id":"52c01312-320c-404a-a19c-0fae235ccf49","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["c300aa24-5c63-4f6b-b111-dfa10cb47b8f"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-01-12T15:05:15.000+01:00","width":48,"height":48,"rotation":90,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"c300aa24-5c63-4f6b-b111-dfa10cb47b8f","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}}</pre>
+<pre>{"public_id":"81240a45-bce4-4cb5-9606-6a132ea3d153","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["affa60d6-72b6-45dd-a947-69910fb1993d"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-02-15T13:02:59.415+01:00","width":48,"height":48,"rotation":90,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"affa60d6-72b6-45dd-a947-69910fb1993d","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}}</pre>

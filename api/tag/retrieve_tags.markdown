@@ -7,7 +7,7 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTMsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiYmIxZDg4NTgtMDcxOS00YjZiLWIwNzAtZTJmY2RlNGI0Mzc4In0.hX3TrFCZseMk0KER8dBfStAWj7moVsUhhVTacd00Slw&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiMDJjNGFiZWEtNDNiMC00NzQ0LWExNDUtNGY2MGZkYmU2OWJkIn0.DTazx5_oVLYuLelfTPvGaK_zejz1lqXIIsNeP3lQ4AE&quot;
 Host: example.org
 Cookie: </pre>
 
@@ -27,12 +27,12 @@ X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTMsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiYmIxZDg4NTgtMDcxOS00YjZiLWIwNzAtZTJmY2RlNGI0Mzc4In0.hX3TrFCZseMk0KER8dBfStAWj7moVsUhhVTacd00Slw
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJ0YWciOiJ7XCJlblwiOiBcInRhZ3NcIiwgXCJmclwiOiBcInRhZ3MgZnJcIn0ifX19LCJ1c2VyX2lkIjoiMDJjNGFiZWEtNDNiMC00NzQ0LWExNDUtNGY2MGZkYmU2OWJkIn0.DTazx5_oVLYuLelfTPvGaK_zejz1lqXIIsNeP3lQ4AE
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 0022d74e-2207-4dab-8903-500010790338
-X-Runtime: 0.049119
+X-Request-Id: 69b2e533-fcb0-4c00-92be-ac7ba301f5d1
+X-Runtime: 0.061566
 Content-Length: 163</pre>
 
 #### Status
@@ -41,4 +41,4 @@ Content-Length: 163</pre>
 
 #### Body
 
-<pre>[{"id":"9126e145-f1cc-494a-b66d-86eca0bfa47a","created_at":"2016-01-12T15:05:13.752+01:00","name":"tag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}]</pre>
+<pre>[{"id":"6acd7bff-2ace-42d0-9e6e-e24fe3d75197","created_at":"2016-02-15T13:02:58.299+01:00","name":"tag","label":"{\"en\":\"Cartoons\",\"fr\":\"Déssin animé\"}"}]</pre>

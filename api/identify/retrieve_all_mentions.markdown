@@ -13,17 +13,17 @@ Description : publication id
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTYsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI4MzJjNWVhMC1iMzQ4LTQ3NDktODhhZS1jOGIwOGExZjg3MTAifQ.wxQ_y3mf0jApsLQGczaBMUH_jp50Lp0TVNiCHC_6NDo&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzcsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkODU1ZjE4Ny01MmZjLTRjODQtOWEwNy1lZDE0MWY5Yjg3OTAifQ.4PdUp2oagZTMAimd992id-gZf0GKsMSDopREGKCB6Ps&quot;
 Host: example.org
 Cookie: </pre>
 
 #### Route
 
-<pre>GET /api/v1/mentions?id=7dfdc589-bbd8-48d7-8507-a08b190ea082</pre>
+<pre>GET /api/v1/mentions?id=97fa8753-d333-4d62-89bb-fb1c54e46831</pre>
 
 #### Query Parameters
 
-<pre>id: 7dfdc589-bbd8-48d7-8507-a08b190ea082</pre>
+<pre>id: 97fa8753-d333-4d62-89bb-fb1c54e46831</pre>
 
 ### Response
 
@@ -37,12 +37,12 @@ X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI4MzJjNWVhMC1iMzQ4LTQ3NDktODhhZS1jOGIwOGExZjg3MTAifQ.lEnrnUAiRNcBjZJmgMfQe3x-7htmGJYHsowcYav54wk
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkODU1ZjE4Ny01MmZjLTRjODQtOWEwNy1lZDE0MWY5Yjg3OTAifQ.-JjHPsJP61UQJMzWlHspCDX4QcjAKnZaAjsMmtp6-dE
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 60b69499-e4bc-4a33-8de2-1db4971f72bb
-X-Runtime: 0.034695
+X-Request-Id: d6063701-921d-4072-89f5-444ff588fbf7
+X-Runtime: 0.026898
 Content-Length: 2</pre>
 
 #### Status

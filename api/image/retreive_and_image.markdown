@@ -7,13 +7,13 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTUsImFiaWxpdGllcyI6eyI2YmZiODY0Yy04OTI3LTQ4ZDQtYTI4Ni05N2JhODU4M2Y3YWUiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiI5MGNmYjUzOC0wMjg0LTRlOTktODg4ZS1hM2NkYjQ3NzgxMDEifQ.kxTogWho77qHSykYuIVUVwakWF88qFx9NV3o8lNIG1c&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6eyI5MTk2ZDFlYy02NTQyLTQ2NjItYmFjZS01NjljYTU0OTE1MDkiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiI5NWI5ZGUwNi03ZTIzLTQ0N2ItYTFlMi00NzkyMDdjYzk1YTEifQ.uYpO0XtXvIqcCaNEin7pEtqG4zsipF0fAFnfklw5J9E&quot;
 Host: example.org
 Cookie: </pre>
 
 #### Route
 
-<pre>GET /api/v1/images/5cf8c06d-83fa-4ede-b995-5efd3133b6e5</pre>
+<pre>GET /api/v1/images/72412189-1cb2-4ae7-a2f0-f1ce55e9009c</pre>
 
 ### Response
 
@@ -29,12 +29,13 @@ X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 X-access-crop: false
 X-access-rotate: false
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTUsImFiaWxpdGllcyI6eyI2YmZiODY0Yy04OTI3LTQ4ZDQtYTI4Ni05N2JhODU4M2Y3YWUiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiI5MGNmYjUzOC0wMjg0LTRlOTktODg4ZS1hM2NkYjQ3NzgxMDEifQ.kxTogWho77qHSykYuIVUVwakWF88qFx9NV3o8lNIG1c
+X-access-duplicate: false
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6eyI5MTk2ZDFlYy02NTQyLTQ2NjItYmFjZS01NjljYTU0OTE1MDkiOnsiQWNjZXNzIjp7ImltYWdlX2xpc3QiOnRydWV9fX0sInVzZXJfaWQiOiI5NWI5ZGUwNi03ZTIzLTQ0N2ItYTFlMi00NzkyMDdjYzk1YTEifQ.uYpO0XtXvIqcCaNEin7pEtqG4zsipF0fAFnfklw5J9E
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 0157b7b3-564c-4dce-916c-bbb5c05b77ce
-X-Runtime: 0.039901
+X-Request-Id: f8a7be4f-368c-450f-a47b-eb0d62f692f5
+X-Runtime: 0.046458
 Content-Length: 757</pre>
 
 #### Status
@@ -43,4 +44,4 @@ Content-Length: 757</pre>
 
 #### Body
 
-<pre>{"public_id":"5cf8c06d-83fa-4ede-b995-5efd3133b6e5","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["6bfb864c-8927-48d4-a286-97ba8583f7ae"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-01-12T15:05:15.692+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"6bfb864c-8927-48d4-a286-97ba8583f7ae","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}}</pre>
+<pre>{"public_id":"72412189-1cb2-4ae7-a2f0-f1ce55e9009c","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["9196d1ec-6542-4662-bace-569ca5491509"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-02-15T13:02:58.731+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"9196d1ec-6542-4662-bace-569ca5491509","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}}</pre>

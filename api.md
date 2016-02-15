@@ -1,7 +1,9 @@
-# SharinPix API Documentation
+# Documentation
 
-### Authentification
+### Authentication
 
-### Endpoints
+Authentication abstract
 
-[Endpoints details](api/index.markdown)
+### Api reference
+
+[API reference](api/index.markdown)

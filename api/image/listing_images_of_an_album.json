@@ -13,10 +13,10 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/albums/37bd8672-65f0-483e-812a-c5ce95c1706c/images",
+      "request_path": "/api/v1/albums/15635709-4b50-4d42-a7cc-8f36133cef41/images",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTYsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjE3MTlkNi1jMGNlLTQ3NDgtYjIzMS1jZGI5YjE5ZTZiNTAifQ.xgcAh8i-byyxkijhDlpTi02HCHk50mvcv-ftHmkQi2Y\"",
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzksImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIyYzNhMGUwNy01Y2QyLTQ4MjgtYTVkOC1mYjE5ZTMwZGQ0NzMifQ.JkxP1g0kjjbhWcig7E2p6HcoLaT8RB3X8KghyTxIZF8\"",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -35,12 +35,12 @@
         "X-Content-Type-Options": "nosniff",
         "X-Download-Options": "noopen",
         "X-Permitted-Cross-Domain-Policies": "none",
-        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTYsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIxZjE3MTlkNi1jMGNlLTQ3NDgtYjIzMS1jZGI5YjE5ZTZiNTAifQ.xgcAh8i-byyxkijhDlpTi02HCHk50mvcv-ftHmkQi2Y",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzksImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiIyYzNhMGUwNy01Y2QyLTQ4MjgtYTVkOC1mYjE5ZTMwZGQ0NzMifQ.JkxP1g0kjjbhWcig7E2p6HcoLaT8RB3X8KghyTxIZF8",
         "Content-Type": "application/json; charset=utf-8",
         "Vary": "Accept-Encoding",
         "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-        "X-Request-Id": "9b422050-6bbb-4777-8a5f-81b28975ad11",
-        "X-Runtime": "0.026944",
+        "X-Request-Id": "f45420bc-c287-491c-8191-4e1787431f6e",
+        "X-Runtime": "0.009450",
         "Content-Length": "2"
       },
       "response_content_type": "application/json; charset=utf-8",

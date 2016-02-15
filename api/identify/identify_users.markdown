@@ -13,14 +13,14 @@ Description : details of tagging
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI4ODgxNmQyOC04OTk1LTQ1Y2MtYWZkZC02Y2JjZjE3MWM3YmEifQ.jS67wBUp1pfeOzEenExNJ5rKKiz-6281Lq2GVLq_fnk&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI5YWJlOTU5YS01OWU5LTQ1MzctYjM4Ni1jY2U5MjdmNzZiZGUifQ.V29uzFjvWTPW66BWQ5L_ga1BCmeVuqDz43QjGbPoqVk&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
 
-<pre>POST /api/v1/images/8f2b8eee-8120-4f7c-96b5-c89a127b1055/identify</pre>
+<pre>POST /api/v1/images/6a0fac79-a632-4895-a1b5-2f8f61e377f0/identify</pre>
 
 #### Body
 
@@ -38,12 +38,12 @@ X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI4ODgxNmQyOC04OTk1LTQ1Y2MtYWZkZC02Y2JjZjE3MWM3YmEifQ.jS67wBUp1pfeOzEenExNJ5rKKiz-6281Lq2GVLq_fnk
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzgsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI5YWJlOTU5YS01OWU5LTQ1MzctYjM4Ni1jY2U5MjdmNzZiZGUifQ.V29uzFjvWTPW66BWQ5L_ga1BCmeVuqDz43QjGbPoqVk
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: e3f6ee4d-dd0e-44ce-81d8-c9db52d7d6a4
-X-Runtime: 0.068626
+X-Request-Id: 227e4b76-ddce-467b-96ac-b1deb0f7a01a
+X-Runtime: 0.078808
 Content-Length: 930</pre>
 
 #### Status
@@ -52,4 +52,4 @@ Content-Length: 930</pre>
 
 #### Body
 
-<pre>{"id":"5dd5b220-fb3d-4832-ba19-8e29d535e538","created_at":"2016-01-12T15:05:17.154+01:00","url":"https://localhost/identifies/5dd5b220-fb3d-4832-ba19-8e29d535e538","image":{"public_id":"8f2b8eee-8120-4f7c-96b5-c89a127b1055","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["d936be9e-d3e2-4636-b012-1f6cc68f4764"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-01-12T15:05:17.131+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"d936be9e-d3e2-4636-b012-1f6cc68f4764","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}}}</pre>
+<pre>{"id":"4c0e61f2-b48a-419e-bf6f-27cd7b350599","created_at":"2016-02-15T13:02:58.130+01:00","url":"https://localhost/identifies/4c0e61f2-b48a-419e-bf6f-27cd7b350599","image":{"public_id":"6a0fac79-a632-4895-a1b5-2f8f61e377f0","infos":{"bytes":3604,"created_at":"2015-09-25T13:32:55Z","etag":"5a98d4d3e5d39024abf237be55e99b15","format":"png","height":48,"resource_type":"image","tags":["bcbbe986-d8e8-4cb7-bbdd-d45961519cf4"],"type":"private","width":48,"location":{"accuracy":36,"latitude":48.861934399999996,"longitude":2.348967}},"exifs":{},"gps":[48.861934399999996,2.348967],"gps_ip":null,"gps_exifs":null,"gps_html":[48.861934399999996,2.348967],"created_at":"2016-02-15T13:02:58.080+01:00","width":48,"height":48,"rotation":0,"crop_x":0.0,"crop_y":0.0,"crop_w":0.0,"crop_h":0.0,"album_id":"bcbbe986-d8e8-4cb7-bbdd-d45961519cf4","thumbnails":{"full":"/assets/blank.jpg","large":"/assets/blank.jpg","mini":"/assets/blank.jpg"}}}</pre>

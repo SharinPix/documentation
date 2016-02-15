@@ -74,6 +74,11 @@
           "groups": "all"
         },
         {
+          "description": "Retreive an image embed code",
+          "link": "image/retreive_an_image_embed_code.json",
+          "groups": "all"
+        },
+        {
           "description": "Retreive and image",
           "link": "image/retreive_and_image.json",
           "groups": "all"
@@ -156,36 +161,6 @@
         {
           "description": "Retreive the album contained",
           "link": "publication/retreive_the_album_contained.json",
-          "groups": "all"
-        }
-      ]
-    },
-    {
-      "name": "Sharing",
-      "examples": [
-        {
-          "description": "retrieve sharing",
-          "link": "sharing/retrieve_sharing.json",
-          "groups": "all"
-        },
-        {
-          "description": "retrieve sharings",
-          "link": "sharing/retrieve_sharings.json",
-          "groups": "all"
-        }
-      ]
-    },
-    {
-      "name": "SharingImage",
-      "examples": [
-        {
-          "description": "create sharing images",
-          "link": "sharingimage/create_sharing_images.json",
-          "groups": "all"
-        },
-        {
-          "description": "retreive sharing images",
-          "link": "sharingimage/retreive_sharing_images.json",
           "groups": "all"
         }
       ]

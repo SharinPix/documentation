@@ -20,6 +20,7 @@
 * [Listing images of an album](image/listing_images_of_an_album.markdown)
 * [Listing untag images of an album](image/listing_untag_images_of_an_album.markdown)
 * [Retreive an image embed code](image/retreive_an_image_embed_code.markdown)
+* [Retreive an image embed code](image/retreive_an_image_embed_code.markdown)
 * [Retreive and image](image/retreive_and_image.markdown)
 * [Rotate an image](image/rotate_an_image.markdown)
 * [return an empty list](image/return_an_empty_list.markdown)
@@ -47,16 +48,6 @@
 * [Create a publication with text from salesforce1](publication/create_a_publication_with_text_from_salesforce1.markdown)
 * [Retreive the album contained](publication/retreive_the_album_contained.markdown)
 * [Retreive the album contained](publication/retreive_the_album_contained.markdown)
-
-## Sharing
-
-* [retrieve sharing](sharing/retrieve_sharing.markdown)
-* [retrieve sharings](sharing/retrieve_sharings.markdown)
-
-## SharingImage
-
-* [create sharing images](sharingimage/create_sharing_images.markdown)
-* [retreive sharing images](sharingimage/retreive_sharing_images.markdown)
 
 ## Statistics
 

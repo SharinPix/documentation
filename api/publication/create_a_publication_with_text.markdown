@@ -7,14 +7,14 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTMsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI0OTViNWZiOS0zNDAwLTRiMTYtOTE2Zi1hNzVmYTQyMzgwOTYifQ.T1qy0ZJ0f0Wb92VsLnEFlshBMVS2k6YUELRoclSbsms&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzksImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkYmJkYjJjYy1kZTRkLTQ0ZjItYjllYi00ZGY0ZTNkNDY2OWMifQ.G4jaBQDVRqGGxCzxXbMIn38S5uiVu4qfK4ImNSXtbzQ&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
 
-<pre>POST /api/v1/albums/3457c503-5728-4398-9307-ffafe08b5ec9/publications</pre>
+<pre>POST /api/v1/albums/fa7fd79b-ef9c-4774-9043-eb42e7d480c2/publications</pre>
 
 #### Body
 
@@ -32,12 +32,12 @@ X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTQsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiI0OTViNWZiOS0zNDAwLTRiMTYtOTE2Zi1hNzVmYTQyMzgwOTYifQ.LMF5VenojzQ3wOCusMrvQdIwYSvbhjavIPoAHeSg9LA
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzksImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkYmJkYjJjYy1kZTRkLTQ0ZjItYjllYi00ZGY0ZTNkNDY2OWMifQ.G4jaBQDVRqGGxCzxXbMIn38S5uiVu4qfK4ImNSXtbzQ
 Content-Type: application/json; charset=utf-8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: cf79d002-abd2-468a-ab5b-278f12ea5db1
-X-Runtime: 0.041632
+X-Request-Id: e4088814-8715-47d8-8fc8-9d3f7e7adb08
+X-Runtime: 0.030917
 Content-Length: 292</pre>
 
 #### Status
@@ -46,4 +46,4 @@ Content-Length: 292</pre>
 
 #### Body
 
-<pre>{"public_id":"b120a650-61f9-48a3-9072-a122c945847d","thumbnail":"https://localhost/publications/b120a650-61f9-48a3-9072-a122c945847d/thumbnail","title":"Album du 12/01/2016","description":"1 photo disponible\nPowered by SharinPix","aux_text":"","entity_id":"","views_count":0,"opens_count":0}</pre>
+<pre>{"public_id":"d9c423a5-adc1-4fdf-9ca0-88925452358d","thumbnail":"https://localhost/publications/d9c423a5-adc1-4fdf-9ca0-88925452358d/thumbnail","title":"Album du 15/02/2016","description":"1 photo disponible\nPowered by SharinPix","aux_text":"","entity_id":"","views_count":0,"opens_count":0}</pre>

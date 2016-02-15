@@ -24,22 +24,22 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/tag_images?tag_name=MyTag&image_id=687f25a5-c7ae-4f4b-8ba7-3419d7b7573a&album_id=00324000004ijWS",
+      "request_path": "api/v1/tag_images?tag_name=MyTag&image_id=d8a5ed41-300c-4f99-8621-ca4c4b73fd73&album_id=00324000004ijWS",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiZjEyYjhjODktZmYzNS00YmVhLThmZGQtZjNiMDFkMDRhNTdiIn0.FBCFbh8zuy8eWf4QhT_uam_tSS7t24blG6z-Z9Xd7H4\"",
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzYsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiZGZiZGQzN2QtZWY0Mi00NjhlLWJhNjktZmJjMzQ2N2JlMWRmIn0.MC6kvTeQP7bGfuiiVZjLkzG_NHqmxmr0dB4tHXBtmvM\"",
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
         "tag_name": "MyTag",
-        "image_id": "687f25a5-c7ae-4f4b-8ba7-3419d7b7573a",
+        "image_id": "d8a5ed41-300c-4f99-8621-ca4c4b73fd73",
         "album_id": "00324000004ijWS"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[{\"id\":\"26c8676d-23a3-46ba-a99b-3799706b99d8\",\"created_at\":\"2016-01-12T15:05:17.635+01:00\",\"user\":\"f12b8c89-ff35-4bea-8fdd-f3b01d04a57b\",\"image\":{\"public_id\":\"687f25a5-c7ae-4f4b-8ba7-3419d7b7573a\",\"infos\":{\"bytes\":3604,\"created_at\":\"2015-09-25T13:32:55Z\",\"etag\":\"5a98d4d3e5d39024abf237be55e99b15\",\"format\":\"png\",\"height\":48,\"resource_type\":\"image\",\"tags\":[\"00324000004ijWS\"],\"type\":\"private\",\"width\":48,\"location\":{\"accuracy\":36,\"latitude\":48.861934399999996,\"longitude\":2.348967}},\"exifs\":{},\"gps\":[48.861934399999996,2.348967],\"gps_ip\":null,\"gps_exifs\":null,\"gps_html\":[48.861934399999996,2.348967],\"created_at\":\"2016-01-12T15:05:17.526+01:00\",\"width\":48,\"height\":48,\"rotation\":0,\"crop_x\":0.0,\"crop_y\":0.0,\"crop_w\":0.0,\"crop_h\":0.0,\"album_id\":\"00324000004ijWS\",\"thumbnails\":{\"full\":\"/assets/blank.jpg\",\"large\":\"/assets/blank.jpg\",\"mini\":\"/assets/blank.jpg\"}},\"tag\":{\"id\":\"ddf997a6-4008-47e6-a403-51e53bb6e4f9\",\"created_at\":\"2016-01-12T15:05:17.500+01:00\",\"name\":\"MyTag\",\"label\":\"{\\\"en\\\":\\\"Cartoons\\\",\\\"fr\\\":\\\"Déssin animé\\\"}\"}}]",
+      "response_body": "[{\"id\":\"eb81b7c8-2b20-4762-a4af-f0d952bd4dfb\",\"created_at\":\"2016-02-15T13:02:56.233+01:00\",\"user\":\"dfbdd37d-ef42-468e-ba69-fbc3467be1df\",\"image\":{\"public_id\":\"d8a5ed41-300c-4f99-8621-ca4c4b73fd73\",\"infos\":{\"bytes\":3604,\"created_at\":\"2015-09-25T13:32:55Z\",\"etag\":\"5a98d4d3e5d39024abf237be55e99b15\",\"format\":\"png\",\"height\":48,\"resource_type\":\"image\",\"tags\":[\"00324000004ijWS\"],\"type\":\"private\",\"width\":48,\"location\":{\"accuracy\":36,\"latitude\":48.861934399999996,\"longitude\":2.348967}},\"exifs\":{},\"gps\":[48.861934399999996,2.348967],\"gps_ip\":null,\"gps_exifs\":null,\"gps_html\":[48.861934399999996,2.348967],\"created_at\":\"2016-02-15T13:02:56.190+01:00\",\"width\":48,\"height\":48,\"rotation\":0,\"crop_x\":0.0,\"crop_y\":0.0,\"crop_w\":0.0,\"crop_h\":0.0,\"album_id\":\"00324000004ijWS\",\"thumbnails\":{\"full\":\"/assets/blank.jpg\",\"large\":\"/assets/blank.jpg\",\"mini\":\"/assets/blank.jpg\"}},\"tag\":{\"id\":\"6892e79f-6463-46c3-b3f6-17aeef7ce614\",\"created_at\":\"2016-02-15T13:02:56.182+01:00\",\"name\":\"MyTag\",\"label\":\"{\\\"en\\\":\\\"Cartoons\\\",\\\"fr\\\":\\\"Déssin animé\\\"}\"}}]",
       "response_headers": {
         "Cache-Control": "no-cache, no-store, must-revalidate, private, max-age=0",
         "Pragma": "no-cache",
@@ -49,12 +49,12 @@
         "X-Content-Type-Options": "nosniff",
         "X-Download-Options": "noopen",
         "X-Permitted-Cross-Domain-Policies": "none",
-        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTI2MjE5MTcsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiZjEyYjhjODktZmYzNS00YmVhLThmZGQtZjNiMDFkMDRhNTdiIn0.FBCFbh8zuy8eWf4QhT_uam_tSS7t24blG6z-Z9Xd7H4",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxNzYsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6IkNhcnRvb25zIiwiZnIiOiJEw6lzc2luIGFuaW3DqSJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19LCJ1c2VyX2lkIjoiZGZiZGQzN2QtZWY0Mi00NjhlLWJhNjktZmJjMzQ2N2JlMWRmIn0.MC6kvTeQP7bGfuiiVZjLkzG_NHqmxmr0dB4tHXBtmvM",
         "Content-Type": "application/json; charset=utf-8",
         "Vary": "Accept-Encoding",
         "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
-        "X-Request-Id": "4dbff9c6-b353-41fc-8731-cd11634e31d1",
-        "X-Runtime": "0.218143",
+        "X-Request-Id": "35ef01d5-0c92-443c-8b3a-9ddc6994f14a",
+        "X-Runtime": "0.024691",
         "Content-Length": "1032"
       },
       "response_content_type": "application/json; charset=utf-8",
