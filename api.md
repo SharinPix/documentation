@@ -48,12 +48,14 @@ users with an iframe like this :
 src="https://app.sharinpix.com/pagelayout/an-album-id?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTY5NTM0NTcsImlzcyI6InNlY3JldGlkLTAwMDAtMDAwMC0wMDAwLXNlY3JldGlkMDAwMCIsImFiaWxpdGllcyI6eyJhbi1hbGJ1bS1pZCI6eyJBY2Nlc3MiOnsic2VlIjp0cnVlLCJpbWFnZV9saXN0Ijp0cnVlLCJpbWFnZV91cGxvYWQiOnRydWV9fX19.f1_S49veaevYji-xTtDKVFhFNATdd2QarisHxew_aCQ"/>
 ```
 
-
 You should always generate the token on a server. If somebody access your
 SharinPix secret he can generate any token and access all datas stored on
 SharinPix.
 
 
 ### Api reference
+
+In all the example, you always have a token defining abilities. You can easily
+read it on [JWT.io](http://jwt.io)
 
 [API reference](api/index.markdown)
