@@ -1,16 +1,5 @@
-# SharinPix
+# SharinPix API documentation
 
-Sharinpix abstract.
+This repository contains SharinPix endpoint documentation for developers and technical users.
 
-[Getting Started](https://docs.google.com/document/d/16bTVn5DUmjp6BOH4cRd_b8J49WSFUXkNF4ki0Fkm6S0/edit?usp=sharing)
-
-
-["How-To" Articles](https://github.com/SharinPix/apex)
-
-
-[Documentation](api.md)
-
-
-### Old
-
-[Webhooks](https://docs.google.com/document/d/1kL2I9wJSHGL9H5s89K7r92xAtoANLuj_w82ItadfFTA/edit?usp=sharing)
+For admin guides and other documentation, please see the Customization Guides available on the [SharinPix AppExchange listing](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000Dq45IEAR).
