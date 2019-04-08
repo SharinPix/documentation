@@ -1,0 +1,60 @@
+{
+  "resource": "Album",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/albums/:id",
+  "description": "rename takes place",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "album",
+      "description": "Album attributes"
+    },
+    {
+      "name": "merge",
+      "description": "Flag for merging album"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/albums/00100000123BB31",
+      "request_body": "album[public_id]=new_id",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjYsImlhdCI6MTU1NDc0NTEyNiwidXNlcl9pZCI6ImM3OWNjYmI3LTMzYzEtNGIyMC04NjMyLTJmNmZmMDQzODMwZSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMzEiOnsiQWNjZXNzIjp7InJlbmFtZSI6dHJ1ZX19fX0.Lkh2aINgjATaIaC7CMGET7CbMHfokGyloAIXdgXl9Dk\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"new_id\",\n  \"public_id\": \"new_id\",\n  \"images_count\": 0,\n  \"views_count\": 0,\n  \"upload_form\": null,\n  \"organization_id\": \"dcc77b9d-956c-439f-b75b-bcd44dad4753\",\n  \"thumbnails\": [\n\n  ]\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjYsImlhdCI6MTU1NDc0NTEyNiwidXNlcl9pZCI6ImM3OWNjYmI3LTMzYzEtNGIyMC04NjMyLTJmNmZmMDQzODMwZSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMzEiOnsiQWNjZXNzIjp7InJlbmFtZSI6dHJ1ZX19fX0.Lkh2aINgjATaIaC7CMGET7CbMHfokGyloAIXdgXl9Dk",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "8f317a8f-4283-4c96-9dab-8ece64469a09",
+        "X-Runtime": "0.013643",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "161"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

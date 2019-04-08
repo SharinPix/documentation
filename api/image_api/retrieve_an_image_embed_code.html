@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image API API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image API API</h1>
+
+      <div class="article">
+        <h2>Retrieve an image embed code</h2>
+        <h3>GET /api/v1/images/:id/embed</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzIsImlhdCI6MTU1NDc0NTEzMiwidXNlcl9pZCI6Ijg3YzFjOTQ0LWFlMWEtNDUwNy1iNzVjLTkwM2M2NWIwYjZjOCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTM0Ijp7IkFjY2VzcyI6eyJpbWFnZV9saXN0Ijp0cnVlfX19fQ.wRFnuJCM5LcKNH0NgL_5_8tLxA7iQ5QuYNtCBvh6k8I&quot;
+Host: example.org
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET /api/v1/images/8c47b718-83c3-4670-b3bd-e73e86a7f1e3/embed</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzIsImlhdCI6MTU1NDc0NTEzMiwidXNlcl9pZCI6Ijg3YzFjOTQ0LWFlMWEtNDUwNy1iNzVjLTkwM2M2NWIwYjZjOCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTM0Ijp7IkFjY2VzcyI6eyJpbWFnZV9saXN0Ijp0cnVlfX19fQ.wRFnuJCM5LcKNH0NgL_5_8tLxA7iQ5QuYNtCBvh6k8I
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 81c3d5d2-8e82-4cad-87bd-b80606f81654
+X-Runtime: 0.012023
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 940</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;html&quot;: &quot;&lt;video autoplay=\&quot;autoplay\&quot; controls=\&quot;controls\&quot; poster=\&quot;https://res.cloudinary.com/sadaasdasd/video/authenticated/s--zABEla6c--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.jpg\&quot;&gt;&lt;source src=\&quot;https://res.cloudinary.com/sadaasdasd/video/authenticated/s--L9ofyCpV--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.webm\&quot; type=\&quot;video/webm\&quot; /&gt;&lt;source src=\&quot;https://res.cloudinary.com/sadaasdasd/video/authenticated/s--m7UW5Xo9--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.mp4\&quot; type=\&quot;video/mp4\&quot; /&gt;&lt;source src=\&quot;https://res.cloudinary.com/sadaasdasd/video/authenticated/s--_-Y-uawl--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_1000,w_1000/iplggwtcsi2gjybsjg4q.ogv\&quot; type=\&quot;video/ogg\&quot; /&gt;&lt;/video&gt;&quot;
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

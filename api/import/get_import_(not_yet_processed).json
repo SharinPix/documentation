@@ -1,0 +1,55 @@
+{
+  "resource": "Import",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/imports/:id",
+  "description": "get import (not yet processed)",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "id",
+      "description": "import id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/imports/335187bd-86f2-49a2-80f7-d86f231b7ce1",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywidXNlcl9pZCI6ImE4ZDA4MDRhLTlhNmMtNGQ3MS05NjViLWI4Zjc0Y2QyNGU1ZCIsImFiaWxpdGllcyI6eyJpbXBvcnRlZF9hbGJ1bSI6eyJBY2Nlc3MiOnsiaW1hZ2VfdXBsb2FkIjp0cnVlfX19fQ.6VaxCy7uKIxS-ZZ8aZk-Mgr_1_Xv98HvwHK0PZo_tuw\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"335187bd-86f2-49a2-80f7-d86f231b7ce1\",\n  \"organization_id\": \"dd97d290-ddff-4c46-9e28-e4ea0cbb95ea\",\n  \"image_id\": null,\n  \"import_type\": \"url\",\n  \"album_id\": \"00100000123BB201\",\n  \"params\": {\n    \"url\": \"https://exa.com/q\"\n  },\n  \"created_at\": \"2019-04-08T19:38:57.614+02:00\",\n  \"updated_at\": \"2019-04-08T19:38:57.614+02:00\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywidXNlcl9pZCI6ImE4ZDA4MDRhLTlhNmMtNGQ3MS05NjViLWI4Zjc0Y2QyNGU1ZCIsImFiaWxpdGllcyI6eyJpbXBvcnRlZF9hbGJ1bSI6eyJBY2Nlc3MiOnsiaW1hZ2VfdXBsb2FkIjp0cnVlfX19fQ.6VaxCy7uKIxS-ZZ8aZk-Mgr_1_Xv98HvwHK0PZo_tuw",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "e2603e1b-a69b-4ba7-9741-b775019bfd7a",
+        "X-Runtime": "0.005987",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "295"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

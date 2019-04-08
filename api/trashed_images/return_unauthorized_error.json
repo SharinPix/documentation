@@ -1,0 +1,52 @@
+{
+  "resource": "Trashed images",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/trashed_images",
+  "description": "Return unauthorized error",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/trashed_images",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhYmlsaXRpZXMiOnt9LCJpc3MiOiI3NDZhZTAwNS1hM2NiLTQ0YjYtODI3YS1hMjNiZjM4N2IxMzcifQ.prJ9zSk-cVwCZXC_2CBYN8MrR6yaBfONiChvDFHgrrs\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 401,
+      "response_status_text": "Unauthorized",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-message": "Access denied",
+        "Content-Type": "text/html",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "e253d360-88a5-4f90-b885-1814e9e6aa1f",
+        "X-Runtime": "0.004468",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "0"
+      },
+      "response_content_type": "text/html",
+      "curl": null
+    }
+  ]
+}

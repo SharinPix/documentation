@@ -1,0 +1,56 @@
+{
+  "resource": "Tag",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "api/v1/tags/:id",
+  "description": "update public tag with download allowed",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "allow_download",
+      "description": "boolean value"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "api/v1/tags/841d26f9-ea66-4be7-a61c-415703571dce",
+      "request_body": "allow_download=true",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6IjMwOTZlNWI5LWMzNmQtNDU0Yy1hN2U4LTllNDM2ZTdiMzA4ZCIsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiQWNjZXNzIjp7InNoYXJlIjp0cnVlfX19fQ.ONp010MXCEFBjx06aHxnXLoLOf3q4t16AXb0r5LEXzI\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"841d26f9-ea66-4be7-a61c-415703571dce\",\n  \"created_at\": \"2019-04-08T19:38:51.572+02:00\",\n  \"name\": \"tag\",\n  \"label\": \"{\\\"en\\\":\\\"tag\\\",\\\"fr\\\":\\\"tag\\\"}\",\n  \"url\": \"/public_tags/841d26f9-ea66-4be7-a61c-415703571dce\",\n  \"public\": true,\n  \"listed\": false,\n  \"action\": {\n    \"actions\": [\n\n    ]\n  },\n  \"visible\": false,\n  \"color\": \"#00BCD4\",\n  \"color_contrast\": \"#000000\",\n  \"allow_download\": true,\n  \"label_en\": \"tag\",\n  \"label_fr\": \"tag\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6IjMwOTZlNWI5LWMzNmQtNDU0Yy1hN2U4LTllNDM2ZTdiMzA4ZCIsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiQWNjZXNzIjp7InNoYXJlIjp0cnVlfX19fQ.ONp010MXCEFBjx06aHxnXLoLOf3q4t16AXb0r5LEXzI",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "e262f40f-0d05-4b6d-b064-440ce00ad10a",
+        "X-Runtime": "0.010907",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "373"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

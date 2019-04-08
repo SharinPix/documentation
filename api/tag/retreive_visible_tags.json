@@ -1,0 +1,56 @@
+{
+  "resource": "Tag",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/tags",
+  "description": "Retreive visible tags",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "visible",
+      "description": "Should we filter visible tags"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/tags?visible=true",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6IjY1NjIxYTU5LThjZWYtNGJhMC04NDg0LTU1NDc2MjI3MTUyYyIsImFiaWxpdGllcyI6eyJ0YWdzIjp7ImNyZWF0ZSI6InRydWUifX19.DIHoNr1p14XOGS6k_5ygBfDLqWdvdw5QrZfGOjwU0H4\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "visible": "true"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": \"c8273df8-60bc-4a37-b934-a7796ce83035\",\n    \"created_at\": \"2019-04-08T19:38:51.521+02:00\",\n    \"name\": \"Super Tag 3\",\n    \"label\": \"{\\\"en\\\":\\\"Super Tag 3\\\",\\\"fr\\\":\\\"Super Tag 3\\\"}\",\n    \"url\": \"/public_tags/c8273df8-60bc-4a37-b934-a7796ce83035\",\n    \"public\": false,\n    \"listed\": true,\n    \"action\": {\n      \"actions\": [\n\n      ]\n    },\n    \"visible\": true,\n    \"color\": \"#00BCD4\",\n    \"color_contrast\": \"#000000\",\n    \"allow_download\": false,\n    \"label_en\": \"Super Tag 3\",\n    \"label_fr\": \"Super Tag 3\"\n  },\n  {\n    \"id\": \"f8b78db6-7ea9-4e4d-81da-6814ba0a59e9\",\n    \"created_at\": \"2019-04-08T19:38:51.524+02:00\",\n    \"name\": \"Super Tag 4\",\n    \"label\": \"{\\\"en\\\":\\\"Super Tag 4\\\",\\\"fr\\\":\\\"Super Tag 4\\\"}\",\n    \"url\": \"/public_tags/f8b78db6-7ea9-4e4d-81da-6814ba0a59e9\",\n    \"public\": false,\n    \"listed\": true,\n    \"action\": {\n      \"actions\": [\n\n      ]\n    },\n    \"visible\": true,\n    \"color\": \"#FF5722\",\n    \"color_contrast\": \"#000000\",\n    \"allow_download\": false,\n    \"label_en\": \"Super Tag 4\",\n    \"label_fr\": \"Super Tag 4\"\n  }\n]",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6IjY1NjIxYTU5LThjZWYtNGJhMC04NDg0LTU1NDc2MjI3MTUyYyIsImFiaWxpdGllcyI6eyJ0YWdzIjp7ImNyZWF0ZSI6InRydWUifX19.DIHoNr1p14XOGS6k_5ygBfDLqWdvdw5QrZfGOjwU0H4",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "2a49cb80-bcb8-4d10-b57d-16251316b4f2",
+        "X-Runtime": "0.009737",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "829"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "resource": "Tag",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/tags/autocomplete",
+  "description": "Returns autocomplete tags for einstein tags",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "q",
+      "description": "Search request for tags where listed false for einstein"
+    },
+    {
+      "name": "filters",
+      "description": "tag attribute"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/tags/autocomplete?q=uper&filters=%7B+%22listed%22%3A+false+%7D",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzAsImlhdCI6MTU1NDc0NTEzMCwidXNlcl9pZCI6IjVmMjQxMGEzLTRlNTYtNDBlOS1iZWFlLTIwMTM4YTRkZDFiMCIsImFiaWxpdGllcyI6eyJ0YWdzIjp7ImNyZWF0ZSI6dHJ1ZX19fQ.NYPYaBnzWEbr5t15_Zc11WT4eIhPhmycZYBja-B5BQs\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "q": "uper",
+        "filters": "{ \"listed\": false }"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": \"44cddfcc-83fe-42f4-82aa-813d3e20a093\",\n    \"name\": \"Super tag\",\n    \"color\": \"#2196F3\",\n    \"color_contrast\": \"#ffffff\",\n    \"label_en\": \"Super tag\",\n    \"label_fr\": \"Super tag\"\n  }\n]",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6IjVmMjQxMGEzLTRlNTYtNDBlOS1iZWFlLTIwMTM4YTRkZDFiMCIsImFiaWxpdGllcyI6eyJ0YWdzIjp7ImNyZWF0ZSI6dHJ1ZX19fQ.r_WxSxAewfrOfbZUO1x_gzE1jwJZtN6Xmym5lLb_ij8",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "7820c850-51a4-4553-b0ac-18d22e1044d3",
+        "X-Runtime": "0.021228",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "157"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

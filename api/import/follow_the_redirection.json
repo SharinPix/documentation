@@ -1,0 +1,72 @@
+{
+  "resource": "Import",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/imports",
+  "description": "follow the redirection",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "album_id",
+      "description": "Album name"
+    },
+    {
+      "name": "filename",
+      "description": "Image filename"
+    },
+    {
+      "name": "metadata",
+      "description": "Image metadata"
+    },
+    {
+      "name": "url",
+      "description": "Url of the image to import"
+    },
+    {
+      "name": "headers",
+      "description": "The headers to use to when making the get request"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/imports",
+      "request_body": "album_id=imported_album&filename=image123_asdasd.JpG&metadata[attachmentId]=00P24000003vSXsEAM&url=http%3A%2F%2Florempixel.com%2F100%2F100%2F&headers[Authorization]=Token+token%3D%22eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywiaXNzIjoiMGZjMmFhZTctMzZlNi00NzgxLWIwZDktOTc3OGQxMWI0MGRlIiwiYWJpbGl0aWVzIjp7ImltcG9ydGVkX2FsYnVtIjp7IkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.EEPhtY0Ectmul56PGVJfJjEOuSlRtl5qZVkyBZCmunA%22",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywiaXNzIjoiMGZjMmFhZTctMzZlNi00NzgxLWIwZDktOTc3OGQxMWI0MGRlIiwiYWJpbGl0aWVzIjp7ImltcG9ydGVkX2FsYnVtIjp7IkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.EEPhtY0Ectmul56PGVJfJjEOuSlRtl5qZVkyBZCmunA\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"4c77bb52-1caf-47ce-a73a-3bad2d6ccd6c\",\n  \"organization_id\": \"04432836-ea1f-426d-a98d-1334d68e56ed\",\n  \"image_id\": null,\n  \"import_type\": null,\n  \"album_id\": \"imported_album\",\n  \"params\": {\n    \"album_id\": \"imported_album\",\n    \"filename\": \"image123_asdasd.JpG\",\n    \"metadata\": {\n      \"attachmentId\": \"00P24000003vSXsEAM\"\n    },\n    \"url\": \"http://lorempixel.com/100/100/\",\n    \"headers\": {\n      \"Authorization\": \"Token token=\\\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywiaXNzIjoiMGZjMmFhZTctMzZlNi00NzgxLWIwZDktOTc3OGQxMWI0MGRlIiwiYWJpbGl0aWVzIjp7ImltcG9ydGVkX2FsYnVtIjp7IkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.EEPhtY0Ectmul56PGVJfJjEOuSlRtl5qZVkyBZCmunA\\\"\"\n    },\n    \"controller\": \"api/v1/imports\",\n    \"action\": \"create\"\n  },\n  \"created_at\": \"2019-04-08T19:38:57.430+02:00\",\n  \"updated_at\": \"2019-04-08T19:38:57.430+02:00\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywiaXNzIjoiMGZjMmFhZTctMzZlNi00NzgxLWIwZDktOTc3OGQxMWI0MGRlIiwiYWJpbGl0aWVzIjp7ImltcG9ydGVkX2FsYnVtIjp7IkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.EEPhtY0Ectmul56PGVJfJjEOuSlRtl5qZVkyBZCmunA",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "3ac57e29-1dfd-44b9-b9e8-d2f7a33158d6",
+        "X-Runtime": "0.016304",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "783"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Storage file API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Storage file API</h1>
+
+      <div class="article">
+        <h2>Return the storage_file with a image</h2>
+        <h3>PUT /api/v1/storage_files/:id</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">infos</span>
+                </td>
+                <td>
+                  <span class="description">Infos returned by the endoint</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6Ijk4ZTBhYzZmLTFjZmYtNDcyMS04MGU4LTM5NjA5ZjU0Yjc1NSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMjY1Ijp7IkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.Qua_vXmaaj9y8ZVXWwN_Eob2_IDgDjM0PdpNC-YPtII&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">PUT /api/v1/storage_files/6ac3ff51-0ab6-441c-abbc-0dfba47e38a8</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">infos=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E%0A%3CPostResponse%3E%3CLocation%3Ehttps%3A%2F%2Fsharinpix-pix-dev.s3-accelerate.dualstack.amazonaws.com%2Fombr-ngrok-io%252Fstorage_files%252Fdb%252F79%252Fdb79b3d8-9d06-4100-9e4a-43b0348d9b21%252Fimg.jpg%3C%2FLocation%3E%3CBucket%3Esharinpix-pix-dev%3C%2FBucket%3E%3CKey%3Eombr-ngrok-io%2Fstorage_files%2Fdb%2F79%2Fdb79b3d8-9d06-4100-9e4a-43b0348d9b21%2Fimg.jpg%3C%2FKey%3E%3CETag%3E%22e987cefa00eee258bf9367cc25983724%22%3C%2FETag%3E%3C%2FPostResponse%3E%0A</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6Ijk4ZTBhYzZmLTFjZmYtNDcyMS04MGU4LTM5NjA5ZjU0Yjc1NSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMjY1Ijp7IkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.Qua_vXmaaj9y8ZVXWwN_Eob2_IDgDjM0PdpNC-YPtII
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: d79a1b80-7ab7-421c-86fe-ce95ac304b20
+X-Runtime: 0.028183
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 2824</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;id&quot;: &quot;6ac3ff51-0ab6-441c-abbc-0dfba47e38a8&quot;,
+  &quot;organization_id&quot;: &quot;ede9affc-7987-4b38-ba9b-2d8ae553952f&quot;,
+  &quot;image&quot;: {
+    &quot;id&quot;: &quot;560804ab-88bd-431e-bd62-502d87eaf041&quot;,
+    &quot;public_id&quot;: &quot;560804ab-88bd-431e-bd62-502d87eaf041&quot;,
+    &quot;infos&quot;: {
+      &quot;bytes&quot;: 3145728,
+      &quot;color&quot;: &quot;#6c401b&quot;,
+      &quot;exifs&quot;: {
+        &quot;Model&quot;: &quot;NIKON D2H&quot;
+      },
+      &quot;original_filename&quot;: &quot;This is an è à Amazing file&quot;,
+      &quot;format&quot;: &quot;jpg&quot;,
+      &quot;md5&quot;: &quot;e987cefa00eee258bf9367cc25983724&quot;
+    },
+    &quot;exifs&quot;: {
+      &quot;Model&quot;: &quot;NIKON D2H&quot;
+    },
+    &quot;gps&quot;: null,
+    &quot;gps_ip&quot;: null,
+    &quot;gps_exifs&quot;: null,
+    &quot;gps_html&quot;: null,
+    &quot;created_at&quot;: &quot;2019-04-08T19:39:03.950+02:00&quot;,
+    &quot;updated_at&quot;: &quot;2019-04-08T19:39:03.950+02:00&quot;,
+    &quot;taken_at&quot;: null,
+    &quot;width&quot;: 3000,
+    &quot;height&quot;: 3000,
+    &quot;rotation&quot;: 0,
+    &quot;crop_x&quot;: 0.0,
+    &quot;crop_y&quot;: 0.0,
+    &quot;crop_w&quot;: 0.0,
+    &quot;crop_h&quot;: 0.0,
+    &quot;metadatas&quot;: {
+    },
+    &quot;original_url&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/this-is-an-e-a-amazing-file.jpg?s=4b55450&amp;url=localhost/images/560804ab-88bd-431e-bd62-502d87eaf041/thumbnails/original-5f5ccf19ef3.jpg&quot;,
+    &quot;original_width&quot;: 3000,
+    &quot;original_height&quot;: 3000,
+    &quot;external_urls&quot;: {
+      &quot;fill100&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--yHjaSjf0--/c_fit,w_300/raw_placeholder.jpg&quot;,
+      &quot;fit2000&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--vY1va9tF--/c_fit,h_2000,w_2000/raw_placeholder.jpg&quot;,
+      &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/this-is-an-e-a-amazing-file.jpg?s=41973b0&amp;url=localhost/images/560804ab-88bd-431e-bd62-502d87eaf041/thumbnails/mini-a4af55d95e0.jpg&quot;,
+      &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/this-is-an-e-a-amazing-file.jpg?s=8191763&amp;url=localhost/images/560804ab-88bd-431e-bd62-502d87eaf041/thumbnails/thumbnail-27c81a477fe.jpg&quot;,
+      &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/this-is-an-e-a-amazing-file.jpg?s=cc9c187&amp;url=localhost/images/560804ab-88bd-431e-bd62-502d87eaf041/thumbnails/full-78613ac3566.jpg&quot;
+    },
+    &quot;filename&quot;: &quot;This is an è à Amazing file&quot;,
+    &quot;format&quot;: &quot;jpg&quot;,
+    &quot;title&quot;: null,
+    &quot;description&quot;: null,
+    &quot;page&quot;: 1,
+    &quot;group_id&quot;: null,
+    &quot;color&quot;: &quot;#6c401b&quot;,
+    &quot;size&quot;: 3145728,
+    &quot;processed&quot;: false,
+    &quot;processing_error&quot;: null,
+    &quot;album_id&quot;: &quot;00100000123BB265&quot;,
+    &quot;thumbnails&quot;: {
+      &quot;original&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--0KCZNF0J--/fl_attachment/dpr_auto,q_auto,f_auto/raw_placeholder.jpg&quot;,
+      &quot;full_no_sharinpix&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--xBErTufU--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/raw_placeholder.jpg&quot;,
+      &quot;full&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--xBErTufU--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/raw_placeholder.jpg&quot;,
+      &quot;large&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--c5-w2fj8--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/raw_placeholder.jpg&quot;,
+      &quot;mini&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--EmjULx71--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/raw_placeholder.jpg&quot;
+    }
+  }
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

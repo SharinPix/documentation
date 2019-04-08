@@ -1,0 +1,72 @@
+{
+  "resource": "Import",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/imports",
+  "description": "Import from attachment",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "album_id",
+      "description": "Album name"
+    },
+    {
+      "name": "filename",
+      "description": "Image filename"
+    },
+    {
+      "name": "import_type",
+      "description": "Import type"
+    },
+    {
+      "name": "metadatas",
+      "description": "Image metadata"
+    },
+    {
+      "name": "attachment_id",
+      "description": "Salesforce attachment id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/imports",
+      "request_body": "album_id=5005800000HEXCtAAP&filename=Image123.jpg&import_type=salesforce&metadatas[attachmentId]=00P4I00000zyw3eUAA&attachment_id=00P4I00000zyw3eUAA",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywidXNlcl9pZCI6ImY3NmNkOWQ3LTg1OWQtNGQzYi1iNjVlLWQ0ODE3ZGM5NmY1OCJ9.lGdKEApIZJj2cjQ7KYLtokP3cOkE18o-TEG5Tg7E3-0\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"ab445ced-80a2-4659-beaa-e1e9b28edee5\",\n  \"organization_id\": \"91e4e020-bd76-4615-baf0-63263c5f3416\",\n  \"image_id\": null,\n  \"import_type\": \"salesforce\",\n  \"album_id\": \"5005800000HEXCtAAP\",\n  \"params\": {\n    \"album_id\": \"5005800000HEXCtAAP\",\n    \"filename\": \"Image123.jpg\",\n    \"import_type\": \"salesforce\",\n    \"metadatas\": {\n      \"attachmentId\": \"00P4I00000zyw3eUAA\"\n    },\n    \"attachment_id\": \"00P4I00000zyw3eUAA\",\n    \"controller\": \"api/v1/imports\",\n    \"action\": \"create\"\n  },\n  \"created_at\": \"2019-04-08T19:38:57.787+02:00\",\n  \"updated_at\": \"2019-04-08T19:38:57.787+02:00\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzcsImlhdCI6MTU1NDc0NTEzNywidXNlcl9pZCI6ImY3NmNkOWQ3LTg1OWQtNGQzYi1iNjVlLWQ0ODE3ZGM5NmY1OCJ9.lGdKEApIZJj2cjQ7KYLtokP3cOkE18o-TEG5Tg7E3-0",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "20e11784-6c4f-4f81-a530-4dcebe62cf4a",
+        "X-Runtime": "0.208305",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "498"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

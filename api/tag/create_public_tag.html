@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tag API</h1>
+
+      <div class="article">
+        <h2>Create public tag</h2>
+        <h3>POST api/v1/tags</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">name</span>
+                </td>
+                <td>
+                  <span class="description">Name of the tag</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">label</span>
+                </td>
+                <td>
+                  <span class="description">Label of the tag</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">listed</span>
+                </td>
+                <td>
+                  <span class="description">Allow tag to be listed - Boolean value</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">public</span>
+                </td>
+                <td>
+                  <span class="description">Allow tag to be available publicly - Boolean value</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzAsImlhdCI6MTU1NDc0NTEzMCwidXNlcl9pZCI6IjE1NjkxMjA5LWU3YWMtNDEyOS05YTcyLWM4OTBlNDIyOWFmNiIsImFiaWxpdGllcyI6eyJhbWF6aW5nX2lkIjp7IkFjY2VzcyI6eyJzaGFyZSI6dHJ1ZX19fX0.izOZ9nvkVeHxrCx0klKXP0zwT9LikMaDwK59gPn4oDM&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">POST api/v1/tags</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">name=Super+Tag&listed=false&public=true</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzAsImlhdCI6MTU1NDc0NTEzMCwidXNlcl9pZCI6IjE1NjkxMjA5LWU3YWMtNDEyOS05YTcyLWM4OTBlNDIyOWFmNiIsImFiaWxpdGllcyI6eyJhbWF6aW5nX2lkIjp7IkFjY2VzcyI6eyJzaGFyZSI6dHJ1ZX19fX0.izOZ9nvkVeHxrCx0klKXP0zwT9LikMaDwK59gPn4oDM
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 60e84870-ffd4-4fea-824c-6eb331d1b351
+X-Runtime: 0.013327
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 404</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;id&quot;: &quot;b5ab0712-3e8f-4cd1-a3f2-aa100001345a&quot;,
+  &quot;created_at&quot;: &quot;2019-04-08T19:38:50.698+02:00&quot;,
+  &quot;name&quot;: &quot;super-tag&quot;,
+  &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;Super Tag\&quot;,\&quot;fr\&quot;:\&quot;Super Tag\&quot;}&quot;,
+  &quot;url&quot;: &quot;/public_tags/b5ab0712-3e8f-4cd1-a3f2-aa100001345a&quot;,
+  &quot;public&quot;: true,
+  &quot;listed&quot;: false,
+  &quot;action&quot;: {
+    &quot;actions&quot;: [
+
+    ]
+  },
+  &quot;visible&quot;: false,
+  &quot;color&quot;: &quot;#2196F3&quot;,
+  &quot;color_contrast&quot;: &quot;#ffffff&quot;,
+  &quot;allow_download&quot;: false,
+  &quot;label_en&quot;: &quot;Super Tag&quot;,
+  &quot;label_fr&quot;: &quot;Super Tag&quot;
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

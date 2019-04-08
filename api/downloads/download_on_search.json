@@ -1,0 +1,56 @@
+{
+  "resource": "Downloads",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/downloads",
+  "description": "Download on search",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "image_ids",
+      "description": "A list of image public_ids to be added in the zip."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/downloads",
+      "request_body": "image_ids[]=8bfc7a85-06df-4be3-b5af-39bb8aaa2aa5&image_ids[]=48e9b7a7-1574-4185-a880-fb35f7412572&image_ids[]=b5a757c4-42f7-41c5-bf1b-228acc0744b8&image_ids[]=5daf5678-047c-4078-bbae-22e82141bd5b&image_ids[]=2865a6fe-0415-4084-8659-a67f8da013eb&image_ids[]=a9a19610-3b99-437a-9150-e89efa821245&image_ids[]=c18e9774-b1c2-4890-adc2-a7b9c031f2f1&image_ids[]=e53ed4c1-979d-4a3b-8dc0-a65d18879406",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJlMjE4YzYwMi00ZWI1LTRkZDEtYjc0MC01ODFjMjZlOGNiYzAiLCJxIjoiKiIsImRvd25sb2FkIjp0cnVlfQ.bNuhmeoRsRbz3pESvxKPRHsEpsvun-koiAgLj0DMBMQ\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"ccffb235-0405-431d-a337-b1b2bf8d3052\",\n  \"zip_url\": \"https://zipper-dev.herokuapp.com:443/0/https%3A%2F%2Flocalhost%3A5001%2Fapi%2Fv1%2Fdownloads%2Fccffb235%2D0405%2D431d%2Da337%2Db1b2bf8d3052%2Fzip%3Ftimestamp%3D1554674400/eb837ae10/zip.zip\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjksImlhdCI6MTU1NDc0NTEyOSwiaXNzIjoiZTIxOGM2MDItNGViNS00ZGQxLWI3NDAtNTgxYzI2ZThjYmMwIiwicSI6IioiLCJkb3dubG9hZCI6dHJ1ZX0.wik1x_Z12MJUwcMkb7EtvAVo-XRzUYYJvfm6XSEnXCA",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "4f4cb4db-2fc7-4d6d-a201-a2fd1f3521ad",
+        "X-Runtime": "0.026080",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "246"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

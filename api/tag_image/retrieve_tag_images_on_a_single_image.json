@@ -1,0 +1,66 @@
+{
+  "resource": "Tag Image",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/tag_images",
+  "description": "Retrieve tag images on a single image",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "tag_name",
+      "description": "Name of the tag"
+    },
+    {
+      "name": "image_id",
+      "description": "Id of image"
+    },
+    {
+      "name": "album_id",
+      "description": "Id of album"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/tag_images?tag_name=MyTag&image_id=7d4cd3a3-21af-47e3-ac15-1eb3cfac5c8e&album_id=00324000004ijWS",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjUsImlhdCI6MTU1NDc0NTEyNSwidXNlcl9pZCI6ImI4MWQ4MjIwLWVjMjUtNDMxOC1iOTEwLWQ1NDExMGUwYmJjZSIsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6Ik15VGFnIiwiZnIiOiJNeVRhZyJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19fQ.gvK3jbreSpd0MKNJm3iMdvZobxs9F0qMSQc0sXaGU7Q\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "tag_name": "MyTag",
+        "image_id": "7d4cd3a3-21af-47e3-ac15-1eb3cfac5c8e",
+        "album_id": "00324000004ijWS"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": \"858ce861-4487-4847-9f59-a04f9dac0f30\",\n    \"created_at\": \"2019-04-08T19:38:45.186+02:00\",\n    \"user\": \"b81d8220-ec25-4318-b910-d54110e0bbce\",\n    \"image\": {\n      \"id\": \"7d4cd3a3-21af-47e3-ac15-1eb3cfac5c8e\",\n      \"public_id\": \"7d4cd3a3-21af-47e3-ac15-1eb3cfac5c8e\",\n      \"infos\": {\n        \"bytes\": 3604,\n        \"created_at\": \"2015-09-25T13:32:55Z\",\n        \"etag\": \"5a98d4d3e5d39024abf237be55e99b15\",\n        \"format\": \"png\",\n        \"height\": 48,\n        \"resource_type\": \"image\",\n        \"tags\": [\n          \"00324000004ijWS\"\n        ],\n        \"type\": \"authenticated\",\n        \"width\": 48,\n        \"original_filename\": \"Super Image\",\n        \"location\": {\n          \"accuracy\": 36,\n          \"latitude\": 48.861934399999996,\n          \"longitude\": 2.348967\n        }\n      },\n      \"exifs\": {\n      },\n      \"gps\": [\n        48.861934399999996,\n        2.348967\n      ],\n      \"gps_ip\": null,\n      \"gps_exifs\": null,\n      \"gps_html\": [\n        48.861934399999996,\n        2.348967\n      ],\n      \"created_at\": \"2019-04-08T19:38:45.168+02:00\",\n      \"updated_at\": \"2019-04-08T19:38:45.168+02:00\",\n      \"taken_at\": null,\n      \"width\": 48,\n      \"height\": 48,\n      \"rotation\": 0,\n      \"crop_x\": 0.0,\n      \"crop_y\": 0.0,\n      \"crop_w\": 0.0,\n      \"crop_h\": 0.0,\n      \"metadatas\": {\n      },\n      \"original_url\": \"https://res.cloudinary.com/sadaasdasd/image/authenticated/s--uVNc3bha--/fl_attachment/v123123/3f8612de3669.jpg\",\n      \"original_width\": 48,\n      \"original_height\": 48,\n      \"external_urls\": {\n        \"fill100\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--hKPCVlG3--/c_fit,w_300/v123123/3f8612de3669.jpg\",\n        \"fit2000\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--2Gv1ggls--/c_fit,h_2000,w_2000/v123123/3f8612de3669.jpg\",\n        \"mini\": \"https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=53c780d&url=localhost/images/7d4cd3a3-21af-47e3-ac15-1eb3cfac5c8e/thumbnails/mini-5a0dad2a2cc.jpg\",\n        \"large\": \"https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=c3b6eab&url=localhost/images/7d4cd3a3-21af-47e3-ac15-1eb3cfac5c8e/thumbnails/thumbnail-9b02124e225.jpg\",\n        \"full\": \"https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=02bd4a2&url=localhost/images/7d4cd3a3-21af-47e3-ac15-1eb3cfac5c8e/thumbnails/full-a59915ee0ad.jpg\"\n      },\n      \"filename\": \"Super Image\",\n      \"format\": \"png\",\n      \"title\": null,\n      \"description\": null,\n      \"page\": 1,\n      \"group_id\": null,\n      \"color\": \"#7D7D7D\",\n      \"size\": 3604,\n      \"processed\": false,\n      \"processing_error\": null,\n      \"album_id\": \"00324000004ijWS\",\n      \"thumbnails\": {\n        \"original\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--9EyEF6N2--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3f8612de3669.jpg\",\n        \"full_no_sharinpix\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--7CRCj0GE--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3f8612de3669.jpg\",\n        \"full\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--7CRCj0GE--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3f8612de3669.jpg\",\n        \"large\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--64KIMtxd--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3f8612de3669.jpg\",\n        \"mini\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--r2uG5Lze--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3f8612de3669.jpg\"\n      }\n    },\n    \"tag\": {\n      \"id\": \"bf11d531-b20a-474f-808e-bcafaa7f85df\",\n      \"created_at\": \"2019-04-08T19:38:45.159+02:00\",\n      \"name\": \"MyTag\",\n      \"label\": \"{\\\"en\\\":\\\"MyTag\\\",\\\"fr\\\":\\\"MyTag\\\"}\",\n      \"url\": \"/public_tags/bf11d531-b20a-474f-808e-bcafaa7f85df\",\n      \"public\": false,\n      \"listed\": true,\n      \"action\": {\n        \"actions\": [\n\n        ]\n      },\n      \"visible\": false,\n      \"color\": \"#03A9F4\",\n      \"color_contrast\": \"#000000\",\n      \"allow_download\": false,\n      \"label_en\": \"MyTag\",\n      \"label_fr\": \"MyTag\"\n    }\n  }\n]",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjUsImlhdCI6MTU1NDc0NTEyNSwidXNlcl9pZCI6ImI4MWQ4MjIwLWVjMjUtNDMxOC1iOTEwLWQ1NDExMGUwYmJjZSIsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6Ik15VGFnIiwiZnIiOiJNeVRhZyJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19fQ.gvK3jbreSpd0MKNJm3iMdvZobxs9F0qMSQc0sXaGU7Q",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "b7da020f-90c2-48ee-9307-58f405613eba",
+        "X-Runtime": "0.029093",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "3436"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

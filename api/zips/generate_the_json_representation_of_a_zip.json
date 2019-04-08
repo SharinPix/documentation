@@ -1,0 +1,57 @@
+{
+  "resource": "Zips",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/organizations/:organization_id/albums/:album_id/zip",
+  "description": "generate the json representation of a zip",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "timestamp",
+      "description": "The timestamp used to expire the url"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/organizations/f012de45-20a7-4041-99bc-a087b21e96e9/albums/00100000123BB212/zip?timestamp=1554745138",
+      "request_body": null,
+      "request_headers": {
+        "X-Zipper-Signature": null,
+        "X-Zipper-Timestamp": null,
+        "X-Zipper-Request-Id": null,
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "timestamp": "1554745138"
+      },
+      "request_content_type": null,
+      "response_status": 401,
+      "response_status_text": "Unauthorized",
+      "response_body": "Signature is empty",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "ece3c8b9-0691-4412-baf2-29413f0b3fc0",
+        "X-Runtime": "0.002611",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "18"
+      },
+      "response_content_type": "text/plain; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

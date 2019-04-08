@@ -1,0 +1,50 @@
+{
+  "resource": "Thumbnails",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/images/:image_id/thumbnails/:type",
+  "description": "image not found",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/images/b2a9ffc6-924a-4467-bb19-042bde661a77/thumbnails/thumbnail-3998a480e4c.jpg",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 404,
+      "response_status_text": "Not Found",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "image/jpeg",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "30294c21-e9f2-45b7-84c3-1ce268a81b80",
+        "X-Runtime": "0.003899",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "0"
+      },
+      "response_content_type": "image/jpeg",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "resource": "Native Upload",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/native_upload",
+  "description": "Get upload form (obsolete)",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/native_upload",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"url\": \"https://api.cloudinary.com/v1_1/sadaasdasd/auto/upload\",\n  \"expires_at\": 1557337146,\n  \"params\": {\n    \"colors\": 1,\n    \"faces\": 1,\n    \"image_metadata\": 1,\n    \"notification_url\": \"https://localhost:5001/api/v1/native_upload\",\n    \"phash\": 1,\n    \"tags\": \"sharinpix_mobile_app_images\",\n    \"timestamp\": 1557337146,\n    \"type\": \"authenticated\",\n    \"signature\": \"756896a434a0e56edc5328de8e5493e52fae4176\",\n    \"api_key\": \"123123123123\"\n  }\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "708fb0d2-45a9-490c-8fbe-1ba9ccde1abe",
+        "X-Runtime": "0.002713",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "377"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

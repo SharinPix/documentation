@@ -1,0 +1,51 @@
+{
+  "resource": "Native Upload",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/native_upload?app_version=2",
+  "description": "Get upload form",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/native_upload?app_version=2",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "app_version": "2"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"url\": \"https://api.cloudinary.com/v1_1/sadaasdasd/auto/upload\",\n  \"expires_at\": 1557337145,\n  \"params\": {\n    \"colors\": 1,\n    \"faces\": 1,\n    \"image_metadata\": 1,\n    \"notification_url\": \"https://localhost:5001/api/v1/native_upload/image\",\n    \"phash\": 1,\n    \"tags\": \"sharinpix_mobile_app_images\",\n    \"timestamp\": 1557337145,\n    \"type\": \"authenticated\",\n    \"signature\": \"cad190be6bda4047e380c3fd646bb38204e231c7\",\n    \"api_key\": \"123123123123\"\n  }\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "3eea97b2-3c49-4b6a-9de2-9c87cbb71319",
+        "X-Runtime": "0.005668",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "383"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

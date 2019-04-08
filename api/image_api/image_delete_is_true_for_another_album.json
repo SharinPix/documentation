@@ -1,0 +1,53 @@
+{
+  "resource": "Image API",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/api/v1/images/:id",
+  "description": "image_delete is true for another album",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/images/873b258d-e0ea-41d2-ad64-efe7ee7ddfcb",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxIjoiMDBEMjQwMDAwMDBZcDdnRkFDIiwiaW1hZ2VfZGVsZXRlIjp0cnVlLCJpc3MiOiI2OTA3MTlhMC1hOWJhLTQwYzUtOTg2Zi0zZGQzNDY2OGY0YzkifQ.hw2voConGP6wVWs37lUqhH-tXqHItCt9EVerw7Uxd0o\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 401,
+      "response_status_text": "Unauthorized",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-message": "Access denied",
+        "Content-Type": "text/html",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "8061b2c0-a3b4-44f7-9389-7fe770fe0640",
+        "X-Runtime": "0.016109",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "0"
+      },
+      "response_content_type": "text/html",
+      "curl": null
+    }
+  ]
+}

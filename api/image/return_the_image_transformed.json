@@ -1,0 +1,66 @@
+{
+  "resource": "Image",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/images/:image_id",
+  "description": "Return the image transformed",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "width",
+      "description": "Width of image."
+    },
+    {
+      "name": "height",
+      "description": "Height of image."
+    },
+    {
+      "name": "crop",
+      "description": "Crop function (fill, fit, scale, pad) of the image."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/images/64171752-36dd-42aa-b3d3-d769a410b6bb?width=201&height=202&crop=fit",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "width": "201",
+        "height": "202",
+        "crop": "fit"
+      },
+      "request_content_type": null,
+      "response_status": 302,
+      "response_status_text": "Found",
+      "response_body": "<html><body>You are being <a href=\"http://example.org/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--mnPq_Igx--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_202,w_201/v123123/deeb63e7d71e.jpg\">redirected</a>.</body></html>",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Access-Control-Allow-Origin": "*",
+        "Location": "http://example.org/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--mnPq_Igx--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_202,w_201/v123123/deeb63e7d71e.jpg",
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "ba4108f9-f503-48d0-9e13-571ae0b632bb",
+        "X-Runtime": "0.006617",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "273"
+      },
+      "response_content_type": "text/html; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

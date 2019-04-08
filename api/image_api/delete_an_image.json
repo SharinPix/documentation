@@ -1,0 +1,50 @@
+{
+  "resource": "Image API",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/api/v1/images/:id",
+  "description": "Delete an image",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/images/51d818e2-40fc-4a2f-adca-43a6cca11ee5",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6ImUyMTgyYzUwLTY0YTMtNGI4OS1hNzMyLTczNThmNDAwNWNiYSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTYwIjp7IkFjY2VzcyI6eyJpbWFnZV9kZWxldGUiOnRydWV9fX19.-OtIdLp7QcWTz0F6vvKQk6738ZZoUhtdlkc-LSluBF4\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6ImUyMTgyYzUwLTY0YTMtNGI4OS1hNzMyLTczNThmNDAwNWNiYSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTYwIjp7IkFjY2VzcyI6eyJpbWFnZV9kZWxldGUiOnRydWV9fX19.-OtIdLp7QcWTz0F6vvKQk6738ZZoUhtdlkc-LSluBF4",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "fdd86432-3a9f-4eb0-a883-236dff113df9",
+        "X-Runtime": "0.012171",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

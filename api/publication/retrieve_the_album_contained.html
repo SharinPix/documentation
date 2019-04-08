@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Publication API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Publication API</h1>
+
+      <div class="article">
+        <h2>Retrieve the album contained</h2>
+        <h3>GET /api/v1/publications/:publication_id/album</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6IjkwMWVlMzFlLTYzYjUtNDUxMy05ZGFmLWU1Y2FlODVmNGU3OSJ9.DlIam-tsQfM8tqvHZb2HfwqpxurbXOn9T4yj5lnR2c4&quot;
+Host: example.org
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET /api/v1/publications/e0380999-bfca-4aee-90d9-065e2297d7cf/album</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-access-image_delete: true
+X-access-image_upload: true
+X-access-image_share: false
+X-access-image_rotate: true
+X-access-image_crop: true
+X-access-stats: true
+X-access-image_copy: false
+X-access-paste: false
+X-access-share: false
+X-access-image_duplicate: false
+X-access-create_tag: false
+X-access-image_download: true
+X-access-image_annotate: false
+X-access-fullscreen: 
+X-access-einstein_box: 
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6IjkwMWVlMzFlLTYzYjUtNDUxMy05ZGFmLWU1Y2FlODVmNGU3OSJ9.DlIam-tsQfM8tqvHZb2HfwqpxurbXOn9T4yj5lnR2c4
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 8d5e01ce-22ae-4f93-8fef-f46b6e2e397f
+X-Runtime: 0.052451
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 969</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;id&quot;: &quot;00100000123BB253&quot;,
+  &quot;public_id&quot;: &quot;00100000123BB253&quot;,
+  &quot;images_count&quot;: 0,
+  &quot;views_count&quot;: 0,
+  &quot;upload_form&quot;: {
+    &quot;url&quot;: &quot;https://api.cloudinary.com/v1_1/sadaasdasd/auto/upload&quot;,
+    &quot;expires_at&quot;: 1555349943,
+    &quot;name&quot;: &quot;00100000123BB253&quot;,
+    &quot;id&quot;: &quot;78494409-c657-41c9-8c7e-843080388477-00100000123BB253&quot;,
+    &quot;params&quot;: {
+      &quot;colors&quot;: 1,
+      &quot;faces&quot;: 1,
+      &quot;image_metadata&quot;: 1,
+      &quot;notification_url&quot;: &quot;https://localhost:5001/api/v1/cloudinary?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6IjkwMWVlMzFlLTYzYjUtNDUxMy05ZGFmLWU1Y2FlODVmNGU3OSIsImFsYnVtX2lkIjoiMDAxMDAwMDAxMjNCQjI1MyIsIm9yZ2FuaXphdGlvbl9pZCI6Ijc4NDk0NDA5LWM2NTctNDFjOS04YzdlLTg0MzA4MDM4ODQ3NyJ9.EgkqZcAeHDtm_Bsab9ukRjO-uy6RBOB3enh543dPtPU&quot;,
+      &quot;phash&quot;: 1,
+      &quot;tags&quot;: &quot;00100000123BB253&quot;,
+      &quot;timestamp&quot;: 1555349943,
+      &quot;type&quot;: &quot;authenticated&quot;,
+      &quot;signature&quot;: &quot;3537a7fd95b65d00696e18f72fe388aae83014dc&quot;,
+      &quot;api_key&quot;: &quot;123123123123&quot;
+    },
+    &quot;test_url&quot;: &quot;/upload_test&quot;
+  },
+  &quot;organization_id&quot;: &quot;78494409-c657-41c9-8c7e-843080388477&quot;,
+  &quot;thumbnails&quot;: [
+
+  ]
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "resource": "Image API",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/api/v1/images/:id",
+  "description": "image_delete ability inside search token",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/images/7e10717a-b5df-438c-a7f1-8e03c18b70cb",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJxIjoiMDBEMjQwMDAwMDBZcDdnRUFDIiwiaW1hZ2VfZGVsZXRlIjp0cnVlLCJpc3MiOiJiZTVmYTRhZi1kMjNlLTQyMDItODlhMy02YjZmNjAwY2UzMGMifQ.D04Shf2LZVLe9D0IvwkSN8Shd3w1jWBJY4pgJMawf0g\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzMsImlhdCI6MTU1NDc0NTEzMywiaXNzIjoiYmU1ZmE0YWYtZDIzZS00MjAyLTg5YTMtNmI2ZjYwMGNlMzBjIiwicSI6IjAwRDI0MDAwMDAwWXA3Z0VBQyIsImltYWdlX2RlbGV0ZSI6dHJ1ZX0.Dtxi8iDIfBC60lBLlxi2OoCr-FIUtzqy8rO8PLW2heo",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "f8aee7e1-173d-4672-b767-1a1af13cc86f",
+        "X-Runtime": "0.022609",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "resource": "Einstein Prediction",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/einstein_prediction",
+  "description": "Create Einstein Prediction",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "imageId",
+      "description": "Image id"
+    },
+    {
+      "name": "modelId",
+      "description": "Einstein Model Salesforce Id (18 chars)"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/einstein_prediction",
+      "request_body": "imageId=02aaa59a-94ef-4788-bf27-1c8819dc529b&modelId=modelid",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjksImlhdCI6MTU1NDc0NTEyOSwidXNlcl9pZCI6ImQ4Yjg5NGE2LThmYTktNGExZi04MzE4LTgwZDljMjNiOWVmNSIsImFiaWxpdGllcyI6e319.ZYO7D_IFQNazgt_LtTmEqSlpKksKNxVJzqE2AL_qYDg\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"einstein_model_id\": \"0347de92-32c2-4516-8200-be6831bc7433\",\n  \"probability\": null,\n  \"status\": null,\n  \"image_id\": \"02aaa59a-94ef-4788-bf27-1c8819dc529b\",\n  \"model_id\": \"modelid\",\n  \"type\": \"image-detection\",\n  \"message\": null\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjksImlhdCI6MTU1NDc0NTEyOSwidXNlcl9pZCI6ImQ4Yjg5NGE2LThmYTktNGExZi04MzE4LTgwZDljMjNiOWVmNSIsImFiaWxpdGllcyI6e319.ZYO7D_IFQNazgt_LtTmEqSlpKksKNxVJzqE2AL_qYDg",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "b4dcf3e0-2f56-4dd6-be79-7d71c920fa93",
+        "X-Runtime": "0.048468",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "204"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

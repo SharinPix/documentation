@@ -1,0 +1,52 @@
+{
+  "resource": "Tags Token",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/tags_token",
+  "description": "Retreive tags by names",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/tags_token",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6IjNiMDA1ZmM0LWIxZGYtNDI1YS05NmU3LTc5ZjZiZTI1YWUzYSIsImFiaWxpdGllcyI6eyJ0ZXN0LWx1YzIiOnt9LCJ0ZXN0LWx1YyI6eyJUYWdzIjp7Imx1YyI6eyJlbiI6Ikx1YyIsImZyIjoiTHVjIn19fSwiMDAzMjQwMDAwMDRpaldTIjp7IlRhZ3MiOnsia2V2YW4iOnsiZW4iOiJLZXZhbiIsImZyIjoiS2V2YW4ifSwiYXpoYXIiOnsiZW4iOiJBemhhciIsImZyIjoiQXpoYXIifSwia2hlcmluIjp7ImVuIjoiS2hlcmluIiwiZnIiOiJLaGVyaW4ifSwid3JvbmctbGFiZWxzIjpudWxsfX19fQ.OaG5-l6jXxJ-qJmeGb-mahIg7aNgUJcIH6QNGD-66ZU\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": \"4f9ce835-d45f-44b1-82bf-cb55839b79ac\",\n    \"created_at\": \"2019-04-08T19:38:55.886+02:00\",\n    \"name\": \"luc\",\n    \"label\": \"{\\\"en\\\":\\\"Luc\\\",\\\"fr\\\":\\\"Luc\\\"}\",\n    \"url\": \"/public_tags/4f9ce835-d45f-44b1-82bf-cb55839b79ac\",\n    \"public\": false,\n    \"listed\": true,\n    \"action\": {\n      \"actions\": [\n\n      ]\n    },\n    \"visible\": false,\n    \"color\": \"#673AB7\",\n    \"color_contrast\": \"#ffffff\",\n    \"allow_download\": false,\n    \"label_en\": \"Luc\",\n    \"label_fr\": \"Luc\"\n  },\n  {\n    \"id\": \"ec7882e4-7b6e-47a4-a6c5-246a0f2a0610\",\n    \"created_at\": \"2019-04-08T19:38:55.889+02:00\",\n    \"name\": \"kevan\",\n    \"label\": \"{\\\"en\\\":\\\"Kevan\\\",\\\"fr\\\":\\\"Kevan\\\"}\",\n    \"url\": \"/public_tags/ec7882e4-7b6e-47a4-a6c5-246a0f2a0610\",\n    \"public\": false,\n    \"listed\": true,\n    \"action\": {\n      \"actions\": [\n\n      ]\n    },\n    \"visible\": false,\n    \"color\": \"#FF9800\",\n    \"color_contrast\": \"#000000\",\n    \"allow_download\": false,\n    \"label_en\": \"Kevan\",\n    \"label_fr\": \"Kevan\"\n  },\n  {\n    \"id\": \"454b6342-1208-4077-9fe4-f1f303c9bbd9\",\n    \"created_at\": \"2019-04-08T19:38:55.893+02:00\",\n    \"name\": \"azhar\",\n    \"label\": \"{\\\"en\\\":\\\"Azhar\\\",\\\"fr\\\":\\\"Azhar\\\"}\",\n    \"url\": \"/public_tags/454b6342-1208-4077-9fe4-f1f303c9bbd9\",\n    \"public\": false,\n    \"listed\": true,\n    \"action\": {\n      \"actions\": [\n\n      ]\n    },\n    \"visible\": false,\n    \"color\": \"#CDDC39\",\n    \"color_contrast\": \"#000000\",\n    \"allow_download\": false,\n    \"label_en\": \"Azhar\",\n    \"label_fr\": \"Azhar\"\n  },\n  {\n    \"id\": \"073254a3-5a8c-48bc-8804-8fee5a288b93\",\n    \"created_at\": \"2019-04-08T19:38:55.896+02:00\",\n    \"name\": \"kherin\",\n    \"label\": \"{\\\"en\\\":\\\"Kherin\\\",\\\"fr\\\":\\\"Kherin\\\"}\",\n    \"url\": \"/public_tags/073254a3-5a8c-48bc-8804-8fee5a288b93\",\n    \"public\": false,\n    \"listed\": true,\n    \"action\": {\n      \"actions\": [\n\n      ]\n    },\n    \"visible\": false,\n    \"color\": \"#8BC34A\",\n    \"color_contrast\": \"#000000\",\n    \"allow_download\": false,\n    \"label_en\": \"Kherin\",\n    \"label_fr\": \"Kherin\"\n  },\n  {\n    \"id\": \"a75eedaa-268d-4b3d-bf0d-308cd049b959\",\n    \"created_at\": \"2019-04-08T19:38:55.899+02:00\",\n    \"name\": \"wrong-labels\",\n    \"label\": \"{\\\"en\\\":\\\"wrong-labels\\\",\\\"fr\\\":\\\"wrong-labels\\\"}\",\n    \"url\": \"/public_tags/a75eedaa-268d-4b3d-bf0d-308cd049b959\",\n    \"public\": false,\n    \"listed\": true,\n    \"action\": {\n      \"actions\": [\n\n      ]\n    },\n    \"visible\": false,\n    \"color\": \"#2196F3\",\n    \"color_contrast\": \"#ffffff\",\n    \"allow_download\": false,\n    \"label_en\": \"wrong-labels\",\n    \"label_fr\": \"wrong-labels\"\n  }\n]",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6IjNiMDA1ZmM0LWIxZGYtNDI1YS05NmU3LTc5ZjZiZTI1YWUzYSIsImFiaWxpdGllcyI6eyJ0ZXN0LWx1YzIiOnt9LCJ0ZXN0LWx1YyI6eyJUYWdzIjp7Imx1YyI6eyJlbiI6Ikx1YyIsImZyIjoiTHVjIn19fSwiMDAzMjQwMDAwMDRpaldTIjp7IlRhZ3MiOnsia2V2YW4iOnsiZW4iOiJLZXZhbiIsImZyIjoiS2V2YW4ifSwiYXpoYXIiOnsiZW4iOiJBemhhciIsImZyIjoiQXpoYXIifSwia2hlcmluIjp7ImVuIjoiS2hlcmluIiwiZnIiOiJLaGVyaW4ifSwid3JvbmctbGFiZWxzIjpudWxsfX19fQ.OaG5-l6jXxJ-qJmeGb-mahIg7aNgUJcIH6QNGD-66ZU",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "b3fc400a-73cc-4f97-821a-b0296ecb230c",
+        "X-Runtime": "0.031833",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "1956"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

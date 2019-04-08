@@ -1,0 +1,52 @@
+{
+  "resource": "Image API",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/images/:id/user",
+  "description": "Retrieve username",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/images/1e9387d1-56f4-44d0-ae8a-c6c29300262e/user",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6IjJjMWVhYzA3LWJiZGItNDI4Ni04ZGE5LTEwZWZjMmIyMTU0YiIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTY0Ijp7IkFjY2VzcyI6eyJpbWFnZV9saXN0Ijp0cnVlfX19fQ.j70klo8HBE4IW_ijD0D5qYTTFIK3LH2XWtD-52IVvpU\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6IjJjMWVhYzA3LWJiZGItNDI4Ni04ZGE5LTEwZWZjMmIyMTU0YiIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTY0Ijp7IkFjY2VzcyI6eyJpbWFnZV9saXN0Ijp0cnVlfX19fQ.j70klo8HBE4IW_ijD0D5qYTTFIK3LH2XWtD-52IVvpU",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "0e5a63e9-e2f1-4541-bc6f-691d7f199b30",
+        "X-Runtime": "0.011069",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "2"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

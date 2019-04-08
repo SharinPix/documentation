@@ -1,0 +1,60 @@
+{
+  "resource": "Album",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/albums/:id",
+  "description": "do not create an album",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "album",
+      "description": "Album attributes"
+    },
+    {
+      "name": "merge",
+      "description": "Flag for merging album"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/albums/idonotexists",
+      "request_body": "album[public_id]=new_id",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjYsImlhdCI6MTU1NDc0NTEyNiwidXNlcl9pZCI6ImI4MGQxNzEyLTdiYjEtNDMwNy04ODdhLTY0NWM0Yjk5Y2I2NSIsImFiaWxpdGllcyI6e319.ZheCOZPhKxx9aPZ4xT2ahflyNwxuwRp5TKOzQVdGf9I\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "text/html",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjYsImlhdCI6MTU1NDc0NTEyNiwidXNlcl9pZCI6ImI4MGQxNzEyLTdiYjEtNDMwNy04ODdhLTY0NWM0Yjk5Y2I2NSIsImFiaWxpdGllcyI6e319.ZheCOZPhKxx9aPZ4xT2ahflyNwxuwRp5TKOzQVdGf9I",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "d7dc4165-43e9-49a6-8c32-a8c4ead2a85c",
+        "X-Runtime": "0.006010",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "0"
+      },
+      "response_content_type": "text/html",
+      "curl": null
+    }
+  ]
+}

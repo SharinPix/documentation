@@ -1,0 +1,72 @@
+{
+  "resource": "Image API",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/images/:id",
+  "description": "Crop an image",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "rotation",
+      "description": "Image rotation"
+    },
+    {
+      "name": "crop_x",
+      "description": "Image crop coordinate x"
+    },
+    {
+      "name": "crop_y",
+      "description": "Image crop coordinate y"
+    },
+    {
+      "name": "crop_w",
+      "description": "Image crop coordinate w"
+    },
+    {
+      "name": "crop_h",
+      "description": "Image crop coordinate h"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/images/7c13e836-c3ad-46de-be65-202e27498347",
+      "request_body": "rotation=0&crop_x=3&crop_y=2&crop_w=10&crop_h=11",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzIsImlhdCI6MTU1NDc0NTEzMiwidXNlcl9pZCI6ImUxMzUwZmNlLTdiMWUtNGNhMi1hNTgwLTBmMjcxOWFhN2JlNSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTM2Ijp7IkFjY2VzcyI6eyJpbWFnZV9jcm9wIjp0cnVlfX19fQ.bV1nKfG7wHWWorfn3WQRKm6kwhI037u1eWpnxmnuozk\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"7c13e836-c3ad-46de-be65-202e27498347\",\n  \"public_id\": \"7c13e836-c3ad-46de-be65-202e27498347\",\n  \"infos\": {\n    \"bytes\": 3604,\n    \"created_at\": \"2015-09-25T13:32:55Z\",\n    \"etag\": \"5a98d4d3e5d39024abf237be55e99b15\",\n    \"format\": \"png\",\n    \"height\": 48,\n    \"resource_type\": \"image\",\n    \"tags\": [\n      \"00100000123BB136\"\n    ],\n    \"type\": \"authenticated\",\n    \"width\": 48,\n    \"original_filename\": \"Super Image\",\n    \"location\": {\n      \"accuracy\": 36,\n      \"latitude\": 48.861934399999996,\n      \"longitude\": 2.348967\n    }\n  },\n  \"exifs\": {\n  },\n  \"gps\": [\n    48.861934399999996,\n    2.348967\n  ],\n  \"gps_ip\": null,\n  \"gps_exifs\": null,\n  \"gps_html\": [\n    48.861934399999996,\n    2.348967\n  ],\n  \"created_at\": \"2019-04-08T19:38:52.987+02:00\",\n  \"updated_at\": \"2019-04-08T19:38:53.001+02:00\",\n  \"taken_at\": null,\n  \"width\": 10,\n  \"height\": 11,\n  \"rotation\": 0,\n  \"crop_x\": 3.0,\n  \"crop_y\": 2.0,\n  \"crop_w\": 10.0,\n  \"crop_h\": 11.0,\n  \"metadatas\": {\n  },\n  \"original_url\": \"https://res.cloudinary.com/sadaasdasd/image/authenticated/s--YW4jKx3a--/fl_attachment/v123123/297f850d3d7c.jpg\",\n  \"original_width\": 48,\n  \"original_height\": 48,\n  \"external_urls\": {\n    \"fill100\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--IH9ZbEYD--/c_crop,h_11,w_10,x_3,y_2/c_fit,w_300/v123123/297f850d3d7c.jpg\",\n    \"fit2000\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--2jvg8gu5--/c_crop,h_11,w_10,x_3,y_2/c_fit,h_2000,w_2000/v123123/297f850d3d7c.jpg\",\n    \"mini\": \"https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=bb0a40b&url=localhost/images/7c13e836-c3ad-46de-be65-202e27498347/thumbnails/mini-922eb75a979.jpg\",\n    \"large\": \"https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=05b7162&url=localhost/images/7c13e836-c3ad-46de-be65-202e27498347/thumbnails/thumbnail-d4009a8bea4.jpg\",\n    \"full\": \"https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=dab0c30&url=localhost/images/7c13e836-c3ad-46de-be65-202e27498347/thumbnails/full-09c9cbb9d9c.jpg\"\n  },\n  \"filename\": \"Super Image\",\n  \"format\": \"png\",\n  \"title\": null,\n  \"description\": null,\n  \"page\": 1,\n  \"group_id\": null,\n  \"color\": \"#7D7D7D\",\n  \"size\": 3604,\n  \"processed\": false,\n  \"processing_error\": null,\n  \"album_id\": \"00100000123BB136\",\n  \"thumbnails\": {\n    \"original\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--H1Hr2-2---/fl_attachment/dpr_auto,q_auto,f_auto/v123123/297f850d3d7c.jpg\",\n    \"full_no_sharinpix\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--G6pFnC16--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/297f850d3d7c.jpg\",\n    \"full\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--_qztmKZw--/c_crop,h_11,w_10,x_3,y_2/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/297f850d3d7c.jpg\",\n    \"large\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--G2-BuPKM--/c_crop,h_11,w_10,x_3,y_2/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/297f850d3d7c.jpg\",\n    \"mini\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--aEshVGgT--/c_crop,h_11,w_10,x_3,y_2/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/297f850d3d7c.jpg\"\n  }\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzMsImlhdCI6MTU1NDc0NTEzMywidXNlcl9pZCI6ImUxMzUwZmNlLTdiMWUtNGNhMi1hNTgwLTBmMjcxOWFhN2JlNSIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTM2Ijp7IkFjY2VzcyI6eyJpbWFnZV9jcm9wIjp0cnVlfX19fQ.a-7d9NMMehl17Acxg9Hqr4ALlKITwldWpN3rXFnLeIc",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "0c56e630-1d15-4df1-b4fb-b17309e5abd4",
+        "X-Runtime": "0.017418",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "3027"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

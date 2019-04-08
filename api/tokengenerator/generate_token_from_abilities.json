@@ -1,0 +1,56 @@
+{
+  "resource": "TokenGenerator",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/token",
+  "description": "generate token from abilities",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "permission",
+      "description": "permission"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/token",
+      "request_body": "permission=%7B%22abilities%22%3A%7B%22album_id%22%3A%7B%22Access%22%3A%7B%22see%22%3Atrue%2C%22image_list%22%3Atrue%2C%22image_upload%22%3Atrue%2C%22image_delete%22%3Atrue%2C%22fullscreen%22%3Atrue%2C%22image_caption%22%3Atrue%7D%7D%2C%22tags%22%3A%7B%22auto_tag%22%3A%22test%22%7D%7D%2C%22Id%22%3A%22album_id%22%7D",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6ImY1NTFhMWNiLTkzMGUtNDUwMS04N2E5LWY1MWEwNzE4ZGEzZSJ9.KjujWpRJg0qy5ELjixs_3MW_rHjp77U9LuncVexJIO4\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6ImY1NTFhMWNiLTkzMGUtNDUwMS04N2E5LWY1MWEwNzE4ZGEzZSIsImFiaWxpdGllcyI6eyJhbGJ1bV9pZCI6eyJBY2Nlc3MiOnsic2VlIjp0cnVlLCJpbWFnZV9saXN0Ijp0cnVlLCJpbWFnZV91cGxvYWQiOnRydWUsImltYWdlX2RlbGV0ZSI6dHJ1ZSwiZnVsbHNjcmVlbiI6dHJ1ZSwiaW1hZ2VfY2FwdGlvbiI6dHJ1ZX19LCJ0YWdzIjp7ImF1dG9fdGFnIjoidGVzdCJ9fSwiSWQiOiJhbGJ1bV9pZCJ9.LYLpDGpnGZkq1Cyx90dmOnYsEpWdGf5EvPOFdFuyvQc\",\n  \"endpoint\": \"localhost:5001\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6ImY1NTFhMWNiLTkzMGUtNDUwMS04N2E5LWY1MWEwNzE4ZGEzZSJ9.KjujWpRJg0qy5ELjixs_3MW_rHjp77U9LuncVexJIO4",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "59b75418-bbf5-4c52-b8f9-970fed25e456",
+        "X-Runtime": "0.007622",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "485"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

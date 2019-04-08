@@ -1,0 +1,57 @@
+{
+  "resource": "Cloudinary",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/cloudinary?token=:token",
+  "description": "do not create images when there is an error but accept the payload",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "raw_post",
+      "description": "JSON as body."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/cloudinary?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1MTQxMWRmZS0xOGJlLTQ5OTUtODNlZS0zZTA4OWQ5ZTM2NDgiLCJvcmdhbml6YXRpb25faWQiOiI1YzJkZWQxNC0wYWQwLTRiZjYtYWFhYy1lMWYyYjVkZDM2OWMiLCJhbGJ1bV9pZCI6IjEyMzQ1Njc4OSJ9.ahmxeQLdJkFf2oVMXSY9j8bkXTdSdSvMS4e7ddfHy-k",
+      "request_body": "{\n  \"error\": {\n    \"message\": \"Empty file\",\n    \"status\": 400,\n    \"request_id\": \"ed63e916763fcc99\"\n  },\n  \"notification_type\": \"error\",\n  \"params\": {\n    \"faces\": \"1\",\n    \"colors\": \"1\",\n    \"image_metadata\": \"1\",\n    \"phash\": \"1\",\n    \"type\": \"authenticated\",\n    \"tags\": \"empty\",\n    \"notification_url\": \"https://ombr.ngrok.io/api/v1/cloudinary?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjM0NzUyMjAsImlhdCI6MTUyMzQ2MDgyMCwidXNlcl9pZCI6IjZhMmJhMDU3LTAyOGYtNDEzYy1iZGZkLTk5ZDFmNTM5ZTM0NSIsImFsYnVtX2lkIjoiZW1wdHkiLCJvcmdhbml6YXRpb25faWQiOiIxYThjY2ZlNi1iZDg4LTQzYzItOWNkZi00ZjI5YTNiYWEwNDMifQ.8AxJzoN5OIIIL7buwSlfQ3tEP2L9EUCynaYvsl8z2h4\"\n  }\n}\n",
+      "request_headers": {
+        "X-Cld-Timestamp": "1554745139",
+        "X-Cld-Signature": "e221a22c233361cd4c4e5c3ac093dabae2fd1669",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1MTQxMWRmZS0xOGJlLTQ5OTUtODNlZS0zZTA4OWQ5ZTM2NDgiLCJvcmdhbml6YXRpb25faWQiOiI1YzJkZWQxNC0wYWQwLTRiZjYtYWFhYy1lMWYyYjVkZDM2OWMiLCJhbGJ1bV9pZCI6IjEyMzQ1Njc4OSJ9.ahmxeQLdJkFf2oVMXSY9j8bkXTdSdSvMS4e7ddfHy-k"
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "text/html",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "44777942-f5f3-452f-ad13-ecbbab4c19b0",
+        "X-Runtime": "0.007407",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "0"
+      },
+      "response_content_type": "text/html",
+      "curl": null
+    }
+  ]
+}

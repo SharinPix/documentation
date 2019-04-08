@@ -1,0 +1,51 @@
+{
+  "resource": "Sticker API",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/stickers",
+  "description": "No image annotate ability",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/stickers",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjgsImlhdCI6MTU1NDc0NTEyOCwidXNlcl9pZCI6Ijk1N2RlOTI2LWUyMjktNDNmOS05N2ViLTc0MzExMWNiYzU2NiIsImFiaWxpdGllcyI6eyJtYWluX2FsYnVtIjp7IkFjY2VzcyI6eyJzZWUiOnRydWUsImltYWdlX2xpc3QiOnRydWV9fX19.vD5Gcsk2wJ_R-YAtIcp14imQm3CCnzfFhFutnHDSIbQ\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n\n]",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "9ce27286-05db-48ed-be2f-f2ecf5deb761",
+        "X-Runtime": "0.004144",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "2"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

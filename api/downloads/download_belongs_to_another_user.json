@@ -1,0 +1,24 @@
+{
+  "resource": "Downloads",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/downloads",
+  "description": "Download belongs to another user",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "id",
+      "description": "Download UUID"
+    },
+    {
+      "name": "image_ids",
+      "description": "A list of image public_ids to be added in the zip."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+
+  ]
+}

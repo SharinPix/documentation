@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tags Token API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tags Token API</h1>
+
+      <div class="article">
+        <h2>Retreive tags by names</h2>
+        <h3>GET api/v1/tags_token</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6IjNiMDA1ZmM0LWIxZGYtNDI1YS05NmU3LTc5ZjZiZTI1YWUzYSIsImFiaWxpdGllcyI6eyJ0ZXN0LWx1YzIiOnt9LCJ0ZXN0LWx1YyI6eyJUYWdzIjp7Imx1YyI6eyJlbiI6Ikx1YyIsImZyIjoiTHVjIn19fSwiMDAzMjQwMDAwMDRpaldTIjp7IlRhZ3MiOnsia2V2YW4iOnsiZW4iOiJLZXZhbiIsImZyIjoiS2V2YW4ifSwiYXpoYXIiOnsiZW4iOiJBemhhciIsImZyIjoiQXpoYXIifSwia2hlcmluIjp7ImVuIjoiS2hlcmluIiwiZnIiOiJLaGVyaW4ifSwid3JvbmctbGFiZWxzIjpudWxsfX19fQ.OaG5-l6jXxJ-qJmeGb-mahIg7aNgUJcIH6QNGD-66ZU&quot;
+Host: example.org
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET api/v1/tags_token</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzUsImlhdCI6MTU1NDc0NTEzNSwidXNlcl9pZCI6IjNiMDA1ZmM0LWIxZGYtNDI1YS05NmU3LTc5ZjZiZTI1YWUzYSIsImFiaWxpdGllcyI6eyJ0ZXN0LWx1YzIiOnt9LCJ0ZXN0LWx1YyI6eyJUYWdzIjp7Imx1YyI6eyJlbiI6Ikx1YyIsImZyIjoiTHVjIn19fSwiMDAzMjQwMDAwMDRpaldTIjp7IlRhZ3MiOnsia2V2YW4iOnsiZW4iOiJLZXZhbiIsImZyIjoiS2V2YW4ifSwiYXpoYXIiOnsiZW4iOiJBemhhciIsImZyIjoiQXpoYXIifSwia2hlcmluIjp7ImVuIjoiS2hlcmluIiwiZnIiOiJLaGVyaW4ifSwid3JvbmctbGFiZWxzIjpudWxsfX19fQ.OaG5-l6jXxJ-qJmeGb-mahIg7aNgUJcIH6QNGD-66ZU
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: b3fc400a-73cc-4f97-821a-b0296ecb230c
+X-Runtime: 0.031833
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 1956</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[
+  {
+    &quot;id&quot;: &quot;4f9ce835-d45f-44b1-82bf-cb55839b79ac&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:55.886+02:00&quot;,
+    &quot;name&quot;: &quot;luc&quot;,
+    &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;Luc\&quot;,\&quot;fr\&quot;:\&quot;Luc\&quot;}&quot;,
+    &quot;url&quot;: &quot;/public_tags/4f9ce835-d45f-44b1-82bf-cb55839b79ac&quot;,
+    &quot;public&quot;: false,
+    &quot;listed&quot;: true,
+    &quot;action&quot;: {
+      &quot;actions&quot;: [
+
+      ]
+    },
+    &quot;visible&quot;: false,
+    &quot;color&quot;: &quot;#673AB7&quot;,
+    &quot;color_contrast&quot;: &quot;#ffffff&quot;,
+    &quot;allow_download&quot;: false,
+    &quot;label_en&quot;: &quot;Luc&quot;,
+    &quot;label_fr&quot;: &quot;Luc&quot;
+  },
+  {
+    &quot;id&quot;: &quot;ec7882e4-7b6e-47a4-a6c5-246a0f2a0610&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:55.889+02:00&quot;,
+    &quot;name&quot;: &quot;kevan&quot;,
+    &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;Kevan\&quot;,\&quot;fr\&quot;:\&quot;Kevan\&quot;}&quot;,
+    &quot;url&quot;: &quot;/public_tags/ec7882e4-7b6e-47a4-a6c5-246a0f2a0610&quot;,
+    &quot;public&quot;: false,
+    &quot;listed&quot;: true,
+    &quot;action&quot;: {
+      &quot;actions&quot;: [
+
+      ]
+    },
+    &quot;visible&quot;: false,
+    &quot;color&quot;: &quot;#FF9800&quot;,
+    &quot;color_contrast&quot;: &quot;#000000&quot;,
+    &quot;allow_download&quot;: false,
+    &quot;label_en&quot;: &quot;Kevan&quot;,
+    &quot;label_fr&quot;: &quot;Kevan&quot;
+  },
+  {
+    &quot;id&quot;: &quot;454b6342-1208-4077-9fe4-f1f303c9bbd9&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:55.893+02:00&quot;,
+    &quot;name&quot;: &quot;azhar&quot;,
+    &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;Azhar\&quot;,\&quot;fr\&quot;:\&quot;Azhar\&quot;}&quot;,
+    &quot;url&quot;: &quot;/public_tags/454b6342-1208-4077-9fe4-f1f303c9bbd9&quot;,
+    &quot;public&quot;: false,
+    &quot;listed&quot;: true,
+    &quot;action&quot;: {
+      &quot;actions&quot;: [
+
+      ]
+    },
+    &quot;visible&quot;: false,
+    &quot;color&quot;: &quot;#CDDC39&quot;,
+    &quot;color_contrast&quot;: &quot;#000000&quot;,
+    &quot;allow_download&quot;: false,
+    &quot;label_en&quot;: &quot;Azhar&quot;,
+    &quot;label_fr&quot;: &quot;Azhar&quot;
+  },
+  {
+    &quot;id&quot;: &quot;073254a3-5a8c-48bc-8804-8fee5a288b93&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:55.896+02:00&quot;,
+    &quot;name&quot;: &quot;kherin&quot;,
+    &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;Kherin\&quot;,\&quot;fr\&quot;:\&quot;Kherin\&quot;}&quot;,
+    &quot;url&quot;: &quot;/public_tags/073254a3-5a8c-48bc-8804-8fee5a288b93&quot;,
+    &quot;public&quot;: false,
+    &quot;listed&quot;: true,
+    &quot;action&quot;: {
+      &quot;actions&quot;: [
+
+      ]
+    },
+    &quot;visible&quot;: false,
+    &quot;color&quot;: &quot;#8BC34A&quot;,
+    &quot;color_contrast&quot;: &quot;#000000&quot;,
+    &quot;allow_download&quot;: false,
+    &quot;label_en&quot;: &quot;Kherin&quot;,
+    &quot;label_fr&quot;: &quot;Kherin&quot;
+  },
+  {
+    &quot;id&quot;: &quot;a75eedaa-268d-4b3d-bf0d-308cd049b959&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:55.899+02:00&quot;,
+    &quot;name&quot;: &quot;wrong-labels&quot;,
+    &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;wrong-labels\&quot;,\&quot;fr\&quot;:\&quot;wrong-labels\&quot;}&quot;,
+    &quot;url&quot;: &quot;/public_tags/a75eedaa-268d-4b3d-bf0d-308cd049b959&quot;,
+    &quot;public&quot;: false,
+    &quot;listed&quot;: true,
+    &quot;action&quot;: {
+      &quot;actions&quot;: [
+
+      ]
+    },
+    &quot;visible&quot;: false,
+    &quot;color&quot;: &quot;#2196F3&quot;,
+    &quot;color_contrast&quot;: &quot;#ffffff&quot;,
+    &quot;allow_download&quot;: false,
+    &quot;label_en&quot;: &quot;wrong-labels&quot;,
+    &quot;label_fr&quot;: &quot;wrong-labels&quot;
+  }
+]</pre>
+      </div>
+    </div>
+  </body>
+</html>

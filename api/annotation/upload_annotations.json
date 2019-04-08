@@ -1,0 +1,56 @@
+{
+  "resource": "Annotation",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/images/:image_id/annotation",
+  "description": "Upload annotations",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "annotation",
+      "description": "annotation svg"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/images/6461f01c-8691-4962-bd67-1e347944d8e9/annotation",
+      "request_body": "annotation=%3Csvg%3Eblank%3C%2Fsvg%3E",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjQsImlhdCI6MTU1NDc0NTEyNCwidXNlcl9pZCI6ImU3NzZjMDc3LTVlZjktNGIzMi04ZGRiLWU2ZjBmYzI2ZjE1OCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCOSI6eyJBY2Nlc3MiOnsiaW1hZ2VfbGlzdCI6dHJ1ZSwiaW1hZ2VfYW5ub3RhdGUiOnRydWV9fX19.jtQ2AWwYIa0FcPLOfGBLplfrmGlEQZoy_-R39yHZSwA\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"svg\": \"<svg>blank</svg>\",\n  \"object\": null\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjQsImlhdCI6MTU1NDc0NTEyNCwidXNlcl9pZCI6ImU3NzZjMDc3LTVlZjktNGIzMi04ZGRiLWU2ZjBmYzI2ZjE1OCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCOSI6eyJBY2Nlc3MiOnsiaW1hZ2VfbGlzdCI6dHJ1ZSwiaW1hZ2VfYW5ub3RhdGUiOnRydWV9fX19.jtQ2AWwYIa0FcPLOfGBLplfrmGlEQZoy_-R39yHZSwA",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "d5f92387-fc2c-4396-addf-339e88a1f965",
+        "X-Runtime": "0.013825",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "60"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

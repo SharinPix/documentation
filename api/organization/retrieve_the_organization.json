@@ -1,0 +1,53 @@
+{
+  "resource": "Organization",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/organization",
+  "description": "Retrieve the organization",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/organization",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDUsImlhdCI6MTU1NDc0NTE0NSwidXNlcl9pZCI6ImI2MDhkNjMzLWU1MjUtNDMxZi05NzFhLTI4ZGY1Y2MyZTQ5NCJ9.SKgoxUTfgbUyeSRrdrNqDRpDB4rdFgK80KKNP_lYaso\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"06236c35-218f-4b8b-a2ed-5838fe193380\",\n  \"name\": \"SharinPix-00D24000000IycKQWE (06236c35)\",\n  \"sandbox\": false,\n  \"sfid\": \"00D24000000IycKQWE\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-access-stats": "false",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDUsImlhdCI6MTU1NDc0NTE0NSwidXNlcl9pZCI6ImI2MDhkNjMzLWU1MjUtNDMxZi05NzFhLTI4ZGY1Y2MyZTQ5NCJ9.SKgoxUTfgbUyeSRrdrNqDRpDB4rdFgK80KKNP_lYaso",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "380b6c46-61e0-47cd-a3ea-d9dd87dd69a0",
+        "X-Runtime": "0.004924",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "138"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

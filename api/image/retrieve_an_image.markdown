@@ -1,0 +1,42 @@
+# Image API
+
+## Retrieve an image
+
+### GET /images/:image_id
+### Request
+
+#### Headers
+
+<pre>Host: example.org
+Cookie: </pre>
+
+#### Route
+
+<pre>GET /images/84d64b68-98dd-4035-b8e3-c518fa1b1fcf</pre>
+
+### Response
+
+#### Headers
+
+<pre>Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Access-Control-Allow-Origin: *
+X-message: Access denied
+Content-Type: text/html
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: d3630297-9af5-4dd4-9de6-4a5fa44713eb
+X-Runtime: 0.005661
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 0</pre>
+
+#### Status
+
+<pre>401 Unauthorized</pre>
+

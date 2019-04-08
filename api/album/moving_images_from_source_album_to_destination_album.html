@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Album API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Album API</h1>
+
+      <div class="article">
+        <h2>moving images from source album to destination album</h2>
+        <h3>PUT /api/v1/albums/:id</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">album</span>
+                </td>
+                <td>
+                  <span class="description">Album attributes</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">merge</span>
+                </td>
+                <td>
+                  <span class="description">Flag for merging album</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjYsImlhdCI6MTU1NDc0NTEyNiwidXNlcl9pZCI6ImE0YjYxNTJhLTVlOGUtNDQwZC05MmQ3LTgwYjc3Y2Q5YTllNCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMzYiOnsiQWNjZXNzIjp7InJlbmFtZSI6dHJ1ZX19fX0.HkQKc1D751Cv30gu1yBY0q07CuMKT0VRc2w0tHPlyEs&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">PUT /api/v1/albums/00100000123BB36</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">album[public_id]=00100000123BB38&merge=true</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjYsImlhdCI6MTU1NDc0NTEyNiwidXNlcl9pZCI6ImE0YjYxNTJhLTVlOGUtNDQwZC05MmQ3LTgwYjc3Y2Q5YTllNCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMzYiOnsiQWNjZXNzIjp7InJlbmFtZSI6dHJ1ZX19fX0.HkQKc1D751Cv30gu1yBY0q07CuMKT0VRc2w0tHPlyEs
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 57e17746-bc13-4a4a-bb16-2b468c8cc534
+X-Runtime: 0.268582
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 11775</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;id&quot;: &quot;00100000123BB38&quot;,
+  &quot;public_id&quot;: &quot;00100000123BB38&quot;,
+  &quot;images_count&quot;: 10,
+  &quot;views_count&quot;: 0,
+  &quot;upload_form&quot;: null,
+  &quot;organization_id&quot;: &quot;9c511639-8066-4d6f-8dc0-49257ca27a96&quot;,
+  &quot;thumbnails&quot;: [
+    {
+      &quot;id&quot;: &quot;237b2fda-4db3-41a8-9044-737e57491897&quot;,
+      &quot;public_id&quot;: &quot;237b2fda-4db3-41a8-9044-737e57491897&quot;,
+      &quot;infos&quot;: {
+        &quot;bytes&quot;: 3604,
+        &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+        &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+        &quot;format&quot;: &quot;png&quot;,
+        &quot;height&quot;: 48,
+        &quot;resource_type&quot;: &quot;image&quot;,
+        &quot;tags&quot;: [
+          &quot;00100000123BB36&quot;
+        ],
+        &quot;type&quot;: &quot;authenticated&quot;,
+        &quot;width&quot;: 48,
+        &quot;original_filename&quot;: &quot;Super Image&quot;,
+        &quot;location&quot;: {
+          &quot;accuracy&quot;: 36,
+          &quot;latitude&quot;: 48.861934399999996,
+          &quot;longitude&quot;: 2.348967
+        }
+      },
+      &quot;exifs&quot;: {
+      },
+      &quot;gps&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;gps_ip&quot;: null,
+      &quot;gps_exifs&quot;: null,
+      &quot;gps_html&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:46.196+02:00&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-08T19:38:46.393+02:00&quot;,
+      &quot;taken_at&quot;: null,
+      &quot;width&quot;: 48,
+      &quot;height&quot;: 48,
+      &quot;rotation&quot;: 0,
+      &quot;crop_x&quot;: 0.0,
+      &quot;crop_y&quot;: 0.0,
+      &quot;crop_w&quot;: 0.0,
+      &quot;crop_h&quot;: 0.0,
+      &quot;metadatas&quot;: {
+      },
+      &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--Lzpm6og6--/fl_attachment/v123123/ccc0ddb6de7d.jpg&quot;,
+      &quot;original_width&quot;: 48,
+      &quot;original_height&quot;: 48,
+      &quot;external_urls&quot;: {
+        &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--mOo5-8U8--/c_fit,w_300/v123123/ccc0ddb6de7d.jpg&quot;,
+        &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--sSxspR6h--/c_fit,h_2000,w_2000/v123123/ccc0ddb6de7d.jpg&quot;,
+        &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=40710c7&amp;url=localhost/images/237b2fda-4db3-41a8-9044-737e57491897/thumbnails/mini-a015970f3c9.jpg&quot;,
+        &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=5c13c2c&amp;url=localhost/images/237b2fda-4db3-41a8-9044-737e57491897/thumbnails/thumbnail-c73b86be1a4.jpg&quot;,
+        &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=1420fa4&amp;url=localhost/images/237b2fda-4db3-41a8-9044-737e57491897/thumbnails/full-43fe6dc03f6.jpg&quot;
+      },
+      &quot;filename&quot;: &quot;Super Image&quot;,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;page&quot;: 1,
+      &quot;group_id&quot;: null,
+      &quot;color&quot;: &quot;#7D7D7D&quot;,
+      &quot;size&quot;: 3604,
+      &quot;processed&quot;: false,
+      &quot;processing_error&quot;: null,
+      &quot;album_id&quot;: &quot;00100000123BB38&quot;,
+      &quot;thumbnails&quot;: {
+        &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--dwMTG1wN--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/ccc0ddb6de7d.jpg&quot;,
+        &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--OeBDHp2H--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/ccc0ddb6de7d.jpg&quot;,
+        &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--OeBDHp2H--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/ccc0ddb6de7d.jpg&quot;,
+        &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--6NdqpRle--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/ccc0ddb6de7d.jpg&quot;,
+        &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--Emk1PUrI--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/ccc0ddb6de7d.jpg&quot;
+      }
+    },
+    {
+      &quot;id&quot;: &quot;c150783d-bd3d-45e3-b5e8-7246ca7bbffa&quot;,
+      &quot;public_id&quot;: &quot;c150783d-bd3d-45e3-b5e8-7246ca7bbffa&quot;,
+      &quot;infos&quot;: {
+        &quot;bytes&quot;: 3604,
+        &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+        &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+        &quot;format&quot;: &quot;png&quot;,
+        &quot;height&quot;: 48,
+        &quot;resource_type&quot;: &quot;image&quot;,
+        &quot;tags&quot;: [
+          &quot;00100000123BB36&quot;
+        ],
+        &quot;type&quot;: &quot;authenticated&quot;,
+        &quot;width&quot;: 48,
+        &quot;original_filename&quot;: &quot;Super Image&quot;,
+        &quot;location&quot;: {
+          &quot;accuracy&quot;: 36,
+          &quot;latitude&quot;: 48.861934399999996,
+          &quot;longitude&quot;: 2.348967
+        }
+      },
+      &quot;exifs&quot;: {
+      },
+      &quot;gps&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;gps_ip&quot;: null,
+      &quot;gps_exifs&quot;: null,
+      &quot;gps_html&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:46.190+02:00&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-08T19:38:46.321+02:00&quot;,
+      &quot;taken_at&quot;: null,
+      &quot;width&quot;: 48,
+      &quot;height&quot;: 48,
+      &quot;rotation&quot;: 0,
+      &quot;crop_x&quot;: 0.0,
+      &quot;crop_y&quot;: 0.0,
+      &quot;crop_w&quot;: 0.0,
+      &quot;crop_h&quot;: 0.0,
+      &quot;metadatas&quot;: {
+      },
+      &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--PIojlJKR--/fl_attachment/v123123/566220666b60.jpg&quot;,
+      &quot;original_width&quot;: 48,
+      &quot;original_height&quot;: 48,
+      &quot;external_urls&quot;: {
+        &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--3dqgQG60--/c_fit,w_300/v123123/566220666b60.jpg&quot;,
+        &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--HjKmM4m6--/c_fit,h_2000,w_2000/v123123/566220666b60.jpg&quot;,
+        &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=216b1ec&amp;url=localhost/images/c150783d-bd3d-45e3-b5e8-7246ca7bbffa/thumbnails/mini-e3aa9c089d7.jpg&quot;,
+        &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=76f31b7&amp;url=localhost/images/c150783d-bd3d-45e3-b5e8-7246ca7bbffa/thumbnails/thumbnail-5ceb83f054a.jpg&quot;,
+        &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=d01e4ba&amp;url=localhost/images/c150783d-bd3d-45e3-b5e8-7246ca7bbffa/thumbnails/full-999923a6e32.jpg&quot;
+      },
+      &quot;filename&quot;: &quot;Super Image&quot;,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;page&quot;: 1,
+      &quot;group_id&quot;: null,
+      &quot;color&quot;: &quot;#7D7D7D&quot;,
+      &quot;size&quot;: 3604,
+      &quot;processed&quot;: false,
+      &quot;processing_error&quot;: null,
+      &quot;album_id&quot;: &quot;00100000123BB38&quot;,
+      &quot;thumbnails&quot;: {
+        &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--QEw2hurf--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/566220666b60.jpg&quot;,
+        &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--QGFh5FyG--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/566220666b60.jpg&quot;,
+        &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--QGFh5FyG--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/566220666b60.jpg&quot;,
+        &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--KmrZAEhU--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/566220666b60.jpg&quot;,
+        &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--bL1tJB6m--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/566220666b60.jpg&quot;
+      }
+    },
+    {
+      &quot;id&quot;: &quot;0f8d5be7-1e14-4b2f-9236-d6e660d0c995&quot;,
+      &quot;public_id&quot;: &quot;0f8d5be7-1e14-4b2f-9236-d6e660d0c995&quot;,
+      &quot;infos&quot;: {
+        &quot;bytes&quot;: 3604,
+        &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+        &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+        &quot;format&quot;: &quot;png&quot;,
+        &quot;height&quot;: 48,
+        &quot;resource_type&quot;: &quot;image&quot;,
+        &quot;tags&quot;: [
+          &quot;00100000123BB36&quot;
+        ],
+        &quot;type&quot;: &quot;authenticated&quot;,
+        &quot;width&quot;: 48,
+        &quot;original_filename&quot;: &quot;Super Image&quot;,
+        &quot;location&quot;: {
+          &quot;accuracy&quot;: 36,
+          &quot;latitude&quot;: 48.861934399999996,
+          &quot;longitude&quot;: 2.348967
+        }
+      },
+      &quot;exifs&quot;: {
+      },
+      &quot;gps&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;gps_ip&quot;: null,
+      &quot;gps_exifs&quot;: null,
+      &quot;gps_html&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:46.183+02:00&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-08T19:38:46.287+02:00&quot;,
+      &quot;taken_at&quot;: null,
+      &quot;width&quot;: 48,
+      &quot;height&quot;: 48,
+      &quot;rotation&quot;: 0,
+      &quot;crop_x&quot;: 0.0,
+      &quot;crop_y&quot;: 0.0,
+      &quot;crop_w&quot;: 0.0,
+      &quot;crop_h&quot;: 0.0,
+      &quot;metadatas&quot;: {
+      },
+      &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--T3I-AM7h--/fl_attachment/v123123/3c1b7bced9dc.jpg&quot;,
+      &quot;original_width&quot;: 48,
+      &quot;original_height&quot;: 48,
+      &quot;external_urls&quot;: {
+        &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--6DUeWTtv--/c_fit,w_300/v123123/3c1b7bced9dc.jpg&quot;,
+        &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--6IKLFk35--/c_fit,h_2000,w_2000/v123123/3c1b7bced9dc.jpg&quot;,
+        &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=2aa6802&amp;url=localhost/images/0f8d5be7-1e14-4b2f-9236-d6e660d0c995/thumbnails/mini-18773a23c5d.jpg&quot;,
+        &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=de9eea5&amp;url=localhost/images/0f8d5be7-1e14-4b2f-9236-d6e660d0c995/thumbnails/thumbnail-70ec1d70ed9.jpg&quot;,
+        &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=b8e8f32&amp;url=localhost/images/0f8d5be7-1e14-4b2f-9236-d6e660d0c995/thumbnails/full-6cb34dc9624.jpg&quot;
+      },
+      &quot;filename&quot;: &quot;Super Image&quot;,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;page&quot;: 1,
+      &quot;group_id&quot;: null,
+      &quot;color&quot;: &quot;#7D7D7D&quot;,
+      &quot;size&quot;: 3604,
+      &quot;processed&quot;: false,
+      &quot;processing_error&quot;: null,
+      &quot;album_id&quot;: &quot;00100000123BB38&quot;,
+      &quot;thumbnails&quot;: {
+        &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--kuUbtMDJ--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3c1b7bced9dc.jpg&quot;,
+        &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--rC-La8Aa--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3c1b7bced9dc.jpg&quot;,
+        &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--rC-La8Aa--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3c1b7bced9dc.jpg&quot;,
+        &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--_0Y6UFnX--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3c1b7bced9dc.jpg&quot;,
+        &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--bhN_Tl9f--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/3c1b7bced9dc.jpg&quot;
+      }
+    },
+    {
+      &quot;id&quot;: &quot;d07ade6c-9ebc-4ec7-afce-88232bc315a9&quot;,
+      &quot;public_id&quot;: &quot;d07ade6c-9ebc-4ec7-afce-88232bc315a9&quot;,
+      &quot;infos&quot;: {
+        &quot;bytes&quot;: 3604,
+        &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+        &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+        &quot;format&quot;: &quot;png&quot;,
+        &quot;height&quot;: 48,
+        &quot;resource_type&quot;: &quot;image&quot;,
+        &quot;tags&quot;: [
+          &quot;00100000123BB36&quot;
+        ],
+        &quot;type&quot;: &quot;authenticated&quot;,
+        &quot;width&quot;: 48,
+        &quot;original_filename&quot;: &quot;Super Image&quot;,
+        &quot;location&quot;: {
+          &quot;accuracy&quot;: 36,
+          &quot;latitude&quot;: 48.861934399999996,
+          &quot;longitude&quot;: 2.348967
+        }
+      },
+      &quot;exifs&quot;: {
+      },
+      &quot;gps&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;gps_ip&quot;: null,
+      &quot;gps_exifs&quot;: null,
+      &quot;gps_html&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:46.202+02:00&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-08T19:38:46.426+02:00&quot;,
+      &quot;taken_at&quot;: null,
+      &quot;width&quot;: 48,
+      &quot;height&quot;: 48,
+      &quot;rotation&quot;: 0,
+      &quot;crop_x&quot;: 0.0,
+      &quot;crop_y&quot;: 0.0,
+      &quot;crop_w&quot;: 0.0,
+      &quot;crop_h&quot;: 0.0,
+      &quot;metadatas&quot;: {
+      },
+      &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--4q-CFQhp--/fl_attachment/v123123/adcec426aa24.jpg&quot;,
+      &quot;original_width&quot;: 48,
+      &quot;original_height&quot;: 48,
+      &quot;external_urls&quot;: {
+        &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--JJR-iegG--/c_fit,w_300/v123123/adcec426aa24.jpg&quot;,
+        &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--AtvwhiDa--/c_fit,h_2000,w_2000/v123123/adcec426aa24.jpg&quot;,
+        &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=94a7180&amp;url=localhost/images/d07ade6c-9ebc-4ec7-afce-88232bc315a9/thumbnails/mini-c33c94f4ebd.jpg&quot;,
+        &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=4705bb1&amp;url=localhost/images/d07ade6c-9ebc-4ec7-afce-88232bc315a9/thumbnails/thumbnail-77136cf1ad6.jpg&quot;,
+        &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=28f3dce&amp;url=localhost/images/d07ade6c-9ebc-4ec7-afce-88232bc315a9/thumbnails/full-fa3dae6e19a.jpg&quot;
+      },
+      &quot;filename&quot;: &quot;Super Image&quot;,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;page&quot;: 1,
+      &quot;group_id&quot;: null,
+      &quot;color&quot;: &quot;#7D7D7D&quot;,
+      &quot;size&quot;: 3604,
+      &quot;processed&quot;: false,
+      &quot;processing_error&quot;: null,
+      &quot;album_id&quot;: &quot;00100000123BB38&quot;,
+      &quot;thumbnails&quot;: {
+        &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s---dW8KHuJ--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/adcec426aa24.jpg&quot;,
+        &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--qf1SvEfY--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/adcec426aa24.jpg&quot;,
+        &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--qf1SvEfY--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/adcec426aa24.jpg&quot;,
+        &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--JrnOawd_--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/adcec426aa24.jpg&quot;,
+        &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--GxjQQYuF--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/adcec426aa24.jpg&quot;
+      }
+    }
+  ]
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

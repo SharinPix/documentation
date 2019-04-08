@@ -1,0 +1,53 @@
+{
+  "resource": "Album",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/albums/:id/upload_done",
+  "description": "Trigger uploaded on an album",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/albums/00100000123BB25/upload_done",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjUsImlhdCI6MTU1NDc0NTEyNSwidXNlcl9pZCI6ImJjYTVlYTEwLTZlMDYtNDZiYi1hMTYwLWQ1ZmI2NjlhMjc3NCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMjUiOnsiQWNjZXNzIjp7ImltYWdlX3VwbG9hZCI6dHJ1ZX19fX0.guKk5l1ISUrpcWz2Q4VI4RDBqgP8oJ6TukHMmE1X9IM\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"00100000123BB25\",\n  \"public_id\": \"00100000123BB25\",\n  \"images_count\": 0,\n  \"views_count\": 0,\n  \"upload_form\": {\n    \"url\": \"https://api.cloudinary.com/v1_1/sadaasdasd/auto/upload\",\n    \"expires_at\": 1555349925,\n    \"name\": \"00100000123BB25\",\n    \"id\": \"232678ca-60c7-4bae-a9b2-88e55d4aecdc-00100000123BB25\",\n    \"params\": {\n      \"colors\": 1,\n      \"faces\": 1,\n      \"image_metadata\": 1,\n      \"notification_url\": \"https://localhost:5001/api/v1/cloudinary?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjUsImlhdCI6MTU1NDc0NTEyNSwidXNlcl9pZCI6ImJjYTVlYTEwLTZlMDYtNDZiYi1hMTYwLWQ1ZmI2NjlhMjc3NCIsImFsYnVtX2lkIjoiMDAxMDAwMDAxMjNCQjI1Iiwib3JnYW5pemF0aW9uX2lkIjoiMjMyNjc4Y2EtNjBjNy00YmFlLWE5YjItODhlNTVkNGFlY2RjIn0.A9v0CAMAVWPMUIc1Vfoye2F-oRxuFQvpUISjvoQgc60\",\n      \"phash\": 1,\n      \"tags\": \"00100000123BB25\",\n      \"timestamp\": 1555349925,\n      \"type\": \"authenticated\",\n      \"signature\": \"be2e6ad309dfd26b130e6d92e472e498114b752c\",\n      \"api_key\": \"123123123123\"\n    },\n    \"test_url\": \"/upload_test\"\n  },\n  \"organization_id\": \"232678ca-60c7-4bae-a9b2-88e55d4aecdc\",\n  \"thumbnails\": [\n\n  ]\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjUsImlhdCI6MTU1NDc0NTEyNSwidXNlcl9pZCI6ImJjYTVlYTEwLTZlMDYtNDZiYi1hMTYwLWQ1ZmI2NjlhMjc3NCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMjUiOnsiQWNjZXNzIjp7ImltYWdlX3VwbG9hZCI6dHJ1ZX19fX0.guKk5l1ISUrpcWz2Q4VI4RDBqgP8oJ6TukHMmE1X9IM",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "56d3bf60-90bf-4436-bb4d-fc77b589cb26",
+        "X-Runtime": "0.026387",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "963"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

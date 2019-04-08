@@ -1,0 +1,56 @@
+{
+  "resource": "Native Upload",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/native_upload/image",
+  "description": "Post an image",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "raw_post",
+      "description": "JSON as body."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/native_upload/image",
+      "request_body": "{\"version\":1507784418,\"format\":\"jpg\",\"resource_type\":\"image\",\"type\":\"authenticated\",\"original_filename\":\"SharinPixM1\",\"public_id\":\"twio1\"}",
+      "request_headers": {
+        "X-Cld-Timestamp": "1554745146",
+        "X-Cld-Signature": "2f0fc1acb3f3d377dc2aa3b642b625de7aa4cb6e",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "text/html",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "19b34e6e-1767-44a9-9187-554911e1719f",
+        "X-Runtime": "0.009409",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "0"
+      },
+      "response_content_type": "text/html",
+      "curl": null
+    }
+  ]
+}

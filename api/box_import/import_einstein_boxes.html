@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Box Import API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Box Import API</h1>
+
+      <div class="article">
+        <h2>Import einstein boxes</h2>
+        <h3>POST /api/v1/box_imports</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">payload</span>
+                </td>
+                <td>
+                  <span class="description">Einstein boxes payload</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">image_id</span>
+                </td>
+                <td>
+                  <span class="description">Image Id</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjMsImlhdCI6MTU1NDc0NTEyMywidXNlcl9pZCI6IjM5YjM1MWE5LWE2MmMtNDA5Yi1iNzk3LWRjMTU2YmQ4Mzk0ZiIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCNSI6eyJBY2Nlc3MiOnsiaW1hZ2VfbGlzdCI6dHJ1ZSwiZWluc3RlaW5fYm94Ijp0cnVlfX19fQ.e9JLrO5ya-e5V1gcgH9L6EaxP8uviWKj9ceeHPn7NjI&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">POST /api/v1/box_imports</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">payload=%5B%7B+%22probability%22%3A+0.9891305%2C+%22label%22%3A+%22700MLX6IT%22%2C+%22boundingBox%22%3A+%7B+%22minY%22%3A+2059%2C+%22minX%22%3A+2248%2C+%22maxY%22%3A+2571%2C+%22maxX%22%3A+2456+%7D+%7D%2C%0A++++++++%7B+%22probability%22%3A+0.90%2C+%22label%22%3A+%22800YUT%22%2C+%22boundingBox%22%3A+%7B+%22minY%22%3A+2059%2C+%22minX%22%3A+2248%2C+%22maxY%22%3A+2571%2C+%22maxX%22%3A+2456+%7D+%7D%5D&image_id=d858303f-0fba-414e-b52b-3d56d38f0638</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjQsImlhdCI6MTU1NDc0NTEyNCwidXNlcl9pZCI6IjM5YjM1MWE5LWE2MmMtNDA5Yi1iNzk3LWRjMTU2YmQ4Mzk0ZiIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCNSI6eyJBY2Nlc3MiOnsiaW1hZ2VfbGlzdCI6dHJ1ZSwiZWluc3RlaW5fYm94Ijp0cnVlfX19fQ.WA1ZK_SjyJ7sdkotRp8GCfR8cf9eO37pNe5QlUytdoU
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: f2b4a011-b009-4a95-b330-ed4885f9a03c
+X-Runtime: 0.068478
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 485</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;id&quot;: &quot;6fa804ae-7401-41f5-a155-ee87f895a950&quot;,
+  &quot;image_id&quot;: &quot;d858303f-0fba-414e-b52b-3d56d38f0638&quot;,
+  &quot;organization_id&quot;: &quot;f950bf22-4f93-469b-836d-3766c2f02f1f&quot;,
+  &quot;processed_at&quot;: null,
+  &quot;payload&quot;: [
+    {
+      &quot;probability&quot;: 0.9891305,
+      &quot;label&quot;: &quot;700MLX6IT&quot;,
+      &quot;boundingBox&quot;: {
+        &quot;minY&quot;: 2059,
+        &quot;minX&quot;: 2248,
+        &quot;maxY&quot;: 2571,
+        &quot;maxX&quot;: 2456
+      }
+    },
+    {
+      &quot;probability&quot;: 0.9,
+      &quot;label&quot;: &quot;800YUT&quot;,
+      &quot;boundingBox&quot;: {
+        &quot;minY&quot;: 2059,
+        &quot;minX&quot;: 2248,
+        &quot;maxY&quot;: 2571,
+        &quot;maxX&quot;: 2456
+      }
+    }
+  ],
+  &quot;created_at&quot;: &quot;2019-04-08T19:38:44.016+02:00&quot;,
+  &quot;updated_at&quot;: &quot;2019-04-08T19:38:44.016+02:00&quot;
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "resource": "Import",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/imports",
+  "description": "import using storage",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "album_id",
+      "description": "Album name"
+    },
+    {
+      "name": "filename",
+      "description": "Image filename"
+    },
+    {
+      "name": "metadatas",
+      "description": "Image metadata"
+    },
+    {
+      "name": "url",
+      "description": "Url of the image to import"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/imports",
+      "request_body": "album_id=imported_album&filename=image123_asdasd.JpG&metadatas[attachmentId]=00P24000003vSXsEAM&url=http%3A%2F%2Florempixel.com%2F100%2F100%2F",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzgsImlhdCI6MTU1NDc0NTEzOCwiaXNzIjoiMzgwMGJlMjktYjVkMy00MDY0LWFkNzAtZGY5ZDNiY2NiODRmIiwiYWJpbGl0aWVzIjp7ImltcG9ydGVkX2FsYnVtIjp7IkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.npf99AlomSl1KAVESYkHdRdEg1-2LxCZVt4OT9i3aV8\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": \"27381a7b-fd61-4577-b004-67372057299d\",\n  \"organization_id\": \"6a270d78-5659-464e-9905-6daa7b29e911\",\n  \"image_id\": null,\n  \"import_type\": null,\n  \"album_id\": \"imported_album\",\n  \"params\": {\n    \"album_id\": \"imported_album\",\n    \"filename\": \"image123_asdasd.JpG\",\n    \"metadatas\": {\n      \"attachmentId\": \"00P24000003vSXsEAM\"\n    },\n    \"url\": \"http://lorempixel.com/100/100/\",\n    \"controller\": \"api/v1/imports\",\n    \"action\": \"create\"\n  },\n  \"created_at\": \"2019-04-08T19:38:58.402+02:00\",\n  \"updated_at\": \"2019-04-08T19:38:58.402+02:00\"\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzgsImlhdCI6MTU1NDc0NTEzOCwiaXNzIjoiMzgwMGJlMjktYjVkMy00MDY0LWFkNzAtZGY5ZDNiY2NiODRmIiwic3RvcmFnZSI6ImFtYXppbmctc3RvcmFnZSIsImFiaWxpdGllcyI6eyJzdG9yYWdlIjoiYW1hemluZy1zdG9yYWdlIiwiaW1wb3J0ZWRfYWxidW0iOnsic3RvcmFnZSI6ImFtYXppbmctc3RvcmFnZSIsIkFjY2VzcyI6eyJpbWFnZV91cGxvYWQiOnRydWV9fX19.QiMKgCiCAvQJ2fQNOlovhHB4fM1NCPPaG4RKwNqL9uQ",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "36735d0d-5090-4d6a-9745-7c93b5c988a8",
+        "X-Runtime": "0.094339",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "464"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resource": "Image API",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/api/v1/images",
+  "description": "it does not delete images and returns 401",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "image_ids",
+      "description": "List of images ids to be deleted"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/images",
+      "request_body": "image_ids[]=2f8dd2dc-2abb-4975-8796-2e2df3a8c555&image_ids[]=de5c9bff-2e4c-4a00-a337-cd6cd0eaf2df&image_ids[]=dfbc1893-db09-4346-8da6-93fa87caca7a&image_ids[]=621518d8-df23-46ff-b148-cca7a3df7b6c&image_ids[]=d77070fe-3eeb-449c-8468-0cba5ffdce91&image_ids[]=9aa8b490-7d5d-477b-ab52-e04db866475c&image_ids[]=27a8b3d8-2117-416c-9823-762067811f98&image_ids[]=f09d0189-2ae3-4425-8312-a3ffdc7ce8af&image_ids[]=27e6a464-6208-483b-9974-04f39358d30c",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6ImQxMjUyNTY3LTg5MTMtNGNhYi05MmRkLTVmMTQzYjVmNmFmZCIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMTE4Ijp7IkFjY2VzcyI6eyJpbWFnZV9saXN0Ijp0cnVlfX19fQ._ke8KmcgevukXTDT-_pS6Vr_WM7-lBegki_57L0kSRw\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 401,
+      "response_status_text": "Unauthorized",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-message": "Access denied",
+        "Content-Type": "text/html",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "4bea8a25-eaa7-42b5-b626-31b7b22f1b7e",
+        "X-Runtime": "0.006822",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "0"
+      },
+      "response_content_type": "text/html",
+      "curl": null
+    }
+  ]
+}

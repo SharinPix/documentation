@@ -1,0 +1,50 @@
+{
+  "resource": "EinsteinBox",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/api/v1/einstein_box/:id",
+  "description": "Delete a box",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/einstein_box/1d805182-7053-4205-961a-3b673dee9754",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDQsImlhdCI6MTU1NDc0NTE0NCwidXNlcl9pZCI6ImRkOGVjZDQ5LWQwNTItNDMxMS1hZDI1LWZmZGI4M2ZiZjBjYiIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMjgyIjp7IkFjY2VzcyI6eyJzZWUiOnRydWUsImVpbnN0ZWluX2JveCI6dHJ1ZX19fX0.YAkLUuUlrJZxaweNNdLUqx3UX6ALVohgX95HB5X4x_k\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDQsImlhdCI6MTU1NDc0NTE0NCwidXNlcl9pZCI6ImRkOGVjZDQ5LWQwNTItNDMxMS1hZDI1LWZmZGI4M2ZiZjBjYiIsImFiaWxpdGllcyI6eyIwMDEwMDAwMDEyM0JCMjgyIjp7IkFjY2VzcyI6eyJzZWUiOnRydWUsImVpbnN0ZWluX2JveCI6dHJ1ZX19fX0.YAkLUuUlrJZxaweNNdLUqx3UX6ALVohgX95HB5X4x_k",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "f2a02f5e-cf3d-47e0-990f-7787ac834c06",
+        "X-Runtime": "0.012128",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

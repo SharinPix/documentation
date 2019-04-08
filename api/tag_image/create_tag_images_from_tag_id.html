@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag Image API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tag Image API</h1>
+
+      <div class="article">
+        <h2>Create tag images from tag id</h2>
+        <h3>POST /api/v1/tags/:tag_id/tag_images</h3>
+
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">tag_id</span>
+                </td>
+                <td>
+                  <span class="description">Id or Name of tag</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <span class="name">image_ids</span>
+                </td>
+                <td>
+                  <span class="description">Id of images</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjUsImlhdCI6MTU1NDc0NTEyNSwidXNlcl9pZCI6ImI2YmY3Y2JhLWRiNGMtNGUwMC04OGM4LTA2ZGFhODkzY2FhOCIsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6Ik15VGFnIiwiZnIiOiJNeVRhZyJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19fQ.dI73wjxmvGfvYrN4kuxh2AG2zP9yvTU4GG0j0u0HCSg&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">POST /api/v1/tags/21bec422-691c-412a-9ec2-06c39b34547d/tag_images</pre>
+
+
+            <h4>Body</h4>
+            <pre class="request body">image_ids[]=d1530e91-b0fc-4ad3-b0b1-4a7ab8e8d380&image_ids[]=85d7046b-5487-4874-a89a-62a299af2bc5&image_ids[]=3011a1ed-5a9a-4ecc-8921-3b1a2d0f7cd0</pre>
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjUsImlhdCI6MTU1NDc0NTEyNSwidXNlcl9pZCI6ImI2YmY3Y2JhLWRiNGMtNGUwMC04OGM4LTA2ZGFhODkzY2FhOCIsImFiaWxpdGllcyI6eyIwMDMyNDAwMDAwNGlqV1MiOnsiVGFncyI6eyJNeVRhZyI6eyJlbiI6Ik15VGFnIiwiZnIiOiJNeVRhZyJ9fSwiQWNjZXNzIjp7InNlZSI6dHJ1ZSwiaW1hZ2VfdGFnIjp0cnVlfX19fQ.dI73wjxmvGfvYrN4kuxh2AG2zP9yvTU4GG0j0u0HCSg
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 406c39a2-fb09-4df6-a791-49fada4372cb
+X-Runtime: 0.056012
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 10306</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[
+  {
+    &quot;id&quot;: &quot;bb698588-2b06-4cac-8760-6d8ace9e0055&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:45.361+02:00&quot;,
+    &quot;user&quot;: &quot;b6bf7cba-db4c-4e00-88c8-06daa893caa8&quot;,
+    &quot;image&quot;: {
+      &quot;id&quot;: &quot;3011a1ed-5a9a-4ecc-8921-3b1a2d0f7cd0&quot;,
+      &quot;public_id&quot;: &quot;3011a1ed-5a9a-4ecc-8921-3b1a2d0f7cd0&quot;,
+      &quot;infos&quot;: {
+        &quot;bytes&quot;: 3604,
+        &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+        &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+        &quot;format&quot;: &quot;png&quot;,
+        &quot;height&quot;: 48,
+        &quot;resource_type&quot;: &quot;image&quot;,
+        &quot;tags&quot;: [
+          &quot;00324000004ijWS&quot;
+        ],
+        &quot;type&quot;: &quot;authenticated&quot;,
+        &quot;width&quot;: 48,
+        &quot;original_filename&quot;: &quot;Super Image&quot;,
+        &quot;location&quot;: {
+          &quot;accuracy&quot;: 36,
+          &quot;latitude&quot;: 48.861934399999996,
+          &quot;longitude&quot;: 2.348967
+        }
+      },
+      &quot;exifs&quot;: {
+      },
+      &quot;gps&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;gps_ip&quot;: null,
+      &quot;gps_exifs&quot;: null,
+      &quot;gps_html&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:45.345+02:00&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-08T19:38:45.345+02:00&quot;,
+      &quot;taken_at&quot;: null,
+      &quot;width&quot;: 48,
+      &quot;height&quot;: 48,
+      &quot;rotation&quot;: 0,
+      &quot;crop_x&quot;: 0.0,
+      &quot;crop_y&quot;: 0.0,
+      &quot;crop_w&quot;: 0.0,
+      &quot;crop_h&quot;: 0.0,
+      &quot;metadatas&quot;: {
+      },
+      &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s---489qNA9--/fl_attachment/v123123/466a910d848e.jpg&quot;,
+      &quot;original_width&quot;: 48,
+      &quot;original_height&quot;: 48,
+      &quot;external_urls&quot;: {
+        &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--EGjeBuor--/c_fit,w_300/v123123/466a910d848e.jpg&quot;,
+        &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--8a0K9Lgc--/c_fit,h_2000,w_2000/v123123/466a910d848e.jpg&quot;,
+        &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=790e3d7&amp;url=localhost/images/3011a1ed-5a9a-4ecc-8921-3b1a2d0f7cd0/thumbnails/mini-b5365be0a8e.jpg&quot;,
+        &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=555a304&amp;url=localhost/images/3011a1ed-5a9a-4ecc-8921-3b1a2d0f7cd0/thumbnails/thumbnail-32ff8dd908a.jpg&quot;,
+        &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=0bc8193&amp;url=localhost/images/3011a1ed-5a9a-4ecc-8921-3b1a2d0f7cd0/thumbnails/full-eccccf2a73b.jpg&quot;
+      },
+      &quot;filename&quot;: &quot;Super Image&quot;,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;page&quot;: 1,
+      &quot;group_id&quot;: null,
+      &quot;color&quot;: &quot;#7D7D7D&quot;,
+      &quot;size&quot;: 3604,
+      &quot;processed&quot;: false,
+      &quot;processing_error&quot;: null,
+      &quot;album_id&quot;: &quot;00324000004ijWS&quot;,
+      &quot;thumbnails&quot;: {
+        &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--bqzlT4g4--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/466a910d848e.jpg&quot;,
+        &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--QMgMRTLT--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/466a910d848e.jpg&quot;,
+        &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--QMgMRTLT--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/466a910d848e.jpg&quot;,
+        &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--mYCnjEJ1--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/466a910d848e.jpg&quot;,
+        &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--8pGWpYe7--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/466a910d848e.jpg&quot;
+      }
+    },
+    &quot;tag&quot;: {
+      &quot;id&quot;: &quot;21bec422-691c-412a-9ec2-06c39b34547d&quot;,
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:45.322+02:00&quot;,
+      &quot;name&quot;: &quot;MyTag&quot;,
+      &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;MyTag\&quot;,\&quot;fr\&quot;:\&quot;MyTag\&quot;}&quot;,
+      &quot;url&quot;: &quot;/public_tags/21bec422-691c-412a-9ec2-06c39b34547d&quot;,
+      &quot;public&quot;: false,
+      &quot;listed&quot;: true,
+      &quot;action&quot;: {
+        &quot;actions&quot;: [
+
+        ]
+      },
+      &quot;visible&quot;: false,
+      &quot;color&quot;: &quot;#FF9800&quot;,
+      &quot;color_contrast&quot;: &quot;#000000&quot;,
+      &quot;allow_download&quot;: false,
+      &quot;label_en&quot;: &quot;MyTag&quot;,
+      &quot;label_fr&quot;: &quot;MyTag&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;7c0e9ed6-88ae-4cea-8435-8048635405dd&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:45.366+02:00&quot;,
+    &quot;user&quot;: &quot;b6bf7cba-db4c-4e00-88c8-06daa893caa8&quot;,
+    &quot;image&quot;: {
+      &quot;id&quot;: &quot;85d7046b-5487-4874-a89a-62a299af2bc5&quot;,
+      &quot;public_id&quot;: &quot;85d7046b-5487-4874-a89a-62a299af2bc5&quot;,
+      &quot;infos&quot;: {
+        &quot;bytes&quot;: 3604,
+        &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+        &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+        &quot;format&quot;: &quot;png&quot;,
+        &quot;height&quot;: 48,
+        &quot;resource_type&quot;: &quot;image&quot;,
+        &quot;tags&quot;: [
+          &quot;00324000004ijWS&quot;
+        ],
+        &quot;type&quot;: &quot;authenticated&quot;,
+        &quot;width&quot;: 48,
+        &quot;original_filename&quot;: &quot;Super Image&quot;,
+        &quot;location&quot;: {
+          &quot;accuracy&quot;: 36,
+          &quot;latitude&quot;: 48.861934399999996,
+          &quot;longitude&quot;: 2.348967
+        }
+      },
+      &quot;exifs&quot;: {
+      },
+      &quot;gps&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;gps_ip&quot;: null,
+      &quot;gps_exifs&quot;: null,
+      &quot;gps_html&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:45.339+02:00&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-08T19:38:45.339+02:00&quot;,
+      &quot;taken_at&quot;: null,
+      &quot;width&quot;: 48,
+      &quot;height&quot;: 48,
+      &quot;rotation&quot;: 0,
+      &quot;crop_x&quot;: 0.0,
+      &quot;crop_y&quot;: 0.0,
+      &quot;crop_w&quot;: 0.0,
+      &quot;crop_h&quot;: 0.0,
+      &quot;metadatas&quot;: {
+      },
+      &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--5Q9VwC5C--/fl_attachment/v123123/32324c9c8f33.jpg&quot;,
+      &quot;original_width&quot;: 48,
+      &quot;original_height&quot;: 48,
+      &quot;external_urls&quot;: {
+        &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--uQdtNErg--/c_fit,w_300/v123123/32324c9c8f33.jpg&quot;,
+        &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--D4-ncQ79--/c_fit,h_2000,w_2000/v123123/32324c9c8f33.jpg&quot;,
+        &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=206ab5b&amp;url=localhost/images/85d7046b-5487-4874-a89a-62a299af2bc5/thumbnails/mini-4ea5f551410.jpg&quot;,
+        &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=6f054e4&amp;url=localhost/images/85d7046b-5487-4874-a89a-62a299af2bc5/thumbnails/thumbnail-932392c827a.jpg&quot;,
+        &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=a33cdea&amp;url=localhost/images/85d7046b-5487-4874-a89a-62a299af2bc5/thumbnails/full-35bc4cb6218.jpg&quot;
+      },
+      &quot;filename&quot;: &quot;Super Image&quot;,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;page&quot;: 1,
+      &quot;group_id&quot;: null,
+      &quot;color&quot;: &quot;#7D7D7D&quot;,
+      &quot;size&quot;: 3604,
+      &quot;processed&quot;: false,
+      &quot;processing_error&quot;: null,
+      &quot;album_id&quot;: &quot;00324000004ijWS&quot;,
+      &quot;thumbnails&quot;: {
+        &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--3AWQloEJ--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/32324c9c8f33.jpg&quot;,
+        &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--7ZBFQqhH--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/32324c9c8f33.jpg&quot;,
+        &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--7ZBFQqhH--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/32324c9c8f33.jpg&quot;,
+        &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--j50x7PrY--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/32324c9c8f33.jpg&quot;,
+        &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--f1kC43Kr--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/32324c9c8f33.jpg&quot;
+      }
+    },
+    &quot;tag&quot;: {
+      &quot;id&quot;: &quot;21bec422-691c-412a-9ec2-06c39b34547d&quot;,
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:45.322+02:00&quot;,
+      &quot;name&quot;: &quot;MyTag&quot;,
+      &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;MyTag\&quot;,\&quot;fr\&quot;:\&quot;MyTag\&quot;}&quot;,
+      &quot;url&quot;: &quot;/public_tags/21bec422-691c-412a-9ec2-06c39b34547d&quot;,
+      &quot;public&quot;: false,
+      &quot;listed&quot;: true,
+      &quot;action&quot;: {
+        &quot;actions&quot;: [
+
+        ]
+      },
+      &quot;visible&quot;: false,
+      &quot;color&quot;: &quot;#FF9800&quot;,
+      &quot;color_contrast&quot;: &quot;#000000&quot;,
+      &quot;allow_download&quot;: false,
+      &quot;label_en&quot;: &quot;MyTag&quot;,
+      &quot;label_fr&quot;: &quot;MyTag&quot;
+    }
+  },
+  {
+    &quot;id&quot;: &quot;6b22b818-a4a3-4077-ab3e-17262e8fc8b9&quot;,
+    &quot;created_at&quot;: &quot;2019-04-08T19:38:45.371+02:00&quot;,
+    &quot;user&quot;: &quot;b6bf7cba-db4c-4e00-88c8-06daa893caa8&quot;,
+    &quot;image&quot;: {
+      &quot;id&quot;: &quot;d1530e91-b0fc-4ad3-b0b1-4a7ab8e8d380&quot;,
+      &quot;public_id&quot;: &quot;d1530e91-b0fc-4ad3-b0b1-4a7ab8e8d380&quot;,
+      &quot;infos&quot;: {
+        &quot;bytes&quot;: 3604,
+        &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+        &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+        &quot;format&quot;: &quot;png&quot;,
+        &quot;height&quot;: 48,
+        &quot;resource_type&quot;: &quot;image&quot;,
+        &quot;tags&quot;: [
+          &quot;00324000004ijWS&quot;
+        ],
+        &quot;type&quot;: &quot;authenticated&quot;,
+        &quot;width&quot;: 48,
+        &quot;original_filename&quot;: &quot;Super Image&quot;,
+        &quot;location&quot;: {
+          &quot;accuracy&quot;: 36,
+          &quot;latitude&quot;: 48.861934399999996,
+          &quot;longitude&quot;: 2.348967
+        }
+      },
+      &quot;exifs&quot;: {
+      },
+      &quot;gps&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;gps_ip&quot;: null,
+      &quot;gps_exifs&quot;: null,
+      &quot;gps_html&quot;: [
+        48.861934399999996,
+        2.348967
+      ],
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:45.332+02:00&quot;,
+      &quot;updated_at&quot;: &quot;2019-04-08T19:38:45.332+02:00&quot;,
+      &quot;taken_at&quot;: null,
+      &quot;width&quot;: 48,
+      &quot;height&quot;: 48,
+      &quot;rotation&quot;: 0,
+      &quot;crop_x&quot;: 0.0,
+      &quot;crop_y&quot;: 0.0,
+      &quot;crop_w&quot;: 0.0,
+      &quot;crop_h&quot;: 0.0,
+      &quot;metadatas&quot;: {
+      },
+      &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--ABqyznn---/fl_attachment/v123123/18c34f9b7d62.jpg&quot;,
+      &quot;original_width&quot;: 48,
+      &quot;original_height&quot;: 48,
+      &quot;external_urls&quot;: {
+        &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--odiLGnOY--/c_fit,w_300/v123123/18c34f9b7d62.jpg&quot;,
+        &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--Kl9kAd7K--/c_fit,h_2000,w_2000/v123123/18c34f9b7d62.jpg&quot;,
+        &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=60d4cf9&amp;url=localhost/images/d1530e91-b0fc-4ad3-b0b1-4a7ab8e8d380/thumbnails/mini-917e0f82358.jpg&quot;,
+        &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=52e9329&amp;url=localhost/images/d1530e91-b0fc-4ad3-b0b1-4a7ab8e8d380/thumbnails/thumbnail-da7d3faa937.jpg&quot;,
+        &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=7cf382b&amp;url=localhost/images/d1530e91-b0fc-4ad3-b0b1-4a7ab8e8d380/thumbnails/full-ede64f5781c.jpg&quot;
+      },
+      &quot;filename&quot;: &quot;Super Image&quot;,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;title&quot;: null,
+      &quot;description&quot;: null,
+      &quot;page&quot;: 1,
+      &quot;group_id&quot;: null,
+      &quot;color&quot;: &quot;#7D7D7D&quot;,
+      &quot;size&quot;: 3604,
+      &quot;processed&quot;: false,
+      &quot;processing_error&quot;: null,
+      &quot;album_id&quot;: &quot;00324000004ijWS&quot;,
+      &quot;thumbnails&quot;: {
+        &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--DhMtv1M5--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/18c34f9b7d62.jpg&quot;,
+        &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--NxJ7wIN4--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/18c34f9b7d62.jpg&quot;,
+        &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--NxJ7wIN4--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/18c34f9b7d62.jpg&quot;,
+        &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--GIHNK0Bq--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/18c34f9b7d62.jpg&quot;,
+        &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--mBo0lrYx--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/18c34f9b7d62.jpg&quot;
+      }
+    },
+    &quot;tag&quot;: {
+      &quot;id&quot;: &quot;21bec422-691c-412a-9ec2-06c39b34547d&quot;,
+      &quot;created_at&quot;: &quot;2019-04-08T19:38:45.322+02:00&quot;,
+      &quot;name&quot;: &quot;MyTag&quot;,
+      &quot;label&quot;: &quot;{\&quot;en\&quot;:\&quot;MyTag\&quot;,\&quot;fr\&quot;:\&quot;MyTag\&quot;}&quot;,
+      &quot;url&quot;: &quot;/public_tags/21bec422-691c-412a-9ec2-06c39b34547d&quot;,
+      &quot;public&quot;: false,
+      &quot;listed&quot;: true,
+      &quot;action&quot;: {
+        &quot;actions&quot;: [
+
+        ]
+      },
+      &quot;visible&quot;: false,
+      &quot;color&quot;: &quot;#FF9800&quot;,
+      &quot;color_contrast&quot;: &quot;#000000&quot;,
+      &quot;allow_download&quot;: false,
+      &quot;label_en&quot;: &quot;MyTag&quot;,
+      &quot;label_fr&quot;: &quot;MyTag&quot;
+    }
+  }
+]</pre>
+      </div>
+    </div>
+  </body>
+</html>

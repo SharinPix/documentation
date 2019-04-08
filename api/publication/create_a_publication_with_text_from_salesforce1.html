@@ -117,13 +117,13 @@ table th, table td {
           <h3>Request</h3>
 
             <h4>Headers</h4>
-            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxODAsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkMDE4N2UxYi1hNWFkLTQ4MWYtOTU3MS05NDFjYzRiNjQxMTcifQ.x-wAnvCADve9I9PBTtKoqXpxDxxdD02ieH0Xhpju5PM&quot;
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6IjEyYTM3N2YyLTA2NDUtNDM3MC05ZmRkLTExYjJhNGI2Njc4YSJ9.yRrICAY7UmdsKq1bM-uG_kJf6kxLdOoTMYoru-fpHF8&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">POST /api/v1/albums/aeee0cfb-bf2f-4e96-9ebf-3b29e76d46e6/publications</pre>
+          <pre class="request route highlight">POST /api/v1/albums/00100000123BB248/publications</pre>
 
 
             <h4>Body</h4>
@@ -132,25 +132,35 @@ Cookie: </pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
-              <pre class="response headers">Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+              <pre class="response headers">Cache-Control: no-cache, no-store
 Pragma: no-cache
 Expires: Fri, 01 Jan 1990 00:00:00 GMT
-X-Frame-Options: DENY
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-Permitted-Cross-Domain-Policies: none
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxODAsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkMDE4N2UxYi1hNWFkLTQ4MWYtOTU3MS05NDFjYzRiNjQxMTcifQ.x-wAnvCADve9I9PBTtKoqXpxDxxdD02ieH0Xhpju5PM
 Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6IjEyYTM3N2YyLTA2NDUtNDM3MC05ZmRkLTExYjJhNGI2Njc4YSJ9.yRrICAY7UmdsKq1bM-uG_kJf6kxLdOoTMYoru-fpHF8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 6f136c9a-2bea-4b71-baf2-e1b1facbaca3
-X-Runtime: 0.058732
-Content-Length: 292</pre>
+X-Request-Id: a327271a-a453-4a43-b558-56c2bfd5f036
+X-Runtime: 0.018420
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 307</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;public_id&quot;:&quot;d09ffaa2-5359-4cda-b630-d3fe6d020cdc&quot;,&quot;thumbnail&quot;:&quot;https://localhost/publications/d09ffaa2-5359-4cda-b630-d3fe6d020cdc/thumbnail&quot;,&quot;title&quot;:&quot;Album du 15/02/2016&quot;,&quot;description&quot;:&quot;1 photo disponible\nPowered by SharinPix&quot;,&quot;aux_text&quot;:&quot;&quot;,&quot;entity_id&quot;:&quot;&quot;,&quot;views_count&quot;:0,&quot;opens_count&quot;:0}</pre>
+              <pre class="response body">{
+  &quot;public_id&quot;: &quot;6224f31a-9c2b-4a19-87c4-677f020a294c&quot;,
+  &quot;thumbnail&quot;: &quot;https://localhost:5001/publications/6224f31a-9c2b-4a19-87c4-677f020a294c/thumbnail&quot;,
+  &quot;title&quot;: &quot;Album published on 2019-04-08&quot;,
+  &quot;description&quot;: &quot;0 photos available\nPowered by SharinPix&quot;,
+  &quot;aux_text&quot;: &quot;&quot;,
+  &quot;entity_id&quot;: &quot;&quot;,
+  &quot;views_count&quot;: 0,
+  &quot;opens_count&quot;: 0
+}</pre>
       </div>
     </div>
   </body>

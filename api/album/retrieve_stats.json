@@ -1,0 +1,88 @@
+{
+  "resource": "Album",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/albums/:id/einstein_box_stats",
+  "description": "Retrieve stats",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/albums/datasetsfid/einstein_box_stats",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlaW5zdGVpbiI6dHJ1ZSwiaXNzIjoiZDAzNjk0YWMtZTQ3Yy00ZWYyLTg3MzMtOTlmMTRhOTgzYWNmIn0.uXIgu9160s-_tIpmLABVPpW84GYEogKkASL_116_-DY\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"completed\": false\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjgsImlhdCI6MTU1NDc0NTEyOCwiaXNzIjoiZDAzNjk0YWMtZTQ3Yy00ZWYyLTg3MzMtOTlmMTRhOTgzYWNmIiwiZWluc3RlaW4iOnRydWV9.Vy3OmMTIK4v-SdaZVcYqFk6KuWpClbwNrhCqDLGAjWY",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "70575eda-8354-4f56-a851-22f883911a10",
+        "X-Runtime": "0.006740",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "19"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    },
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/albums/datasetsfid/einstein_box_stats",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlaW5zdGVpbiI6dHJ1ZSwiaXNzIjoiZDAzNjk0YWMtZTQ3Yy00ZWYyLTg3MzMtOTlmMTRhOTgzYWNmIn0.uXIgu9160s-_tIpmLABVPpW84GYEogKkASL_116_-DY\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"completed\": true,\n  \"stats\": [\n    {\n      \"label\": \"Building\",\n      \"count\": 4\n    },\n    {\n      \"label\": \"Cartoon\",\n      \"count\": 6\n    }\n  ]\n}",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MjgsImlhdCI6MTU1NDc0NTEyOCwiaXNzIjoiZDAzNjk0YWMtZTQ3Yy00ZWYyLTg3MzMtOTlmMTRhOTgzYWNmIiwiZWluc3RlaW4iOnRydWV9.Vy3OmMTIK4v-SdaZVcYqFk6KuWpClbwNrhCqDLGAjWY",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "fd4bdda0-713c-4be9-863e-5233b2c12240",
+        "X-Runtime": "0.006076",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "89"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

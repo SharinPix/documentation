@@ -1,0 +1,20 @@
+{
+  "resource": "Image",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/images/:image_id",
+  "description": "image_id not found",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "token",
+      "description": "Token to secure the transformation"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+
+  ]
+}

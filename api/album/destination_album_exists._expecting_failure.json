@@ -1,0 +1,24 @@
+{
+  "resource": "Album",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/albums/:id",
+  "description": "destination album exists. expecting failure",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "album",
+      "description": "Album attributes"
+    },
+    {
+      "name": "merge",
+      "description": "Flag for merging album"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+
+  ]
+}

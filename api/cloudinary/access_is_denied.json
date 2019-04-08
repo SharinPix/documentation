@@ -1,0 +1,20 @@
+{
+  "resource": "Cloudinary",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/cloudinary?token=:token",
+  "description": "access is denied",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "raw_post",
+      "description": "JSON as body."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+
+  ]
+}

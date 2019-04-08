@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trashed images API</title>
+    <meta charset="utf-8">
+    <style>
+      
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #404040;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+pre {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 18px;
+  line-height: 18px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+td.required .name:after {
+  float: right;
+  content: "required";
+  font-weight: normal;
+  color: #F08080;
+}
+
+a{
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h3{
+  font-size: 18px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 36px;
+}
+
+table{
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: separate;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th+th, table td+td {
+  border-left: 1px solid #ddd;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 18px;
+  text-align: left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Trashed images API</h1>
+
+      <div class="article">
+        <h2>Restore deleted images</h2>
+        <h3>DELETE api/v1/trashed_images/:image_id</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhYmlsaXRpZXMiOnsiMDAxMDAwMDAxMjNCQjE4NiI6eyJBY2Nlc3MiOnsidHJhc2giOnRydWV9fX0sImlzcyI6IjE4ZTg4MzdhLWNhMGYtNGM1OC04MWM0LTgyOTFhZTBiYzA4ZiJ9.ft1nIqG3uZz0DPF7zuO0nLIp7PjJsbMyUnDxNGD8pYI&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">DELETE api/v1/trashed_images/1ccbf0e2-658b-429c-bd39-f983a2d6c74d</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzYsImlhdCI6MTU1NDc0NTEzNiwiaXNzIjoiMThlODgzN2EtY2EwZi00YzU4LTgxYzQtODI5MWFlMGJjMDhmIiwiYWJpbGl0aWVzIjp7IjAwMTAwMDAwMTIzQkIxODYiOnsiQWNjZXNzIjp7InRyYXNoIjp0cnVlfX19fQ.e-qfPRI8iQnQ7QI3tyuGbK98iMJv0DxDKZlBtpufIvo
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 10d351a7-fccd-4cd0-8c81-de43749fcc38
+X-Runtime: 0.018293
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 2900</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;id&quot;: &quot;1ccbf0e2-658b-429c-bd39-f983a2d6c74d&quot;,
+  &quot;public_id&quot;: &quot;1ccbf0e2-658b-429c-bd39-f983a2d6c74d&quot;,
+  &quot;infos&quot;: {
+    &quot;bytes&quot;: 3604,
+    &quot;created_at&quot;: &quot;2015-09-25T13:32:55Z&quot;,
+    &quot;etag&quot;: &quot;5a98d4d3e5d39024abf237be55e99b15&quot;,
+    &quot;format&quot;: &quot;png&quot;,
+    &quot;height&quot;: 48,
+    &quot;resource_type&quot;: &quot;image&quot;,
+    &quot;tags&quot;: [
+      &quot;00100000123BB186&quot;
+    ],
+    &quot;type&quot;: &quot;authenticated&quot;,
+    &quot;width&quot;: 48,
+    &quot;original_filename&quot;: &quot;Super Image&quot;,
+    &quot;location&quot;: {
+      &quot;accuracy&quot;: 36,
+      &quot;latitude&quot;: 48.861934399999996,
+      &quot;longitude&quot;: 2.348967
+    }
+  },
+  &quot;exifs&quot;: {
+  },
+  &quot;gps&quot;: [
+    48.861934399999996,
+    2.348967
+  ],
+  &quot;gps_ip&quot;: null,
+  &quot;gps_exifs&quot;: null,
+  &quot;gps_html&quot;: [
+    48.861934399999996,
+    2.348967
+  ],
+  &quot;created_at&quot;: &quot;2019-04-08T19:38:56.865+02:00&quot;,
+  &quot;updated_at&quot;: &quot;2019-04-08T19:38:56.884+02:00&quot;,
+  &quot;taken_at&quot;: null,
+  &quot;width&quot;: 48,
+  &quot;height&quot;: 48,
+  &quot;rotation&quot;: 0,
+  &quot;crop_x&quot;: 0.0,
+  &quot;crop_y&quot;: 0.0,
+  &quot;crop_w&quot;: 0.0,
+  &quot;crop_h&quot;: 0.0,
+  &quot;metadatas&quot;: {
+  },
+  &quot;original_url&quot;: &quot;https://res.cloudinary.com/sadaasdasd/image/authenticated/s--IK4WUcnB--/fl_attachment/v123123/412a32c60f94.jpg&quot;,
+  &quot;original_width&quot;: 48,
+  &quot;original_height&quot;: 48,
+  &quot;external_urls&quot;: {
+    &quot;fill100&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--r9HOA8vG--/c_fit,w_300/v123123/412a32c60f94.jpg&quot;,
+    &quot;fit2000&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--oaVMA1gf--/c_fit,h_2000,w_2000/v123123/412a32c60f94.jpg&quot;,
+    &quot;mini&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=3a1eb77&amp;url=localhost/images/1ccbf0e2-658b-429c-bd39-f983a2d6c74d/thumbnails/mini-3e229fec0ef.jpg&quot;,
+    &quot;large&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=d27f867&amp;url=localhost/images/1ccbf0e2-658b-429c-bd39-f983a2d6c74d/thumbnails/thumbnail-123317e4ecf.jpg&quot;,
+    &quot;full&quot;: &quot;https://sharinpix-proxy-dev.herokuapp.com/super-image.png?s=d8ab911&amp;url=localhost/images/1ccbf0e2-658b-429c-bd39-f983a2d6c74d/thumbnails/full-c721bdfcb97.jpg&quot;
+  },
+  &quot;filename&quot;: &quot;Super Image&quot;,
+  &quot;format&quot;: &quot;png&quot;,
+  &quot;title&quot;: null,
+  &quot;description&quot;: null,
+  &quot;page&quot;: 1,
+  &quot;group_id&quot;: null,
+  &quot;color&quot;: &quot;#7D7D7D&quot;,
+  &quot;size&quot;: 3604,
+  &quot;processed&quot;: false,
+  &quot;processing_error&quot;: null,
+  &quot;album_id&quot;: &quot;00100000123BB186&quot;,
+  &quot;thumbnails&quot;: {
+    &quot;original&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--s1p40uMH--/fl_attachment/dpr_auto,q_auto,f_auto/v123123/412a32c60f94.jpg&quot;,
+    &quot;full_no_sharinpix&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--ZKkISjNl--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/412a32c60f94.jpg&quot;,
+    &quot;full&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--ZKkISjNl--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/v123123/412a32c60f94.jpg&quot;,
+    &quot;large&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--4EuU-oyr--/c_fit,h_1920,w_1920/c_fill,h_200,w_200/fl_attachment/dpr_auto,q_auto,f_auto/v123123/412a32c60f94.jpg&quot;,
+    &quot;mini&quot;: &quot;/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--wuYaaoXr--/c_fit,h_1920,w_1920/c_fill,h_100,w_100/fl_attachment/dpr_auto,q_auto,f_auto/v123123/412a32c60f94.jpg&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "resource": "Tag",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/tags/autocomplete",
+  "description": "Returns autocomplete tags",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "q",
+      "description": "Search request for tags"
+    },
+    {
+      "name": "filters",
+      "description": "tag attribute"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/tags/autocomplete?q=uper&filters=%7B+%22listed%22%3A+true+%7D",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6ImRjYWZjYzkzLTQ2NTktNGVmZS04YzgzLTUwNGE0MDU2NmM2ZSIsImFiaWxpdGllcyI6eyJ0YWdzIjp7ImNyZWF0ZSI6dHJ1ZX19fQ.B9rKA4ehYckbCHBf4q-yvN5dwpdFG89hggbiGi_TOnU\"",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "q": "uper",
+        "filters": "{ \"listed\": true }"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": \"e9f8b58c-0d25-48d6-ae82-d3faeb6a3a82\",\n    \"name\": \"Super tag\",\n    \"color\": \"#FFC107\",\n    \"color_contrast\": \"#000000\",\n    \"label_en\": \"Super tag\",\n    \"label_fr\": \"Super tag\"\n  }\n]",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1MzEsImlhdCI6MTU1NDc0NTEzMSwidXNlcl9pZCI6ImRjYWZjYzkzLTQ2NTktNGVmZS04YzgzLTUwNGE0MDU2NmM2ZSIsImFiaWxpdGllcyI6eyJ0YWdzIjp7ImNyZWF0ZSI6dHJ1ZX19fQ.B9rKA4ehYckbCHBf4q-yvN5dwpdFG89hggbiGi_TOnU",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "83f393ee-3298-40b4-b9c7-1c057d6c25ef",
+        "X-Runtime": "0.017722",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "157"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

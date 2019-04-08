@@ -1,0 +1,54 @@
+# Downloads API
+
+## No download ability
+
+### POST /api/v1/downloads
+
+### Parameters
+
+| Name | Description | Required | Scope |
+|------|-------------|----------|-------|
+| image_ids | A list of image public_ids to be added in the zip. | false |  |
+
+### Request
+
+#### Headers
+
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiM2Q5MzliNzMtYjJjYi00ZjAyLTlkNDAtNmQzZDhhNjNiNWJlIiwiYWJpbGl0aWVzIjp7IjAwMTAwMDAwMTIzQkI2OCI6eyJBY2Nlc3MiOnsiaW1hZ2VfbGlzdCI6dHJ1ZX19fSwiaXNzIjoiNjJkNmE2ZmEtNmRlMi00MTZhLTgzOTktMmM1MzcxMDE2MjZkIn0.3yab_H9PQ3nScRDIRwgiH7UZUQcVkjn0vKNm_oF4Q8Y&quot;
+Host: example.org
+Content-Type: application/x-www-form-urlencoded
+Cookie: </pre>
+
+#### Route
+
+<pre>POST /api/v1/downloads</pre>
+
+#### Body
+
+<pre>image_ids[]=3e1612b6-8e40-4d1e-ac42-d8e335258d83&image_ids[]=827e4edb-9f15-46d0-967b-5f2ab60dd171&image_ids[]=a676dd88-8ba7-4cb4-b593-4a7c20fc2e3b&image_ids[]=7ea38924-0f69-42f7-9e44-4b6c24308f5b&image_ids[]=61dc3f3c-f06d-40ad-9074-38b3115eef47</pre>
+
+### Response
+
+#### Headers
+
+<pre>Cache-Control: no-cache, no-store
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+X-message: Access denied
+Content-Type: text/html
+Vary: Accept-Encoding
+P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
+X-Request-Id: 8fd3b5d4-b798-4c63-9de3-582dc9658142
+X-Runtime: 0.008233
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 0</pre>
+
+#### Status
+
+<pre>401 Unauthorized</pre>
+

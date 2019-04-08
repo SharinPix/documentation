@@ -1,0 +1,56 @@
+{
+  "resource": "Image External Url",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/image_external_urls",
+  "description": "Retrieve Cloudinary URL",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "image_external_urls",
+      "description": "Images urls"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/image_external_urls",
+      "request_body": "image_external_urls[][image_id]=a202b14a-a187-4858-b746-29476a8c48fa&&image_external_urls[][transformations][crop]=fit&image_external_urls[][transformations][height]=100&image_external_urls[][transformations][width]=100&image_external_urls[][image_id]=a669476c-473e-42ac-a681-dc64e109cb38&image_external_urls[][transformations][crop]=crop&image_external_urls[][transformations][height]=200&image_external_urls[][transformations][width]=200&image_external_urls[][image_id]=a202b14a-a187-4858-b746-29476a8c48fa&image_external_urls[][sharinpix][original]=true&image_external_urls[][transformations][crop]=fill&image_external_urls[][transformations][height]=300&image_external_urls[][transformations][width]=300&image_external_urls[][image_id]=a202b14a-a187-4858-b746-29476a8c48fa&image_external_urls[][sharinpix][download]=false&image_external_urls[][transformations][][crop]=fit&image_external_urls[][transformations][][height]=500&image_external_urls[][transformations][][width]=500&image_external_urls[][transformations][][crop]=fill&image_external_urls[][transformations][][height]=200&image_external_urls[][transformations][][width]=200",
+      "request_headers": {
+        "Authorization": "Token token=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDQsImlhdCI6MTU1NDc0NTE0NCwidXNlcl9pZCI6ImI3MGNkZWIwLWU3ZWQtNDdmZS05M2EyLThkZGYyNDM1NWJmZiIsImFiaWxpdGllcyI6eyJpbWFnZV91cmxzIjp0cnVlfX0.-unpQawc1jqHQWxN8qnPe6q8KAvYWkAFmraSX1-S0sU\"",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": \"4fc0d899-8e7e-48df-b437-bee5e1d90c6f\",\n    \"image_id\": \"a202b14a-a187-4858-b746-29476a8c48fa\",\n    \"infos\": {\n      \"image_id\": \"a202b14a-a187-4858-b746-29476a8c48fa\",\n      \"transformations\": {\n        \"crop\": \"fit\",\n        \"height\": \"100\",\n        \"width\": \"100\"\n      }\n    },\n    \"url\": \"https://sharinpix-proxy-dev.herokuapp.com/4fc0d899-8e7e-48df-b437-bee5e1d90c6f.jpg?s=9431cac&url=localhost/image_external_urls/4fc0d899-8e7e-48df-b437-bee5e1d90c6f\",\n    \"source_url\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--kTKJSgWy--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_100,w_100/v123123/5b3cbbf031c8.jpg\",\n    \"resource_url\": \"https://sharinpix-proxy-dev.herokuapp.com/4fc0d899-8e7e-48df-b437-bee5e1d90c6f.jpg?s=9431cac&url=localhost/image_external_urls/4fc0d899-8e7e-48df-b437-bee5e1d90c6f\"\n  },\n  {\n    \"id\": \"1bfa1c0a-dcfc-4271-9a50-0131dd766f27\",\n    \"image_id\": \"a669476c-473e-42ac-a681-dc64e109cb38\",\n    \"infos\": {\n      \"image_id\": \"a669476c-473e-42ac-a681-dc64e109cb38\",\n      \"transformations\": {\n        \"crop\": \"crop\",\n        \"height\": \"200\",\n        \"width\": \"200\"\n      }\n    },\n    \"url\": \"https://sharinpix-proxy-dev.herokuapp.com/1bfa1c0a-dcfc-4271-9a50-0131dd766f27.jpg?s=7f5917e&url=localhost/image_external_urls/1bfa1c0a-dcfc-4271-9a50-0131dd766f27\",\n    \"source_url\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--jKfUS4-g--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_crop,h_200,w_200/v123123/0d7417775229.jpg\",\n    \"resource_url\": \"https://sharinpix-proxy-dev.herokuapp.com/1bfa1c0a-dcfc-4271-9a50-0131dd766f27.jpg?s=7f5917e&url=localhost/image_external_urls/1bfa1c0a-dcfc-4271-9a50-0131dd766f27\"\n  },\n  {\n    \"id\": \"21418ed9-9097-474f-b676-2d192518df66\",\n    \"image_id\": \"a202b14a-a187-4858-b746-29476a8c48fa\",\n    \"infos\": {\n      \"image_id\": \"a202b14a-a187-4858-b746-29476a8c48fa\",\n      \"sharinpix\": {\n        \"original\": \"true\"\n      },\n      \"transformations\": {\n        \"crop\": \"fill\",\n        \"height\": \"300\",\n        \"width\": \"300\"\n      }\n    },\n    \"url\": \"https://sharinpix-proxy-dev.herokuapp.com/21418ed9-9097-474f-b676-2d192518df66.jpg?s=a373969&url=localhost/image_external_urls/21418ed9-9097-474f-b676-2d192518df66\",\n    \"source_url\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--T05cWy_Z--/fl_attachment/v123123/5b3cbbf031c8.jpg\",\n    \"resource_url\": \"https://sharinpix-proxy-dev.herokuapp.com/21418ed9-9097-474f-b676-2d192518df66.jpg?s=a373969&url=localhost/image_external_urls/21418ed9-9097-474f-b676-2d192518df66\"\n  },\n  {\n    \"id\": \"e28e0570-27ff-4cf4-94a2-d3022e9f5a74\",\n    \"image_id\": \"a202b14a-a187-4858-b746-29476a8c48fa\",\n    \"infos\": {\n      \"image_id\": \"a202b14a-a187-4858-b746-29476a8c48fa\",\n      \"sharinpix\": {\n        \"download\": \"false\"\n      },\n      \"transformations\": [\n        {\n          \"crop\": \"fit\",\n          \"height\": \"500\",\n          \"width\": \"500\"\n        },\n        {\n          \"crop\": \"fill\",\n          \"height\": \"200\",\n          \"width\": \"200\"\n        }\n      ]\n    },\n    \"url\": \"https://sharinpix-proxy-dev.herokuapp.com/e28e0570-27ff-4cf4-94a2-d3022e9f5a74.jpg?s=0abfdb3&url=localhost/image_external_urls/e28e0570-27ff-4cf4-94a2-d3022e9f5a74\",\n    \"source_url\": \"/assets/blank.jpg#https://res.cloudinary.com/sadaasdasd/image/authenticated/s--ljtbr8_k--/c_fit,h_1920,w_1920/fl_attachment/dpr_auto,q_auto,f_auto/c_fit,h_500,w_500/c_fill,h_200,w_200/v123123/5b3cbbf031c8.jpg\",\n    \"resource_url\": \"https://sharinpix-proxy-dev.herokuapp.com/e28e0570-27ff-4cf4-94a2-d3022e9f5a74.jpg?s=0abfdb3&url=localhost/image_external_urls/e28e0570-27ff-4cf4-94a2-d3022e9f5a74\"\n  }\n]",
+      "response_headers": {
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDQsImlhdCI6MTU1NDc0NTE0NCwidXNlcl9pZCI6ImI3MGNkZWIwLWU3ZWQtNDdmZS05M2EyLThkZGYyNDM1NWJmZiIsImFiaWxpdGllcyI6eyJpbWFnZV91cmxzIjp0cnVlfX0.-unpQawc1jqHQWxN8qnPe6q8KAvYWkAFmraSX1-S0sU",
+        "Vary": "Accept-Encoding",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "X-Request-Id": "1d9bd504-a02c-4492-ac68-5c133da86175",
+        "X-Runtime": "0.027144",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "Content-Length": "3218"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

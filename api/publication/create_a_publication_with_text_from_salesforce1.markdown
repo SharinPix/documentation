@@ -7,14 +7,14 @@
 
 #### Headers
 
-<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxODAsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkMDE4N2UxYi1hNWFkLTQ4MWYtOTU3MS05NDFjYzRiNjQxMTcifQ.x-wAnvCADve9I9PBTtKoqXpxDxxdD02ieH0Xhpju5PM&quot;
+<pre>Authorization: Token token=&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6IjEyYTM3N2YyLTA2NDUtNDM3MC05ZmRkLTExYjJhNGI2Njc4YSJ9.yRrICAY7UmdsKq1bM-uG_kJf6kxLdOoTMYoru-fpHF8&quot;
 Host: example.org
 Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
 #### Route
 
-<pre>POST /api/v1/albums/aeee0cfb-bf2f-4e96-9ebf-3b29e76d46e6/publications</pre>
+<pre>POST /api/v1/albums/00100000123BB248/publications</pre>
 
 #### Body
 
@@ -24,21 +24,22 @@ Cookie: </pre>
 
 #### Headers
 
-<pre>Cache-Control: no-cache, no-store, must-revalidate, private, max-age=0
+<pre>Cache-Control: no-cache, no-store
 Pragma: no-cache
 Expires: Fri, 01 Jan 1990 00:00:00 GMT
-X-Frame-Options: DENY
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-Permitted-Cross-Domain-Policies: none
-X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU1NTIxODAsImFiaWxpdGllcyI6e30sInVzZXJfaWQiOiJkMDE4N2UxYi1hNWFkLTQ4MWYtOTU3MS05NDFjYzRiNjQxMTcifQ.x-wAnvCADve9I9PBTtKoqXpxDxxdD02ieH0Xhpju5PM
 Content-Type: application/json; charset=utf-8
+X-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ3NTk1NDMsImlhdCI6MTU1NDc0NTE0MywidXNlcl9pZCI6IjEyYTM3N2YyLTA2NDUtNDM3MC05ZmRkLTExYjJhNGI2Njc4YSJ9.yRrICAY7UmdsKq1bM-uG_kJf6kxLdOoTMYoru-fpHF8
 Vary: Accept-Encoding
 P3P: CP=&quot;NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM&quot;
-X-Request-Id: 6f136c9a-2bea-4b71-baf2-e1b1facbaca3
-X-Runtime: 0.058732
-Content-Length: 292</pre>
+X-Request-Id: a327271a-a453-4a43-b558-56c2bfd5f036
+X-Runtime: 0.018420
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Length: 307</pre>
 
 #### Status
 
@@ -46,4 +47,13 @@ Content-Length: 292</pre>
 
 #### Body
 
-<pre>{"public_id":"d09ffaa2-5359-4cda-b630-d3fe6d020cdc","thumbnail":"https://localhost/publications/d09ffaa2-5359-4cda-b630-d3fe6d020cdc/thumbnail","title":"Album du 15/02/2016","description":"1 photo disponible\nPowered by SharinPix","aux_text":"","entity_id":"","views_count":0,"opens_count":0}</pre>
+<pre>{
+  "public_id": "6224f31a-9c2b-4a19-87c4-677f020a294c",
+  "thumbnail": "https://localhost:5001/publications/6224f31a-9c2b-4a19-87c4-677f020a294c/thumbnail",
+  "title": "Album published on 2019-04-08",
+  "description": "0 photos available\nPowered by SharinPix",
+  "aux_text": "",
+  "entity_id": "",
+  "views_count": 0,
+  "opens_count": 0
+}</pre>
